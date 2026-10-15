@@ -1,0 +1,28 @@
+# model weights live on the external HDD, never in git
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.gguf
+# dataset images are not redistributed (see README)
+medvihall_data/images/
+**/images/
+*.jpg
+*.jpeg
+# backups and caches
+*.bak*
+*_backup*
+__pycache__/
+.ipynb_checkpoints/
+.claude/
+# LaTeX build products
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.blg
+paper/*.bbl
+# local secrets
+.env
+*token*

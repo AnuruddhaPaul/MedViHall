@@ -1,0 +1,33 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lcccc}
+\toprule
+Score (0--5) & ICC(2,1) [95\% CI] & ICC(2,k) & Alpha & QWK \\
+\midrule
+factual correctness & 0.851 [0.829, 0.871] & 0.972 & 0.851 & 0.837 \\
+completeness & 0.853 [0.830, 0.873] & 0.972 & 0.853 & 0.833 \\
+clinical safety & 0.819 [0.795, 0.841] & 0.965 & 0.819 & 0.802 \\
+informativeness & 0.857 [0.836, 0.876] & 0.973 & 0.857 & 0.839 \\
+clarity & 0.920 [0.905, 0.933] & 0.986 & 0.920 & 0.907 \\
+overall & 0.867 [0.847, 0.886] & 0.975 & 0.867 & 0.854 \\
+\bottomrule
+\end{tabular}
+\par\medskip
+\small
+\begin{tabular}{lcccc}
+\toprule
+Hallucination class & Prevalence & Fleiss $\kappa$ [95\% CI] & Judge vs. majority $\kappa$ [95\% CI] & Judge F1 \\
+\midrule
+Fabrication & 0.55 & 0.68 [0.64, 0.72] & 0.33 [0.25, 0.41] & 0.67 \\
+Omission & 0.16 & 0.36 [0.32, 0.40] & 0.09 [0.03, 0.15] & 0.32 \\
+Misclassification & 0.36 & 0.56 [0.51, 0.60] & 0.05 [0.00, 0.11] & 0.12 \\
+Severity distortion & 0.40 & 0.50 [0.46, 0.54] & 0.13 [0.06, 0.21] & 0.36 \\
+Anatomical confusion$^{a}$ & 0.02 & 0.39 [0.17, 0.58] & -0.01 [-0.02, -0.00] & undef. \\
+Evasion & 0.21 & 0.77 [0.73, 0.82] & -0.08 [-0.10, -0.05] & undef. \\
+Clinical reasoning error & 0.10 & 0.35 [0.28, 0.42] & 0.21 [0.11, 0.30] & 0.29 \\
+\bottomrule
+\end{tabular}
+\caption{Agreement among six \emph{simulated (AI-persona) annotators} on 540 items (36 distinct images), and between the LLM judge and the annotator majority. No clinician annotations are included. Intervals are 95\% item-level bootstrap CIs and are optimistic because items share images; $^{a}$ rare class, $\kappa$ unstable.}
+\label{tab:annotation}
+\end{table}
