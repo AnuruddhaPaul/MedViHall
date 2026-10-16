@@ -26,3 +26,4 @@ paper/*.bbl
 # local secrets
 .env
 *token*
+.cache/
