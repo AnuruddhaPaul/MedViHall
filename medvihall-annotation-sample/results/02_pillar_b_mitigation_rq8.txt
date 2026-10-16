@@ -1,0 +1,87 @@
+PILLAR B (RQ8) - COMPARATIVE MITIGATION EFFICACY
+
+Question: which hallucination-mitigation strategy lowers SMHR most, per model, and does mitigation
+close the specialist-vs-general gap?
+
+Design
+- 5 models (qwen25vl, llava16, chexagent, huatuogpt, llava_med) x 500-image stratified subset x
+  1,679 image-question calls per model = 8,395 calls per condition. Greedy decoding in every condition;
+  identical per-question-type token budgets (Q1 700, Q2 220, Q3 480, Q4 280).
+- Baseline: the unmitigated prompt (original core-run responses for four models; llava_med was re-run
+  with a decoding fix because its original baseline had its beginnings cut off, see file 07).
+- RAG: each prompt is prefixed with "Reference context:" and the top-3 reference snippets (definitions of
+  imaging/pathology vocabulary for the modality) retrieved with all-MiniLM-L6-v2 from a 4-modality
+  knowledge base. Retrieval uses the question text only (not the image), so it depends on modality,
+  question type and stratum. 0 retrieval failures in 8,395 calls; mean top-1 similarity 0.556.
+- Contrastive: visual contrastive decoding. At each step the next-token logits are
+  (1+alpha)*logits(original image) - alpha*logits(noised image), alpha = 1.0, restricted to tokens with
+  probability >= 0.1 x the top token; the noised copy is forward-diffusion noise at t = 500.
+- Fine-tuning (originally planned as a third strategy) was dropped at the user's request.
+- Labels: the same claim -> Layer 1 -> Layer 2 pipeline as the core benchmark. Baseline labels for four
+  models are the core-run labels; the llava_med baseline, RAG and contrastive responses were labeled
+  fresh (17,443 responses; 45 judge failures; 1-17 unlabeled responses per model/condition cell).
+- Statistics: SMHR differences are paired on the same image/question, with a 95% bootstrap CI that
+  resamples images (2,000 resamples). * marks an interval that excludes 0. Ten comparisons, no
+  multiplicity correction.
+
+SMHR per model and strategy (lower = safer) and change versus baseline
+| model     | baseline | RAG   | contrastive | delta RAG [95% CI]        | delta contrastive [95% CI] |
+|-----------|----------|-------|-------------|---------------------------|----------------------------|
+| qwen25vl  | 0.537    | 0.508 | 0.533       | -0.028 [-0.046, -0.009] * | -0.003 [-0.021, +0.016]    |
+| llava16   | 0.669    | 0.627 | 0.583       | -0.042 [-0.063, -0.020] * | -0.085 [-0.106, -0.066] *  |
+| chexagent | 0.751    | 0.778 | 0.709       | +0.026 [+0.003, +0.048] * | -0.041 [-0.069, -0.013] *  |
+| huatuogpt | 0.699    | 0.704 | 0.676       | +0.004 [-0.012, +0.020]   | -0.025 [-0.041, -0.009] *  |
+| llava_med | 0.728    | 0.731 | 0.724       | +0.003 [-0.014, +0.018]   | -0.005 [-0.019, +0.008]    |
+
+Answers to the four pre-registered questions
+(a) Which strategy reduces SMHR most per model?
+    qwen25vl: RAG (-0.028*); llava16: contrastive (-0.085*); chexagent: contrastive (-0.041*);
+    huatuogpt: contrastive (-0.025*); llava_med: contrastive (-0.005, not significant).
+(b) Does the best strategy differ by model?
+    Only slightly. Contrastive decoding is best for four of five models, including all three specialists.
+    qwen25vl is the exception: RAG helps it (-0.028*) and contrastive does not (-0.003, n.s.).
+(c) Does mitigation narrow or widen the specialist-vs-general gap (SRI)?
+    Neither closes it. Mean SRI is 1.40 at baseline, 1.47 with RAG
+    (gap widens) and 1.41 with contrastive decoding (unchanged, +0.005). RAG widens the gap
+    because it helps the two general models and hurts or does nothing for the specialists.
+    (SRI here compares against the better of only two general models, qwen25vl and llava16.)
+| condition   | mean SRI (3 specialists x 4 modalities) |
+|-------------|-----------------------------------------|
+| baseline    | 1.401                                   |
+| rag         | 1.474                                   |
+| contrastive | 1.406                                   |
+(d) Does any strategy increase SMHR for any model?
+    Yes - RAG for chexagent (+0.026, significant), and, not significantly, for huatuogpt (+0.004) and
+    llava_med (+0.003). Reference snippets do not help the specialists and can hurt chexagent. This is a
+    negative result worth reporting. Contrastive decoding never raised SMHR significantly.
+
+Caveats - read before using these numbers
+1. SMHR is a ratio, so it can fall when answers get longer and contain more correct claims, without
+   fewer hallucinations. CHR (share of responses with a class-1/2 error) went UP under RAG for qwen25vl
+   (0.776 -> 0.796), llava16 (0.733 -> 0.856) and huatuogpt (0.818 -> 0.894). RAG and contrastive also
+   changed claim counts (table below). The SMHR gains should not be read as "fewer harmful responses".
+2. Confidence statements: the share of responses with no stated confidence rose under RAG for chexagent,
+   huatuogpt and llava_med (table below), which matters for any calibration analysis built on these runs.
+3. One greedy run per cell; the only uncertainty quantified is sampling over images, not run-to-run.
+4. The judge is a 7B model; its label noise (1-3%) is small relative to most effects but is not zero.
+5. The baseline for four models is the original core-run response, not a fresh re-run under identical
+   settings; the llava16 baseline in particular differs from the other conditions in how often it states
+   a confidence (39% missing vs 14% under RAG), which is not explained.
+
+CHR and claim counts
+| model     | CHR base | CHR RAG | CHR contr. | claims base | claims RAG | claims contr. |
+|-----------|----------|---------|------------|-------------|------------|---------------|
+| qwen25vl  | 0.776    | 0.796   | 0.793      | 6,836       | 8,712      | 7,861         |
+| llava16   | 0.733    | 0.856   | 0.805      | 4,960       | 7,165      | 7,701         |
+| chexagent | 0.706    | 0.759   | 0.732      | 3,514       | 3,267      | 3,410         |
+| huatuogpt | 0.818    | 0.894   | 0.807      | 5,408       | 6,183      | 5,662         |
+| llava_med | 0.787    | 0.817   | 0.788      | 4,199       | 4,831      | 4,011         |
+
+Missing confidence and answer length
+| model     | no-conf base | no-conf RAG | no-conf contr. | median words base | RAG | contr. |
+|-----------|--------------|-------------|----------------|-------------------|-----|--------|
+| qwen25vl  | 10.9%        | 11.1%       | 10.8%          | 166               | 199 | 176    |
+| llava16   | 39.3%        | 13.6%       | 28.3%          | 159               | 131 | 175    |
+| chexagent | 16.2%        | 29.7%       | 19.4%          | 68                | 60  | 60     |
+| huatuogpt | 22.0%        | 32.5%       | 25.0%          | 66                | 75  | 73     |
+| llava_med | 51.6%        | 61.5%       | 53.8%          | 40                | 55  | 40     |

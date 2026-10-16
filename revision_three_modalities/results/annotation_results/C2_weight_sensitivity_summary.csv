@@ -1,0 +1,5 @@
+weight_set,n_weight_vectors,n_resamples,n_images,point_all_three_medical_rank_worst3,point_SRI_gt1_all_12_cells,point_paradox_holds_both,boot_P_rank_worst3,boot_P_rank_worst3_ci,boot_P_SRI_gt1,boot_P_SRI_gt1_ci,boot_P_both,boot_P_both_ci,spearman_vs_assumed_point_mean,spearman_vs_assumed_point_min,spearman_vs_assumed_boot_mean,spearman_boot_ci
+(i) assumed weights,1,2000.0,2300.0,0.0,1.0,0.0,0.0,0.000..0.000,1.0,1.000..1.000,0.0,0.000..0.000,1.0,1.0,1.0,1.000..1.000
+(ii) clinician-elicited weights,0,,,,,NOT COMPUTED: no clinician weight-elicitation data found in the project or repo,,,,,,,,,,
+(iii) equal weights (all 1.0),1,2000.0,2300.0,1.0,1.0,1.0,0.6485,0.000..1.000,1.0,1.000..1.000,0.6485,0.000..1.000,0.958041958041958,0.958041958041958,0.9679020979020978,0.944..0.993
+(iv) 200 random +/-30% perturbations,200,2000.0,2300.0,0.0,1.0,0.0,0.0039525,0.000..0.020,1.0,1.000..1.000,0.0039525,0.000..0.020,0.9804195804195805,0.8531468531468531,0.9779730594405577,0.969..0.985

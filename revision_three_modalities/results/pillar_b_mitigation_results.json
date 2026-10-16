@@ -1,0 +1,991 @@
+{
+  "parameters": {
+    "conditions": [
+      "baseline",
+      "rag",
+      "contrastive"
+    ],
+    "n_boot": 2000,
+    "class_weights": {
+      "1": 1.0,
+      "2": 1.0,
+      "3": 0.7,
+      "4": 0.5,
+      "5": 0.4,
+      "6": 0.1,
+      "7": 0.6
+    },
+    "min_claims_per_cell_for_ranking": 100
+  },
+  "smhr": {
+    "baseline": {
+      "qwen25vl": {
+        "records": 1116,
+        "claims": 4522,
+        "smhr": 0.43071649712516547,
+        "chr": 0.6881720430107527,
+        "by_modality": {
+          "dermatology": {
+            "records": 443,
+            "claims": 2203,
+            "smhr": 0.3461643213799369,
+            "chr": 0.636568848758465
+          },
+          "histopathology": {
+            "records": 382,
+            "claims": 1458,
+            "smhr": 0.5506858710562417,
+            "chr": 0.8167539267015707
+          },
+          "ophthalmology": {
+            "records": 291,
+            "claims": 861,
+            "smhr": 0.4439024390243906,
+            "chr": 0.5979381443298969
+          }
+        }
+      },
+      "llava16": {
+        "records": 1118,
+        "claims": 2442,
+        "smhr": 0.5994676494676491,
+        "chr": 0.6565295169946332,
+        "by_modality": {
+          "dermatology": {
+            "records": 444,
+            "claims": 1025,
+            "smhr": 0.5799024390243905,
+            "chr": 0.6463963963963963
+          },
+          "histopathology": {
+            "records": 385,
+            "claims": 565,
+            "smhr": 0.709557522123894,
+            "chr": 0.6467532467532467
+          },
+          "ophthalmology": {
+            "records": 289,
+            "claims": 852,
+            "smhr": 0.5500000000000003,
+            "chr": 0.6851211072664359
+          }
+        }
+      },
+      "chexagent": {
+        "records": 1118,
+        "claims": 1993,
+        "smhr": 0.6788258906171597,
+        "chr": 0.6762075134168157,
+        "by_modality": {
+          "dermatology": {
+            "records": 444,
+            "claims": 826,
+            "smhr": 0.6131961259079904,
+            "chr": 0.713963963963964
+          },
+          "histopathology": {
+            "records": 385,
+            "claims": 748,
+            "smhr": 0.7370320855614976,
+            "chr": 0.7194805194805195
+          },
+          "ophthalmology": {
+            "records": 289,
+            "claims": 419,
+            "smhr": 0.7042959427207638,
+            "chr": 0.5605536332179931
+          }
+        }
+      },
+      "huatuogpt": {
+        "records": 1104,
+        "claims": 3071,
+        "smhr": 0.6001953760989901,
+        "chr": 0.7418478260869565,
+        "by_modality": {
+          "dermatology": {
+            "records": 431,
+            "claims": 1167,
+            "smhr": 0.5664095972579273,
+            "chr": 0.6821345707656613
+          },
+          "histopathology": {
+            "records": 383,
+            "claims": 1064,
+            "smhr": 0.6513157894736848,
+            "chr": 0.8067885117493473
+          },
+          "ophthalmology": {
+            "records": 290,
+            "claims": 840,
+            "smhr": 0.5823809523809529,
+            "chr": 0.7448275862068966
+          }
+        }
+      },
+      "llava_med": {
+        "records": 1119,
+        "claims": 2389,
+        "smhr": 0.6226873168689829,
+        "chr": 0.7140303842716711,
+        "by_modality": {
+          "dermatology": {
+            "records": 443,
+            "claims": 1348,
+            "smhr": 0.5405044510385764,
+            "chr": 0.7426636568848759
+          },
+          "histopathology": {
+            "records": 385,
+            "claims": 459,
+            "smhr": 0.7178649237472767,
+            "chr": 0.5662337662337662
+          },
+          "ophthalmology": {
+            "records": 291,
+            "claims": 582,
+            "smhr": 0.7379725085910654,
+            "chr": 0.865979381443299
+          }
+        }
+      }
+    },
+    "rag": {
+      "qwen25vl": {
+        "records": 1118,
+        "claims": 5054,
+        "smhr": 0.4340720221606645,
+        "chr": 0.7164579606440071,
+        "by_modality": {
+          "dermatology": {
+            "records": 444,
+            "claims": 2347,
+            "smhr": 0.37503195568811293,
+            "chr": 0.6801801801801802
+          },
+          "histopathology": {
+            "records": 383,
+            "claims": 1672,
+            "smhr": 0.4728468899521534,
+            "chr": 0.741514360313316
+          },
+          "ophthalmology": {
+            "records": 291,
+            "claims": 1035,
+            "smhr": 0.5053140096618358,
+            "chr": 0.738831615120275
+          }
+        }
+      },
+      "llava16": {
+        "records": 1114,
+        "claims": 5198,
+        "smhr": 0.5370911889188127,
+        "chr": 0.8078994614003591,
+        "by_modality": {
+          "dermatology": {
+            "records": 443,
+            "claims": 2066,
+            "smhr": 0.4591481122942889,
+            "chr": 0.7742663656884876
+          },
+          "histopathology": {
+            "records": 383,
+            "claims": 1957,
+            "smhr": 0.6121103730199275,
+            "chr": 0.8407310704960835
+          },
+          "ophthalmology": {
+            "records": 288,
+            "claims": 1175,
+            "smhr": 0.5491914893617026,
+            "chr": 0.8159722222222222
+          }
+        }
+      },
+      "chexagent": {
+        "records": 1116,
+        "claims": 1999,
+        "smhr": 0.696448224112056,
+        "chr": 0.7132616487455197,
+        "by_modality": {
+          "dermatology": {
+            "records": 441,
+            "claims": 864,
+            "smhr": 0.6224537037037038,
+            "chr": 0.7052154195011338
+          },
+          "histopathology": {
+            "records": 385,
+            "claims": 496,
+            "smhr": 0.8919354838709679,
+            "chr": 0.7558441558441559
+          },
+          "ophthalmology": {
+            "records": 290,
+            "claims": 639,
+            "smhr": 0.644757433489828,
+            "chr": 0.6689655172413793
+          }
+        }
+      },
+      "huatuogpt": {
+        "records": 1117,
+        "claims": 3950,
+        "smhr": 0.6250886075949349,
+        "chr": 0.8442256042972247,
+        "by_modality": {
+          "dermatology": {
+            "records": 443,
+            "claims": 1515,
+            "smhr": 0.5746534653465358,
+            "chr": 0.7358916478555305
+          },
+          "histopathology": {
+            "records": 385,
+            "claims": 1464,
+            "smhr": 0.6754781420765033,
+            "chr": 0.8935064935064935
+          },
+          "ophthalmology": {
+            "records": 289,
+            "claims": 971,
+            "smhr": 0.6278063851699283,
+            "chr": 0.9446366782006921
+          }
+        }
+      },
+      "llava_med": {
+        "records": 1116,
+        "claims": 2770,
+        "smhr": 0.6590613718411531,
+        "chr": 0.7670250896057348,
+        "by_modality": {
+          "dermatology": {
+            "records": 444,
+            "claims": 987,
+            "smhr": 0.6784194528875389,
+            "chr": 0.6891891891891891
+          },
+          "histopathology": {
+            "records": 383,
+            "claims": 1035,
+            "smhr": 0.6858937198067637,
+            "chr": 0.8720626631853786
+          },
+          "ophthalmology": {
+            "records": 289,
+            "claims": 748,
+            "smhr": 0.5963903743315512,
+            "chr": 0.7474048442906575
+          }
+        }
+      }
+    },
+    "contrastive": {
+      "qwen25vl": {
+        "records": 1115,
+        "claims": 4705,
+        "smhr": 0.4430393198724759,
+        "chr": 0.705829596412556,
+        "by_modality": {
+          "dermatology": {
+            "records": 443,
+            "claims": 2255,
+            "smhr": 0.3846119733924615,
+            "chr": 0.6681715575620768
+          },
+          "histopathology": {
+            "records": 381,
+            "claims": 1602,
+            "smhr": 0.5098002496878908,
+            "chr": 0.7716535433070866
+          },
+          "ophthalmology": {
+            "records": 291,
+            "claims": 848,
+            "smhr": 0.47228773584905653,
+            "chr": 0.6769759450171822
+          }
+        }
+      },
+      "llava16": {
+        "records": 1116,
+        "claims": 3456,
+        "smhr": 0.545949074074074,
+        "chr": 0.7150537634408602,
+        "by_modality": {
+          "dermatology": {
+            "records": 442,
+            "claims": 1564,
+            "smhr": 0.5406649616368294,
+            "chr": 0.755656108597285
+          },
+          "histopathology": {
+            "records": 384,
+            "claims": 764,
+            "smhr": 0.53717277486911,
+            "chr": 0.625
+          },
+          "ophthalmology": {
+            "records": 290,
+            "claims": 1128,
+            "smhr": 0.5592198581560285,
+            "chr": 0.7724137931034483
+          }
+        }
+      },
+      "chexagent": {
+        "records": 1120,
+        "claims": 1636,
+        "smhr": 0.7271393643031787,
+        "chr": 0.6696428571428571,
+        "by_modality": {
+          "dermatology": {
+            "records": 444,
+            "claims": 682,
+            "smhr": 0.6546920821114368,
+            "chr": 0.6846846846846847
+          },
+          "histopathology": {
+            "records": 385,
+            "claims": 565,
+            "smhr": 0.7603539823008849,
+            "chr": 0.7168831168831169
+          },
+          "ophthalmology": {
+            "records": 291,
+            "claims": 389,
+            "smhr": 0.8059125964010283,
+            "chr": 0.584192439862543
+          }
+        }
+      },
+      "huatuogpt": {
+        "records": 1118,
+        "claims": 3567,
+        "smhr": 0.5542753013737028,
+        "chr": 0.7209302325581395,
+        "by_modality": {
+          "dermatology": {
+            "records": 442,
+            "claims": 1469,
+            "smhr": 0.5636487406398918,
+            "chr": 0.6990950226244343
+          },
+          "histopathology": {
+            "records": 385,
+            "claims": 1193,
+            "smhr": 0.5715004191114844,
+            "chr": 0.7532467532467533
+          },
+          "ophthalmology": {
+            "records": 291,
+            "claims": 905,
+            "smhr": 0.5163535911602212,
+            "chr": 0.711340206185567
+          }
+        }
+      },
+      "llava_med": {
+        "records": 1119,
+        "claims": 2584,
+        "smhr": 0.6225619195046431,
+        "chr": 0.7283288650580876,
+        "by_modality": {
+          "dermatology": {
+            "records": 443,
+            "claims": 1266,
+            "smhr": 0.5536334913112171,
+            "chr": 0.7291196388261851
+          },
+          "histopathology": {
+            "records": 385,
+            "claims": 640,
+            "smhr": 0.7257812499999999,
+            "chr": 0.638961038961039
+          },
+          "ophthalmology": {
+            "records": 291,
+            "claims": 678,
+            "smhr": 0.6538348082595874,
+            "chr": 0.845360824742268
+          }
+        }
+      }
+    }
+  },
+  "paired_vs_baseline": {
+    "rag": {
+      "qwen25vl": {
+        "n_paired_keys": 1114,
+        "baseline_smhr": 0.4305905773059058,
+        "strategy_smhr": 0.4348448687350831,
+        "delta": 0.004254291429177326,
+        "delta_ci95": [
+          -0.01894942730819697,
+          0.026196717835143588
+        ],
+        "relative_change": 0.009880131274110387,
+        "significant": false
+      },
+      "llava16": {
+        "n_paired_keys": 1112,
+        "baseline_smhr": 0.5993371996685997,
+        "strategy_smhr": 0.5366441658630664,
+        "delta": -0.06269303380553326,
+        "delta_ci95": [
+          -0.09203920169996999,
+          -0.03432282622209401
+        ],
+        "relative_change": -0.10460394222183947,
+        "significant": true
+      },
+      "chexagent": {
+        "n_paired_keys": 1114,
+        "baseline_smhr": 0.6804853387259856,
+        "strategy_smhr": 0.6971915747241726,
+        "delta": 0.01670623599818699,
+        "delta_ci95": [
+          -0.015965479846624105,
+          0.04856636395084203
+        ],
+        "relative_change": 0.02455047162289293,
+        "significant": false
+      },
+      "huatuogpt": {
+        "n_paired_keys": 1101,
+        "baseline_smhr": 0.5997389885807501,
+        "strategy_smhr": 0.6222078927005417,
+        "delta": 0.022468904119791522,
+        "delta_ci95": [
+          -0.0002686219838571535,
+          0.04378607997472405
+        ],
+        "relative_change": 0.0374644712910244,
+        "significant": false
+      },
+      "llava_med": {
+        "n_paired_keys": 1115,
+        "baseline_smhr": 0.6220445940260834,
+        "strategy_smhr": 0.659016985905312,
+        "delta": 0.03697239187922863,
+        "delta_ci95": [
+          0.015803004378800375,
+          0.05798068763442624
+        ],
+        "relative_change": 0.059436883198245936,
+        "significant": true
+      }
+    },
+    "contrastive": {
+      "qwen25vl": {
+        "n_paired_keys": 1111,
+        "baseline_smhr": 0.43076923076923074,
+        "strategy_smhr": 0.4435776875400725,
+        "delta": 0.012808456770841747,
+        "delta_ci95": [
+          -0.012293216807591949,
+          0.036769400861009695
+        ],
+        "relative_change": 0.029733917503739774,
+        "significant": false
+      },
+      "llava16": {
+        "n_paired_keys": 1114,
+        "baseline_smhr": 0.5983937397034594,
+        "strategy_smhr": 0.5451856148491878,
+        "delta": -0.05320812485427162,
+        "delta_ci95": [
+          -0.08277130639196087,
+          -0.025608378852638038
+        ],
+        "relative_change": -0.08891825118464557,
+        "significant": true
+      },
+      "chexagent": {
+        "n_paired_keys": 1118,
+        "baseline_smhr": 0.6788258906171598,
+        "strategy_smhr": 0.726638089406001,
+        "delta": 0.04781219878884124,
+        "delta_ci95": [
+          0.007361593370660214,
+          0.08499942705291023
+        ],
+        "relative_change": 0.0704336700319023,
+        "significant": true
+      },
+      "huatuogpt": {
+        "n_paired_keys": 1102,
+        "baseline_smhr": 0.6008156606851547,
+        "strategy_smhr": 0.5508857142857141,
+        "delta": -0.049929946399440595,
+        "delta_ci95": [
+          -0.06970775373545712,
+          -0.03007024975563747
+        ],
+        "relative_change": -0.08310360342888162,
+        "significant": true
+      },
+      "llava_med": {
+        "n_paired_keys": 1119,
+        "baseline_smhr": 0.6226873168689829,
+        "strategy_smhr": 0.6225619195046437,
+        "delta": -0.00012539736433925253,
+        "delta_ci95": [
+          -0.020834539921301572,
+          0.019644013146774653
+        ],
+        "relative_change": -0.00020138095146979984,
+        "significant": false
+      }
+    }
+  },
+  "data_quality": {
+    "baseline": {
+      "qwen25vl": {
+        "records": 1120,
+        "unlabeled": 4,
+        "null_confidence_rate": 0.1259,
+        "chopped_start_rate": 0.0,
+        "median_words": 154.0
+      },
+      "llava16": {
+        "records": 1120,
+        "unlabeled": 2,
+        "null_confidence_rate": 0.3795,
+        "chopped_start_rate": 0.0,
+        "median_words": 161.0
+      },
+      "chexagent": {
+        "records": 1120,
+        "unlabeled": 2,
+        "null_confidence_rate": 0.2018,
+        "chopped_start_rate": 0.0,
+        "median_words": 68.0
+      },
+      "huatuogpt": {
+        "records": 1120,
+        "unlabeled": 16,
+        "null_confidence_rate": 0.1982,
+        "chopped_start_rate": 0.0,
+        "median_words": 62.0
+      },
+      "llava_med": {
+        "records": 1120,
+        "unlabeled": 1,
+        "null_confidence_rate": 0.433,
+        "chopped_start_rate": 0.0,
+        "median_words": 40.0
+      }
+    },
+    "rag": {
+      "qwen25vl": {
+        "records": 1120,
+        "unlabeled": 2,
+        "null_confidence_rate": 0.1277,
+        "chopped_start_rate": 0.0,
+        "median_words": 186.0
+      },
+      "llava16": {
+        "records": 1120,
+        "unlabeled": 6,
+        "null_confidence_rate": 0.1661,
+        "chopped_start_rate": 0.0,
+        "median_words": 148.0
+      },
+      "chexagent": {
+        "records": 1120,
+        "unlabeled": 4,
+        "null_confidence_rate": 0.2687,
+        "chopped_start_rate": 0.0,
+        "median_words": 60.0
+      },
+      "huatuogpt": {
+        "records": 1120,
+        "unlabeled": 3,
+        "null_confidence_rate": 0.2571,
+        "chopped_start_rate": 0.0,
+        "median_words": 67.0
+      },
+      "llava_med": {
+        "records": 1120,
+        "unlabeled": 4,
+        "null_confidence_rate": 0.6813,
+        "chopped_start_rate": 0.0027,
+        "median_words": 56.0
+      }
+    },
+    "contrastive": {
+      "qwen25vl": {
+        "records": 1120,
+        "unlabeled": 5,
+        "null_confidence_rate": 0.1232,
+        "chopped_start_rate": 0.0,
+        "median_words": 161.5
+      },
+      "llava16": {
+        "records": 1120,
+        "unlabeled": 4,
+        "null_confidence_rate": 0.2902,
+        "chopped_start_rate": 0.0,
+        "median_words": 169.5
+      },
+      "chexagent": {
+        "records": 1120,
+        "unlabeled": 0,
+        "null_confidence_rate": 0.2027,
+        "chopped_start_rate": 0.0,
+        "median_words": 65.0
+      },
+      "huatuogpt": {
+        "records": 1120,
+        "unlabeled": 2,
+        "null_confidence_rate": 0.1688,
+        "chopped_start_rate": 0.0,
+        "median_words": 63.0
+      },
+      "llava_med": {
+        "records": 1120,
+        "unlabeled": 1,
+        "null_confidence_rate": 0.458,
+        "chopped_start_rate": 0.0,
+        "median_words": 41.0
+      }
+    }
+  },
+  "sri": {
+    "baseline": {
+      "chexagent": {
+        "dermatology": {
+          "sri": 1.7714018690995295,
+          "best_general": "qwen25vl"
+        },
+        "histopathology": {
+          "sri": 1.3383893146701495,
+          "best_general": "qwen25vl"
+        },
+        "ophthalmology": {
+          "sri": 1.586600750085236,
+          "best_general": "qwen25vl"
+        }
+      },
+      "huatuogpt": {
+        "dermatology": {
+          "sri": 1.636244876421731,
+          "best_general": "qwen25vl"
+        },
+        "histopathology": {
+          "sri": 1.182735609730517,
+          "best_general": "qwen25vl"
+        },
+        "ophthalmology": {
+          "sri": 1.3119570905285192,
+          "best_general": "qwen25vl"
+        }
+      },
+      "llava_med": {
+        "dermatology": {
+          "sri": 1.561410051977422,
+          "best_general": "qwen25vl"
+        },
+        "histopathology": {
+          "sri": 1.3035833339438647,
+          "best_general": "qwen25vl"
+        },
+        "ophthalmology": {
+          "sri": 1.6624655413315197,
+          "best_general": "qwen25vl"
+        }
+      },
+      "_mean_sri": 1.4838653819764986
+    },
+    "rag": {
+      "chexagent": {
+        "dermatology": {
+          "sri": 1.659735108603262,
+          "best_general": "qwen25vl"
+        },
+        "histopathology": {
+          "sri": 1.8863092955125946,
+          "best_general": "qwen25vl"
+        },
+        "ophthalmology": {
+          "sri": 1.2759540031777663,
+          "best_general": "qwen25vl"
+        }
+      },
+      "huatuogpt": {
+        "dermatology": {
+          "sri": 1.532278667539557,
+          "best_general": "qwen25vl"
+        },
+        "histopathology": {
+          "sri": 1.4285345984719362,
+          "best_general": "qwen25vl"
+        },
+        "ophthalmology": {
+          "sri": 1.2424084295427833,
+          "best_general": "qwen25vl"
+        }
+      },
+      "llava_med": {
+        "dermatology": {
+          "sri": 1.808964389828507,
+          "best_general": "qwen25vl"
+        },
+        "histopathology": {
+          "sri": 1.450561977633327,
+          "best_general": "qwen25vl"
+        },
+        "ophthalmology": {
+          "sri": 1.1802371652641594,
+          "best_general": "qwen25vl"
+        }
+      },
+      "_mean_sri": 1.4961092928415436
+    },
+    "contrastive": {
+      "chexagent": {
+        "dermatology": {
+          "sri": 1.7022145107359492,
+          "best_general": "qwen25vl"
+        },
+        "histopathology": {
+          "sri": 1.4914743230635679,
+          "best_general": "qwen25vl"
+        },
+        "ophthalmology": {
+          "sri": 1.7064017022423772,
+          "best_general": "qwen25vl"
+        }
+      },
+      "huatuogpt": {
+        "dermatology": {
+          "sri": 1.4654997234439697,
+          "best_general": "qwen25vl"
+        },
+        "histopathology": {
+          "sri": 1.121028127117175,
+          "best_general": "qwen25vl"
+        },
+        "ophthalmology": {
+          "sri": 1.0933029845290079,
+          "best_general": "qwen25vl"
+        }
+      },
+      "llava_med": {
+        "dermatology": {
+          "sri": 1.43945984423705,
+          "best_general": "qwen25vl"
+        },
+        "histopathology": {
+          "sri": 1.4236580904861005,
+          "best_general": "qwen25vl"
+        },
+        "ophthalmology": {
+          "sri": 1.3843992943923351,
+          "best_general": "qwen25vl"
+        }
+      },
+      "_mean_sri": 1.4252709555830592
+    }
+  },
+  "answers": {
+    "a_best_strategy_per_model": {
+      "qwen25vl": {
+        "best": "none (no strategy lowered SMHR)",
+        "delta": 0.004254291429177326,
+        "delta_ci95": [
+          -0.01894942730819697,
+          0.026196717835143588
+        ],
+        "significant": false,
+        "all": {
+          "rag": {
+            "delta": 0.004254291429177326,
+            "significant": false
+          },
+          "contrastive": {
+            "delta": 0.012808456770841747,
+            "significant": false
+          }
+        }
+      },
+      "llava16": {
+        "best": "rag",
+        "delta": -0.06269303380553326,
+        "delta_ci95": [
+          -0.09203920169996999,
+          -0.03432282622209401
+        ],
+        "significant": true,
+        "all": {
+          "rag": {
+            "delta": -0.06269303380553326,
+            "significant": true
+          },
+          "contrastive": {
+            "delta": -0.05320812485427162,
+            "significant": true
+          }
+        }
+      },
+      "chexagent": {
+        "best": "none (no strategy lowered SMHR)",
+        "delta": 0.01670623599818699,
+        "delta_ci95": [
+          -0.015965479846624105,
+          0.04856636395084203
+        ],
+        "significant": false,
+        "all": {
+          "rag": {
+            "delta": 0.01670623599818699,
+            "significant": false
+          },
+          "contrastive": {
+            "delta": 0.04781219878884124,
+            "significant": true
+          }
+        }
+      },
+      "huatuogpt": {
+        "best": "contrastive",
+        "delta": -0.049929946399440595,
+        "delta_ci95": [
+          -0.06970775373545712,
+          -0.03007024975563747
+        ],
+        "significant": true,
+        "all": {
+          "rag": {
+            "delta": 0.022468904119791522,
+            "significant": false
+          },
+          "contrastive": {
+            "delta": -0.049929946399440595,
+            "significant": true
+          }
+        }
+      },
+      "llava_med": {
+        "best": "contrastive",
+        "delta": -0.00012539736433925253,
+        "delta_ci95": [
+          -0.020834539921301572,
+          0.019644013146774653
+        ],
+        "significant": false,
+        "all": {
+          "rag": {
+            "delta": 0.03697239187922863,
+            "significant": true
+          },
+          "contrastive": {
+            "delta": -0.00012539736433925253,
+            "significant": false
+          }
+        }
+      }
+    },
+    "b_best_differs_by_model": {
+      "best_by_model": {
+        "qwen25vl": "none (no strategy lowered SMHR)",
+        "llava16": "rag",
+        "chexagent": "none (no strategy lowered SMHR)",
+        "huatuogpt": "contrastive",
+        "llava_med": "contrastive"
+      },
+      "same_for_all_models": false,
+      "specialists": {
+        "chexagent": "none (no strategy lowered SMHR)",
+        "huatuogpt": "contrastive",
+        "llava_med": "contrastive"
+      },
+      "generals": {
+        "qwen25vl": "none (no strategy lowered SMHR)",
+        "llava16": "rag"
+      }
+    },
+    "d_strategies_that_increase_smhr": [
+      {
+        "model": "qwen25vl",
+        "strategy": "rag",
+        "delta": 0.004254291429177326,
+        "delta_ci95": [
+          -0.01894942730819697,
+          0.026196717835143588
+        ],
+        "significant": false
+      },
+      {
+        "model": "chexagent",
+        "strategy": "rag",
+        "delta": 0.01670623599818699,
+        "delta_ci95": [
+          -0.015965479846624105,
+          0.04856636395084203
+        ],
+        "significant": false
+      },
+      {
+        "model": "huatuogpt",
+        "strategy": "rag",
+        "delta": 0.022468904119791522,
+        "delta_ci95": [
+          -0.0002686219838571535,
+          0.04378607997472405
+        ],
+        "significant": false
+      },
+      {
+        "model": "llava_med",
+        "strategy": "rag",
+        "delta": 0.03697239187922863,
+        "delta_ci95": [
+          0.015803004378800375,
+          0.05798068763442624
+        ],
+        "significant": true
+      },
+      {
+        "model": "qwen25vl",
+        "strategy": "contrastive",
+        "delta": 0.012808456770841747,
+        "delta_ci95": [
+          -0.012293216807591949,
+          0.036769400861009695
+        ],
+        "significant": false
+      },
+      {
+        "model": "chexagent",
+        "strategy": "contrastive",
+        "delta": 0.04781219878884124,
+        "delta_ci95": [
+          0.007361593370660214,
+          0.08499942705291023
+        ],
+        "significant": true
+      }
+    ],
+    "c_specialist_vs_general_gap": {
+      "baseline_mean_sri": 1.4838653819764986,
+      "by_strategy": {
+        "rag": {
+          "mean_sri": 1.4961092928415436,
+          "change_vs_baseline": 0.012243910865044949,
+          "direction": "widens",
+          "note": "SRI > 1: specialists hallucinate more than the best general VLM; gap narrows when mean SRI moves toward 1"
+        },
+        "contrastive": {
+          "mean_sri": 1.4252709555830592,
+          "change_vs_baseline": -0.05859442639343948,
+          "direction": "narrows",
+          "note": "SRI > 1: specialists hallucinate more than the best general VLM; gap narrows when mean SRI moves toward 1"
+        }
+      }
+    }
+  }
+}

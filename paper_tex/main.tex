@@ -1,0 +1,79 @@
+% ===================== main.tex =====================
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathptmx}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,array,multirow}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{caption}
+\usepackage[hidelinks]{hyperref}
+
+% NOTE: replace the class, margins and bibliography style with the journal template once the journal is chosen.
+
+% ---- numbers: a generated numbers.tex overrides these defaults ----
+\IfFileExists{numbers.tex}{\input{numbers.tex}}{}
+\providecommand{\Nimages}{3{,}500}
+\providecommand{\Nmodels}{12}
+\providecommand{\Nstrata}{13}
+\providecommand{\Ncalls}{11{,}750}
+\providecommand{\Nresponses}{141{,}000}
+
+% ---- draft tags: set \showtagsfalse for the final version ----
+\newif\ifshowtags
+\showtagstrue
+% \rad marks text that depends on the radiology arm (blue in the draft, plain in the final version)
+\newcommand{\rad}[1]{\ifshowtags{\color{blue}#1}\else#1\fi}
+% \PH marks a number or word to be bound to the result files (red in the draft, plain in the final version)
+\newcommand{\PH}[1]{\ifshowtags{\color{red}#1}\else#1\fi}
+% \TODO marks a missing passage (shown in the draft, removed in the final version)
+\newcommand{\TODO}[1]{\ifshowtags{\color{red}[#1]}\else\fi}
+
+% ---- metric names (usable in text and in mathematics) ----
+\newcommand{\SMHR}{\ensuremath{\mathrm{SMHR}}}
+\newcommand{\CHR}{\ensuremath{\mathrm{CHR}}}
+\newcommand{\SRI}{\ensuremath{\mathrm{SRI}}}
+
+\title{MedViHall: A Cross-Modality Benchmark for Severity-Weighted Hallucination Evaluation in Medical Vision-Language Models}
+% NOTE: provisional title. Author list and affiliations to be supplied; co-authors are not assumed.
+\author{Anuruddha Paul\\ \small KIIT Deemed to be University, Bhubaneswar, India}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\TODO{Abstract to be written last, from audited results.}
+\end{abstract}
+
+\input{sec_introduction}
+\input{sec_related}
+\input{sec_benchmark}
+\input{sec_setup}
+\input{sec_results}
+\input{sec_validation}
+\input{sec_discussion}
+\input{sec_limitations}
+\input{sec_conclusion}
+
+\bibliographystyle{unsrtnat}
+\bibliography{references,refs_intro_related,refs_setup}
+
+\appendix
+\section{Prompt texts}\label{app:prompts}
+\TODO{Appendix to be written: system prompts and the query templates for the four modalities.}
+
+\section{Sensitivity to the class weights}\label{app:weights}
+\TODO{Appendix to be written: equal weights and random perturbation of up to 30 per cent.}
+
+\section{Reference-label coverage and keyword lexicons}\label{app:coverage}
+\TODO{Appendix to be written: coverage by modality and class (gt\_coverage\_notes.json) and the Layer 1 lexicons (stage2\_lexicons.py).}
+
+\section{Additional figures}
+\input{app_figures}
+
+\end{document}

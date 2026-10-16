@@ -1,0 +1,44 @@
+PILLAR C (RQ9) - DO ALTERNATIVE METRICS AGREE WITH SMHR?
+
+Question: if a model looks safest under SMHR, does it also look safest under CREST (clinical-risk
+severity of its errors) and the MediHall Score (per-claim correctness)? Agreement would mean SMHR is not
+an idiosyncratic metric. If the metrics agree, SMHR-vs-CREST should be positive and SMHR-vs-MediHall
+negative.
+
+Rank correlations across the 12 models (overall)
+| metric pair (12 models, Spearman) | rho    | approx. p |
+|-----------------------------------|--------|-----------|
+| SMHR vs CREST                     | +0.643 | 0.024     |
+| SMHR vs MediHall Score            | -1.000 | <0.001    |
+| CREST vs MediHall Score           | -0.643 | 0.024     |
+
+Divergences: model x modality cells where SMHR and CREST disagree most (z-score difference)
+| model     | modality       | SMHR  | CREST | z(SMHR)-z(CREST) | pattern                                                     |
+|-----------|----------------|-------|-------|------------------|-------------------------------------------------------------|
+| huatuogpt | ophthalmology  | 0.564 | 2.35  | +1.89            | high SMHR-vs-CREST (frequent but comparatively mild errors) |
+| qwen35    | histopathology | 0.482 | 2.78  | -1.33            | high CREST-vs-SMHR (rare but severe errors)                 |
+| gemma3    | radiology      | 0.633 | 2.96  | -1.23            | high CREST-vs-SMHR (rare but severe errors)                 |
+| qwen3vl   | dermatology    | 0.415 | 2.68  | -1.23            | high CREST-vs-SMHR (rare but severe errors)                 |
+| internvl3 | ophthalmology  | 0.470 | 2.35  | +1.19            | high SMHR-vs-CREST (frequent but comparatively mild errors) |
+| internvl3 | histopathology | 0.504 | 2.78  | -1.13            | high CREST-vs-SMHR (rare but severe errors)                 |
+| llava16   | ophthalmology  | 0.571 | 2.49  | +1.10            | high SMHR-vs-CREST (frequent but comparatively mild errors) |
+| huatuogpt | dermatology    | 0.574 | 2.51  | +1.04            | high SMHR-vs-CREST (frequent but comparatively mild errors) |
+| llava_med | radiology      | 0.921 | 2.96  | +1.02            | high SMHR-vs-CREST (frequent but comparatively mild errors) |
+| qwen2vl   | radiology      | 0.828 | 2.84  | +1.02            | high SMHR-vs-CREST (frequent but comparatively mild errors) |
+
+Findings
+- SMHR and CREST agree moderately and in the expected direction (rho = +0.64, p about 0.02): models with a
+  higher hallucination rate tend to make higher-risk errors.
+- SMHR and the MediHall Score are perfectly inversely ranked (rho = -1.0). That is a very strong
+  agreement, but it is most likely partly built in (both summarize per-claim correctness), so it
+  should not be presented as independent confirmation. The relation of the MediHall Score to the other two
+  metrics was not tested for construction overlap.
+- The two disagreement patterns are informative: some model/modality cells make frequent but comparatively
+  mild errors (e.g. huatuogpt and llava16 in ophthalmology: high SMHR, low CREST), while others make rarer
+  but more severe errors (e.g. qwen35 in histopathology, gemma3 in radiology, qwen3vl in dermatology: lower SMHR
+  than CREST would suggest). A single metric would rank these cells differently.
+
+Caveats
+- n = 12 models; correlations are coarse and the p-values are approximate (t approximation, no ties handling).
+- All three metrics rest on the same claim extraction and judge, so they are not independent measurements
+  of the models.

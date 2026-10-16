@@ -1,0 +1,27 @@
+
+===== 2026-10-11 12:02:34 exit=0 =====
+The annotation run is finished: all 720 items are rated and none were skipped. The file has 720 unique `item_id`s that match the manifest exactly, with no extras and none missing.
+
+**Setup check:** `blinded_manifest_720.jsonl` has 720 items with the fields `item_id`, `image_path`, `modality` and `generated_text`. That matches the brief: 180 each of dermatology, ophthalmology, radiology and histopathology.
+
+**Resume:** I found 570 valid lines already in `annotations_ai_ophthalmology_specialist.jsonl` and no cut-off final line. I skipped those and rated the remaining 150, all histopathology, opening each image with Read. I did not read any file containing model names, ground truth or scores.
+
+**Status:** I recounted the file from disk after every write batch. It ended at `done 720/720 | skipped 0 | remaining 0 | last item_id A0715`. `status_ophthalmology_specialist.json` now says `"state": "complete"`.
+
+**Means (0–5 scale, confidence 0–1):**
+
+| Split | n | Factual | Complete | Safety | Informative | Clarity | Overall | Confidence |
+|---|---|---|---|---|---|---|---|---|
+| All | 720 | 1.51 | 1.14 | 1.84 | 1.24 | 2.94 | 1.40 | 0.49 |
+| Ophthalmology | 180 | 1.48 | 1.11 | 1.91 | 1.18 | 2.71 | 1.38 | 0.81 |
+| Radiology | 180 | 1.24 | 0.96 | 1.55 | 1.13 | 2.98 | 1.19 | 0.44 |
+| Dermatology | 180 | 1.89 | 1.51 | 2.19 | 1.59 | 3.17 | 1.81 | 0.39 |
+| Histopathology | 180 | 1.45 | 0.96 | 1.72 | 1.05 | 2.89 | 1.23 | 0.30 |
+
+**On the histopathology items I rated in this run:**
+- **Confidence:** low, about 0.25–0.45, as the persona requires outside ophthalmology.
+- **Typical failure:** the text describes glands, adenocarcinoma, a pancreatic or colonic origin or inflammation that the image doesn't show.
+- **Low-scoring text:** many outputs were prompt echoes, looped text or form templates with invented patient data, and I scored these near zero.
+- **Higher-scoring text:** I scored recognising skeletal muscle with no tumour, or describing pleomorphic nuclei without over-diagnosing, much higher (up to about 4.4).
+
+The ten distinct histopathology images repeat across many items, so the same image appears under many different texts.

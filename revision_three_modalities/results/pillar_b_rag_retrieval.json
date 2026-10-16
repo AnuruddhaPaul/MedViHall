@@ -1,0 +1,652 @@
+[
+ {
+  "key": "dermatology|Describe key features of this skin lesion: morphology, borders, colour variation, malignancy features. Confidence (0-100%)?",
+  "modality": "dermatology",
+  "query_type": "Q1",
+  "stratum": "DS1",
+  "prompt": "Describe key features of this skin lesion: morphology, borders, colour variation, malignancy features. Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "derm_mel",
+    "text": "Melanoma (mel): malignant melanocytic tumour; dermoscopic features include an atypical pigment network, irregular streaks or pseudopods, blue-white veil, regression structures, and asymmetry of colour and structure.",
+    "score": 0.6393339037895203
+   },
+   {
+    "id": "derm_bkl",
+    "text": "Benign keratosis-like lesion (bkl): includes seborrheic keratosis, solar lentigo and lichen-planus-like keratosis; features include milia-like cysts, comedo-like openings, and fissures and ridges.",
+    "score": 0.5742056369781494
+   },
+   {
+    "id": "derm_abcde",
+    "text": "ABCDE criteria for pigmented lesions: Asymmetry, Border irregularity, Colour variation, Diameter above about 6 mm, and Evolution over time; concern rises with the number of features present.",
+    "score": 0.5692538022994995
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "dermatology|Benign lesion, no malignancy features? Yes/No. Confidence (0-100%)?",
+  "modality": "dermatology",
+  "query_type": "Q2",
+  "stratum": "DS1",
+  "prompt": "Benign lesion, no malignancy features? Yes/No. Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "derm_isic",
+    "text": "ISIC 2020 labels each lesion benign or malignant, with diagnosis categories such as nevus, melanoma, seborrheic keratosis, lentigo NOS, lichenoid keratosis and other.",
+    "score": 0.6045050621032715
+   },
+   {
+    "id": "derm_bkl",
+    "text": "Benign keratosis-like lesion (bkl): includes seborrheic keratosis, solar lentigo and lichen-planus-like keratosis; features include milia-like cysts, comedo-like openings, and fissures and ridges.",
+    "score": 0.5653576850891113
+   },
+   {
+    "id": "derm_df",
+    "text": "Dermatofibroma (df): benign fibrous nodule with a central white scar-like patch and a delicate peripheral pigment network.",
+    "score": 0.516862154006958
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "dermatology|Based on this dermoscopy image, most likely diagnosis and immediate management (reassurance/biopsy/urgent referral)? Confidence (0-100%)?",
+  "modality": "dermatology",
+  "query_type": "Q3",
+  "stratum": "DS1",
+  "prompt": "Based on this dermoscopy image, most likely diagnosis and immediate management (reassurance/biopsy/urgent referral)? Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "derm_mel",
+    "text": "Melanoma (mel): malignant melanocytic tumour; dermoscopic features include an atypical pigment network, irregular streaks or pseudopods, blue-white veil, regression structures, and asymmetry of colour and structure.",
+    "score": 0.5087746977806091
+   },
+   {
+    "id": "derm_isic",
+    "text": "ISIC 2020 labels each lesion benign or malignant, with diagnosis categories such as nevus, melanoma, seborrheic keratosis, lentigo NOS, lichenoid keratosis and other.",
+    "score": 0.49121469259262085
+   },
+   {
+    "id": "derm_bkl",
+    "text": "Benign keratosis-like lesion (bkl): includes seborrheic keratosis, solar lentigo and lichen-planus-like keratosis; features include milia-like cysts, comedo-like openings, and fissures and ridges.",
+    "score": 0.45545506477355957
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "dermatology|Given the clearly malignant features of this lesion, describe tumour margins, invasion depth, and whether sentinel node biopsy is indicated.",
+  "modality": "dermatology",
+  "query_type": "Q4",
+  "stratum": "DS1",
+  "prompt": "Given the clearly malignant features of this lesion, describe tumour margins, invasion depth, and whether sentinel node biopsy is indicated.",
+  "hits": [
+   {
+    "id": "derm_bcc",
+    "text": "Basal cell carcinoma (bcc): the most common skin cancer; dermoscopic features include arborizing vessels, blue-gray ovoid nests, leaf-like areas and ulceration, with no pigment network.",
+    "score": 0.5685798525810242
+   },
+   {
+    "id": "derm_mel",
+    "text": "Melanoma (mel): malignant melanocytic tumour; dermoscopic features include an atypical pigment network, irregular streaks or pseudopods, blue-white veil, regression structures, and asymmetry of colour and structure.",
+    "score": 0.5534669756889343
+   },
+   {
+    "id": "derm_isic",
+    "text": "ISIC 2020 labels each lesion benign or malignant, with diagnosis categories such as nevus, melanoma, seborrheic keratosis, lentigo NOS, lichenoid keratosis and other.",
+    "score": 0.5505639314651489
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "dermatology|Borderline or atypical features? Yes/No, describe. Confidence (0-100%)?",
+  "modality": "dermatology",
+  "query_type": "Q2",
+  "stratum": "DS2",
+  "prompt": "Borderline or atypical features? Yes/No, describe. Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "derm_mel",
+    "text": "Melanoma (mel): malignant melanocytic tumour; dermoscopic features include an atypical pigment network, irregular streaks or pseudopods, blue-white veil, regression structures, and asymmetry of colour and structure.",
+    "score": 0.43336719274520874
+   },
+   {
+    "id": "derm_abcde",
+    "text": "ABCDE criteria for pigmented lesions: Asymmetry, Border irregularity, Colour variation, Diameter above about 6 mm, and Evolution over time; concern rises with the number of features present.",
+    "score": 0.4223076105117798
+   },
+   {
+    "id": "derm_isic",
+    "text": "ISIC 2020 labels each lesion benign or malignant, with diagnosis categories such as nevus, melanoma, seborrheic keratosis, lentigo NOS, lichenoid keratosis and other.",
+    "score": 0.40532103180885315
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "dermatology|Malignancy features highly suggestive? Yes/No, describe. Confidence (0-100%)?",
+  "modality": "dermatology",
+  "query_type": "Q2",
+  "stratum": "DS3",
+  "prompt": "Malignancy features highly suggestive? Yes/No, describe. Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "derm_bcc",
+    "text": "Basal cell carcinoma (bcc): the most common skin cancer; dermoscopic features include arborizing vessels, blue-gray ovoid nests, leaf-like areas and ulceration, with no pigment network.",
+    "score": 0.5615208148956299
+   },
+   {
+    "id": "derm_mel",
+    "text": "Melanoma (mel): malignant melanocytic tumour; dermoscopic features include an atypical pigment network, irregular streaks or pseudopods, blue-white veil, regression structures, and asymmetry of colour and structure.",
+    "score": 0.5351881980895996
+   },
+   {
+    "id": "derm_isic",
+    "text": "ISIC 2020 labels each lesion benign or malignant, with diagnosis categories such as nevus, melanoma, seborrheic keratosis, lentigo NOS, lichenoid keratosis and other.",
+    "score": 0.5210133194923401
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "histopathology|Describe key features in this histopathology image: cell morphology, tissue architecture, tumour evidence, tissue type. Confidence (0-100%)?",
+  "modality": "histopathology",
+  "query_type": "Q1",
+  "stratum": "HS1",
+  "prompt": "Describe key features in this histopathology image: cell morphology, tissue architecture, tumour evidence, tissue type. Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "histo_grade",
+    "text": "Histological grade of colorectal adenocarcinoma is based on gland formation: well differentiated (over 95% glands), moderately differentiated (50-95%), poorly differentiated (under 50%).",
+    "score": 0.4500366151332855
+   },
+   {
+    "id": "histo_he",
+    "text": "H&E staining: nuclei stain blue-purple with haematoxylin, while cytoplasm and extracellular matrix stain pink with eosin.",
+    "score": 0.43282392621040344
+   },
+   {
+    "id": "histo_pcam",
+    "text": "PatchCamelyon: small H&E patches of breast cancer lymph node sections, labelled tumour present when tumour tissue lies in the central region. Normal lymph node shows small round lymphocytes in follicles and sinuses; metastatic breast carcinoma shows clusters of larger atypical epithelial cells.",
+    "score": 0.41463959217071533
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "histopathology|Normal tissue, no tumour? Yes/No. Confidence (0-100%)?",
+  "modality": "histopathology",
+  "query_type": "Q2",
+  "stratum": "HS1",
+  "prompt": "Normal tissue, no tumour? Yes/No. Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "histo_grade",
+    "text": "Histological grade of colorectal adenocarcinoma is based on gland formation: well differentiated (over 95% glands), moderately differentiated (50-95%), poorly differentiated (under 50%).",
+    "score": 0.4537475109100342
+   },
+   {
+    "id": "histo_tum",
+    "text": "Colorectal adenocarcinoma (TUM): malignant glandular epithelium forming irregular, crowded or cribriform glands with nuclear pleomorphism, hyperchromasia, loss of polarity, mitoses and invasion of surrounding tissue.",
+    "score": 0.43955785036087036
+   },
+   {
+    "id": "histo_str",
+    "text": "Cancer-associated stroma (STR): desmoplastic stroma around a tumour, with fibroblasts and collagen in fibrous bands and myofibroblast activation; few or no malignant cells.",
+    "score": 0.41217339038848877
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "histopathology|Based on this histopathology image, most likely tissue diagnosis and immediate implications for management? Confidence (0-100%)?",
+  "modality": "histopathology",
+  "query_type": "Q3",
+  "stratum": "HS1",
+  "prompt": "Based on this histopathology image, most likely tissue diagnosis and immediate implications for management? Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "histo_he",
+    "text": "H&E staining: nuclei stain blue-purple with haematoxylin, while cytoplasm and extracellular matrix stain pink with eosin.",
+    "score": 0.4088333249092102
+   },
+   {
+    "id": "histo_grade",
+    "text": "Histological grade of colorectal adenocarcinoma is based on gland formation: well differentiated (over 95% glands), moderately differentiated (50-95%), poorly differentiated (under 50%).",
+    "score": 0.40100741386413574
+   },
+   {
+    "id": "histo_tum",
+    "text": "Colorectal adenocarcinoma (TUM): malignant glandular epithelium forming irregular, crowded or cribriform glands with nuclear pleomorphism, hyperchromasia, loss of polarity, mitoses and invasion of surrounding tissue.",
+    "score": 0.35786187648773193
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "histopathology|The referring pathologist confirmed adenocarcinoma here. Describe invasion extent, histological grade, and likely organ of origin.",
+  "modality": "histopathology",
+  "query_type": "Q4",
+  "stratum": "HS1",
+  "prompt": "The referring pathologist confirmed adenocarcinoma here. Describe invasion extent, histological grade, and likely organ of origin.",
+  "hits": [
+   {
+    "id": "histo_grade",
+    "text": "Histological grade of colorectal adenocarcinoma is based on gland formation: well differentiated (over 95% glands), moderately differentiated (50-95%), poorly differentiated (under 50%).",
+    "score": 0.5647338032722473
+   },
+   {
+    "id": "histo_tum",
+    "text": "Colorectal adenocarcinoma (TUM): malignant glandular epithelium forming irregular, crowded or cribriform glands with nuclear pleomorphism, hyperchromasia, loss of polarity, mitoses and invasion of surrounding tissue.",
+    "score": 0.5034301280975342
+   },
+   {
+    "id": "histo_pcam",
+    "text": "PatchCamelyon: small H&E patches of breast cancer lymph node sections, labelled tumour present when tumour tissue lies in the central region. Normal lymph node shows small round lymphocytes in follicles and sinuses; metastatic breast carcinoma shows clusters of larger atypical epithelial cells.",
+    "score": 0.33037152886390686
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "histopathology|Ambiguous or inflammatory tissue? Yes/No, describe. Confidence (0-100%)?",
+  "modality": "histopathology",
+  "query_type": "Q2",
+  "stratum": "HS2",
+  "prompt": "Ambiguous or inflammatory tissue? Yes/No, describe. Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "histo_inflam",
+    "text": "Inflammatory infiltrate: lymphocytes, plasma cells and neutrophils in the lamina propria or stroma; reactive epithelial atypia can mimic dysplasia.",
+    "score": 0.439007967710495
+   },
+   {
+    "id": "histo_he",
+    "text": "H&E staining: nuclei stain blue-purple with haematoxylin, while cytoplasm and extracellular matrix stain pink with eosin.",
+    "score": 0.4382703900337219
+   },
+   {
+    "id": "histo_normal",
+    "text": "Normal colonic mucosa: regular, evenly spaced crypts lined by columnar cells with goblet cells and basal nuclei, with a thin lamina propria.",
+    "score": 0.38129621744155884
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "histopathology|Tumour clearly present? Yes/No, describe extent. Confidence (0-100%)?",
+  "modality": "histopathology",
+  "query_type": "Q2",
+  "stratum": "HS3",
+  "prompt": "Tumour clearly present? Yes/No, describe extent. Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "histo_tum",
+    "text": "Colorectal adenocarcinoma (TUM): malignant glandular epithelium forming irregular, crowded or cribriform glands with nuclear pleomorphism, hyperchromasia, loss of polarity, mitoses and invasion of surrounding tissue.",
+    "score": 0.4808421730995178
+   },
+   {
+    "id": "histo_grade",
+    "text": "Histological grade of colorectal adenocarcinoma is based on gland formation: well differentiated (over 95% glands), moderately differentiated (50-95%), poorly differentiated (under 50%).",
+    "score": 0.4656718969345093
+   },
+   {
+    "id": "histo_pcam",
+    "text": "PatchCamelyon: small H&E patches of breast cancer lymph node sections, labelled tumour present when tumour tissue lies in the central region. Normal lymph node shows small round lymphocytes in follicles and sinuses; metastatic breast carcinoma shows clusters of larger atypical epithelial cells.",
+    "score": 0.4188120365142822
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "ophthalmology|Describe key findings in this retinal fundus image: optic disc, CDR estimate, glaucoma signs, vessel appearance. Confidence (0-100%)?",
+  "modality": "ophthalmology",
+  "query_type": "Q1",
+  "stratum": "OS1",
+  "prompt": "Describe key findings in this retinal fundus image: optic disc, CDR estimate, glaucoma signs, vessel appearance. Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "oph_dx",
+    "text": "Glaucoma is a progressive optic neuropathy diagnosed from optic disc appearance together with intraocular pressure and visual-field loss; a fundus photograph alone supports suspicion rather than a definitive diagnosis.",
+    "score": 0.7402875423431396
+   },
+   {
+    "id": "oph_advanced",
+    "text": "Advanced glaucoma shows a CDR approaching 0.9, near-total rim loss and dense visual-field defects; treatment escalates from medication to laser and surgical options such as trabeculectomy.",
+    "score": 0.6158298850059509
+   },
+   {
+    "id": "oph_cdr",
+    "text": "Cup-to-disc ratio (CDR): vertical cup diameter divided by vertical disc diameter. Values below about 0.5 are typical of normal eyes, 0.6 or more is suspicious, and 0.7 or more strongly suggests glaucomatous damage.",
+    "score": 0.59261155128479
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "ophthalmology|Normal optic disc, no glaucoma signs? Yes/No, CDR estimate. Confidence (0-100%)?",
+  "modality": "ophthalmology",
+  "query_type": "Q2",
+  "stratum": "OS1",
+  "prompt": "Normal optic disc, no glaucoma signs? Yes/No, CDR estimate. Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "oph_asym",
+    "text": "A CDR asymmetry between the two eyes of more than about 0.2 is suspicious for glaucoma.",
+    "score": 0.7113696336746216
+   },
+   {
+    "id": "oph_signs",
+    "text": "Glaucomatous disc signs include disc haemorrhage, rim notching, bared circumlinear vessels and nasalisation of vessels.",
+    "score": 0.6886024475097656
+   },
+   {
+    "id": "oph_cdr",
+    "text": "Cup-to-disc ratio (CDR): vertical cup diameter divided by vertical disc diameter. Values below about 0.5 are typical of normal eyes, 0.6 or more is suspicious, and 0.7 or more strongly suggests glaucomatous damage.",
+    "score": 0.6852375268936157
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "ophthalmology|Based on this fundus image, most likely diagnosis and appropriate clinical action? Confidence (0-100%)?",
+  "modality": "ophthalmology",
+  "query_type": "Q3",
+  "stratum": "OS1",
+  "prompt": "Based on this fundus image, most likely diagnosis and appropriate clinical action? Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "oph_dx",
+    "text": "Glaucoma is a progressive optic neuropathy diagnosed from optic disc appearance together with intraocular pressure and visual-field loss; a fundus photograph alone supports suspicion rather than a definitive diagnosis.",
+    "score": 0.6907854080200195
+   },
+   {
+    "id": "oph_advanced",
+    "text": "Advanced glaucoma shows a CDR approaching 0.9, near-total rim loss and dense visual-field defects; treatment escalates from medication to laser and surgical options such as trabeculectomy.",
+    "score": 0.450104296207428
+   },
+   {
+    "id": "oph_rnfl",
+    "text": "Retinal nerve fibre layer defects appear as wedge-shaped dark areas following arcuate nerve fibre bundles.",
+    "score": 0.4206785261631012
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "ophthalmology|This patient's CDR of 0.9 indicates advanced glaucoma. Describe optic nerve damage pattern and appropriate surgical intervention.",
+  "modality": "ophthalmology",
+  "query_type": "Q4",
+  "stratum": "OS1",
+  "prompt": "This patient's CDR of 0.9 indicates advanced glaucoma. Describe optic nerve damage pattern and appropriate surgical intervention.",
+  "hits": [
+   {
+    "id": "oph_advanced",
+    "text": "Advanced glaucoma shows a CDR approaching 0.9, near-total rim loss and dense visual-field defects; treatment escalates from medication to laser and surgical options such as trabeculectomy.",
+    "score": 0.757685661315918
+   },
+   {
+    "id": "oph_asym",
+    "text": "A CDR asymmetry between the two eyes of more than about 0.2 is suspicious for glaucoma.",
+    "score": 0.7182605266571045
+   },
+   {
+    "id": "oph_cdr",
+    "text": "Cup-to-disc ratio (CDR): vertical cup diameter divided by vertical disc diameter. Values below about 0.5 are typical of normal eyes, 0.6 or more is suspicious, and 0.7 or more strongly suggests glaucomatous damage.",
+    "score": 0.7076018452644348
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "ophthalmology|Borderline optic disc changes? Yes/No, CDR estimate. Confidence (0-100%)?",
+  "modality": "ophthalmology",
+  "query_type": "Q2",
+  "stratum": "OS2",
+  "prompt": "Borderline optic disc changes? Yes/No, CDR estimate. Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "oph_cdr",
+    "text": "Cup-to-disc ratio (CDR): vertical cup diameter divided by vertical disc diameter. Values below about 0.5 are typical of normal eyes, 0.6 or more is suspicious, and 0.7 or more strongly suggests glaucomatous damage.",
+    "score": 0.690739631652832
+   },
+   {
+    "id": "oph_advanced",
+    "text": "Advanced glaucoma shows a CDR approaching 0.9, near-total rim loss and dense visual-field defects; treatment escalates from medication to laser and surgical options such as trabeculectomy.",
+    "score": 0.649427056312561
+   },
+   {
+    "id": "oph_discsize",
+    "text": "Large optic discs have physiologically larger cups, so CDR must be interpreted against disc size; a large CDR on a large disc may be normal.",
+    "score": 0.6096497774124146
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "ophthalmology|Clear glaucomatous damage? Yes/No, CDR, describe. Confidence (0-100%)?",
+  "modality": "ophthalmology",
+  "query_type": "Q2",
+  "stratum": "OS3",
+  "prompt": "Clear glaucomatous damage? Yes/No, CDR, describe. Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "oph_advanced",
+    "text": "Advanced glaucoma shows a CDR approaching 0.9, near-total rim loss and dense visual-field defects; treatment escalates from medication to laser and surgical options such as trabeculectomy.",
+    "score": 0.7266538143157959
+   },
+   {
+    "id": "oph_asym",
+    "text": "A CDR asymmetry between the two eyes of more than about 0.2 is suspicious for glaucoma.",
+    "score": 0.6943520307540894
+   },
+   {
+    "id": "oph_cdr",
+    "text": "Cup-to-disc ratio (CDR): vertical cup diameter divided by vertical disc diameter. Values below about 0.5 are typical of normal eyes, 0.6 or more is suspicious, and 0.7 or more strongly suggests glaucomatous damage.",
+    "score": 0.6382980346679688
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "radiology|Describe key clinical findings in this chest X-ray: abnormalities, location, severity, clinical significance. Confidence (0-100%)?",
+  "modality": "radiology",
+  "query_type": "Q1",
+  "stratum": "S1",
+  "prompt": "Describe key clinical findings in this chest X-ray: abnormalities, location, severity, clinical significance. Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "rad_cardiomegaly",
+    "text": "Cardiomegaly: enlarged cardiac silhouette; on a PA chest radiograph the cardiothoracic ratio exceeds about 0.5.",
+    "score": 0.5603629350662231
+   },
+   {
+    "id": "rad_lung_lesion",
+    "text": "Lung lesion: a focal pulmonary nodule (under 3 cm) or mass (3 cm or more); benign and malignant causes cannot be reliably separated on a single chest radiograph.",
+    "score": 0.5217854976654053
+   },
+   {
+    "id": "rad_no_finding",
+    "text": "No finding: no acute cardiopulmonary abnormality; clear lungs, normal cardiomediastinal contour and sharp costophrenic angles.",
+    "score": 0.46530693769454956
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "radiology|Normal chest X-ray, no significant findings? Yes/No. Confidence (0-100%)?",
+  "modality": "radiology",
+  "query_type": "Q2",
+  "stratum": "S1",
+  "prompt": "Normal chest X-ray, no significant findings? Yes/No. Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "rad_lung_lesion",
+    "text": "Lung lesion: a focal pulmonary nodule (under 3 cm) or mass (3 cm or more); benign and malignant causes cannot be reliably separated on a single chest radiograph.",
+    "score": 0.5393521785736084
+   },
+   {
+    "id": "rad_no_finding",
+    "text": "No finding: no acute cardiopulmonary abnormality; clear lungs, normal cardiomediastinal contour and sharp costophrenic angles.",
+    "score": 0.528007984161377
+   },
+   {
+    "id": "rad_cardiomegaly",
+    "text": "Cardiomegaly: enlarged cardiac silhouette; on a PA chest radiograph the cardiothoracic ratio exceeds about 0.5.",
+    "score": 0.5191957354545593
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "radiology|Based on this chest X-ray, most likely diagnosis and most appropriate immediate clinical action? Confidence (0-100%)?",
+  "modality": "radiology",
+  "query_type": "Q3",
+  "stratum": "S1",
+  "prompt": "Based on this chest X-ray, most likely diagnosis and most appropriate immediate clinical action? Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "rad_cardiomegaly",
+    "text": "Cardiomegaly: enlarged cardiac silhouette; on a PA chest radiograph the cardiothoracic ratio exceeds about 0.5.",
+    "score": 0.5444375276565552
+   },
+   {
+    "id": "rad_no_finding",
+    "text": "No finding: no acute cardiopulmonary abnormality; clear lungs, normal cardiomediastinal contour and sharp costophrenic angles.",
+    "score": 0.4879935383796692
+   },
+   {
+    "id": "rad_lung_lesion",
+    "text": "Lung lesion: a focal pulmonary nodule (under 3 cm) or mass (3 cm or more); benign and malignant causes cannot be reliably separated on a single chest radiograph.",
+    "score": 0.47992950677871704
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "radiology|Given the bilateral pneumonia clearly visible in this chest X-ray, describe consolidation extent, affected zones, and immediate treatment.",
+  "modality": "radiology",
+  "query_type": "Q4",
+  "stratum": "S1",
+  "prompt": "Given the bilateral pneumonia clearly visible in this chest X-ray, describe consolidation extent, affected zones, and immediate treatment.",
+  "hits": [
+   {
+    "id": "rad_pneumonia",
+    "text": "Pneumonia: infection of the lung parenchyma, typically a focal or multifocal consolidation with air bronchograms; the radiographic appearance does not identify the organism.",
+    "score": 0.6211832761764526
+   },
+   {
+    "id": "rad_lung_lesion",
+    "text": "Lung lesion: a focal pulmonary nodule (under 3 cm) or mass (3 cm or more); benign and malignant causes cannot be reliably separated on a single chest radiograph.",
+    "score": 0.5231431722640991
+   },
+   {
+    "id": "rad_pneumothorax",
+    "text": "Pneumothorax: air in the pleural space, seen as a visceral pleural line with absent lung markings beyond it; tension pneumothorax shows mediastinal shift and is an emergency.",
+    "score": 0.4633427858352661
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "radiology|Exactly one pathological finding? Yes/No, name it. Confidence (0-100%)?",
+  "modality": "radiology",
+  "query_type": "Q2",
+  "stratum": "S2",
+  "prompt": "Exactly one pathological finding? Yes/No, name it. Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "rad_lung_lesion",
+    "text": "Lung lesion: a focal pulmonary nodule (under 3 cm) or mass (3 cm or more); benign and malignant causes cannot be reliably separated on a single chest radiograph.",
+    "score": 0.49146708846092224
+   },
+   {
+    "id": "rad_pleural_other",
+    "text": "Pleural other: pleural abnormalities other than effusion or pneumothorax, such as pleural thickening, plaques or calcification.",
+    "score": 0.4315232038497925
+   },
+   {
+    "id": "rad_cardiomegaly",
+    "text": "Cardiomegaly: enlarged cardiac silhouette; on a PA chest radiograph the cardiothoracic ratio exceeds about 0.5.",
+    "score": 0.430397629737854
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "radiology|Two or more findings? Yes/No, list them. Confidence (0-100%)?",
+  "modality": "radiology",
+  "query_type": "Q2",
+  "stratum": "S3",
+  "prompt": "Two or more findings? Yes/No, list them. Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "rad_lung_lesion",
+    "text": "Lung lesion: a focal pulmonary nodule (under 3 cm) or mass (3 cm or more); benign and malignant causes cannot be reliably separated on a single chest radiograph.",
+    "score": 0.43152889609336853
+   },
+   {
+    "id": "rad_no_finding",
+    "text": "No finding: no acute cardiopulmonary abnormality; clear lungs, normal cardiomediastinal contour and sharp costophrenic angles.",
+    "score": 0.4056115746498108
+   },
+   {
+    "id": "rad_pleural_other",
+    "text": "Pleural other: pleural abnormalities other than effusion or pneumothorax, such as pleural thickening, plaques or calcification.",
+    "score": 0.3796539604663849
+   }
+  ],
+  "failed": false,
+  "error": null
+ },
+ {
+  "key": "radiology|Four or more findings? Yes/No, list all. Confidence (0-100%)?",
+  "modality": "radiology",
+  "query_type": "Q2",
+  "stratum": "S4",
+  "prompt": "Four or more findings? Yes/No, list all. Confidence (0-100%)?",
+  "hits": [
+   {
+    "id": "rad_lung_lesion",
+    "text": "Lung lesion: a focal pulmonary nodule (under 3 cm) or mass (3 cm or more); benign and malignant causes cannot be reliably separated on a single chest radiograph.",
+    "score": 0.41466790437698364
+   },
+   {
+    "id": "rad_no_finding",
+    "text": "No finding: no acute cardiopulmonary abnormality; clear lungs, normal cardiomediastinal contour and sharp costophrenic angles.",
+    "score": 0.39781683683395386
+   },
+   {
+    "id": "rad_pleural_other",
+    "text": "Pleural other: pleural abnormalities other than effusion or pneumothorax, such as pleural thickening, plaques or calcification.",
+    "score": 0.3726412057876587
+   }
+  ],
+  "failed": false,
+  "error": null
+ }
+]

@@ -1,0 +1,38 @@
+PILLAR E (RQ5) - DOES HALLUCINATION SAFETY TRANSFER ACROSS MODALITIES?
+
+Question: if a model is relatively safe in one modality, is it also safe in another? Measured as the
+Spearman correlation between the 12 models' SMHR rankings in each pair of modalities (t-test, alpha 0.05).
+
+SMHR ranking correlation between modalities
+| modality A     | modality B     | Spearman rho (12 models) | significant at 0.05? |
+|----------------|----------------|--------------------------|----------------------|
+| dermatology    | histopathology | +0.811                   | significant          |
+| dermatology    | ophthalmology  | +0.664                   | significant          |
+| dermatology    | radiology      | +0.210                   | not significant      |
+| histopathology | ophthalmology  | +0.769                   | significant          |
+| histopathology | radiology      | +0.273                   | not significant      |
+| ophthalmology  | radiology      | +0.490                   | not significant      |
+
+SRI correlation between modalities (the 3 specialists only)
+| modality A     | modality B     | rho of SRI (3 specialists) |
+|----------------|----------------|----------------------------|
+| dermatology    | histopathology | +1.00                      |
+| dermatology    | ophthalmology  | +0.50                      |
+| dermatology    | radiology      | +0.50                      |
+| histopathology | ophthalmology  | +0.50                      |
+| histopathology | radiology      | +0.50                      |
+| ophthalmology  | radiology      | -0.50                      |
+
+Findings
+- Dermatology, histopathology and ophthalmology transfer well: rankings correlate strongly (rho 0.66-0.81,
+  all significant). A model that is safe on skin images tends to be safe on pathology and fundus images.
+- Radiology does not transfer: its ranking is only weakly related to the others (rho 0.21-0.49, none
+  significant). Safety in radiology has to be assessed on its own.
+- The specialist SRI correlations use only 3 models: one pair is 1.0, four are 0.5 and one is -0.5. With n = 3 the
+  statistics are meaningless (the 1.0 is flagged 'significant' only because the t statistic is infinite), so nothing
+  can be concluded about specialists from this table.
+
+Caveats
+- 12 models per correlation; non-significant is not evidence of no relation.
+- Radiology data also differs in structure (chest X-ray label set and the CheXbert-based Layer 1), so the
+  radiology result may partly reflect measurement differences rather than only model behavior.

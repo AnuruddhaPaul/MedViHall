@@ -10,7 +10,7 @@ What it does (the source folder is never modified):
   2. Drops radiology records from .jsonl / .csv files (rows whose `modality`
      is radiology, or whose image_id/key starts with a radiology prefix) and
      skips files that are radiology-only by name.
-  3. Replaces Hugging Face tokens (hf_...) in text files with hf_REDACTED.
+  3. Replaces API keys/tokens (hf_..., sk-..., ghp_...) in text files with REDACTED_SECRET.
   4. Splits any file larger than --max-mb (default 95; GitHub rejects >100 MB)
      into <file>.parts/part_000, part_001, ... plus a SHA-256 manifest.
      Rejoin with:  python tools/rejoin_chunks.py <file>.parts
@@ -26,7 +26,7 @@ RADIO_NAME = re.compile(r"(radiolog|chexbert|chexpert|chexagent|layer1_radiology
 RADIO_ID = re.compile(r"^(chexpert|mimic|nih|vindr|padchest|radiology)", re.I)
 TEXT_EXT = {".py", ".ipynb", ".md", ".txt", ".json", ".sh", ".tex", ".bib",
             ".yaml", ".yml", ".cfg", ".toml", ".log"}
-TOKEN = re.compile(r"hf_[A-Za-z0-9]{20,}")
+TOKEN = re.compile(r"(hf_[A-Za-z0-9]{20,}|sk-(?:proj-)?[A-Za-z0-9_\-]{20,}|ghp_[A-Za-z0-9]{30,})")
 
 
 def is_radiology_row(d):
@@ -89,7 +89,7 @@ def scrub(path, stats):
     n = len(TOKEN.findall(s))
     if n:
         with open(path, "w", encoding="utf-8", newline="") as f:
-            f.write(TOKEN.sub("hf_REDACTED", s))
+            f.write(TOKEN.sub("REDACTED_SECRET", s))
         stats["tokens_scrubbed"] += n
         stats["scrubbed_files"].append(path)
 
@@ -128,15 +128,16 @@ def main():
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
     src, out = os.path.abspath(a.src), os.path.abspath(a.out)
-    if out.startswith(src + os.sep):
-        sys.exit("--out must be outside --src")
+    if out == src:
+        sys.exit("--out must differ from --src")
     stats = {"copied": 0, "skipped": [], "rows_dropped": 0, "tokens_scrubbed": 0,
              "scrubbed_files": [], "split": [], "filtered": []}
     if not a.dry_run:
         os.makedirs(out, exist_ok=True)
     for root, dirs, files in os.walk(src):
         rel_root = os.path.relpath(root, src)
-        dirs[:] = [d for d in dirs if d not in SKIP_DIRS]
+        dirs[:] = [d for d in dirs if d not in SKIP_DIRS
+                   and os.path.abspath(os.path.join(root, d)) != out]
         for fn in files:
             rel = os.path.normpath(os.path.join(rel_root, fn))
             ext = os.path.splitext(fn)[1].lower()

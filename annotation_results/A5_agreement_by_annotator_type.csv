@@ -1,0 +1,36 @@
+measure,statistic,pair_type,value,ci95,n_resamples,n_items_per_modality
+factual_correctness,"mean pairwise ICC(2,1)",specialist_own|non_specialist,0.8532948438076442,0.829..0.872,500,180
+factual_correctness,"mean pairwise ICC(2,1)",specialist_own|specialist_off,0.873298219422724,0.854..0.886,500,180
+factual_correctness,"mean pairwise ICC(2,1)",specialist_off|specialist_off,0.8639528023243542,0.841..0.881,500,180
+factual_correctness,"mean pairwise ICC(2,1)",specialist_off|non_specialist,0.8548990126166784,0.831..0.872,500,180
+factual_correctness,"mean pairwise ICC(2,1)",non_specialist|non_specialist,0.8252487011000827,0.793..0.851,500,180
+clinical_safety,"mean pairwise ICC(2,1)",specialist_own|non_specialist,0.8085720609991136,0.781..0.833,500,180
+clinical_safety,"mean pairwise ICC(2,1)",specialist_own|specialist_off,0.8113606498034535,0.785..0.831,500,180
+clinical_safety,"mean pairwise ICC(2,1)",specialist_off|specialist_off,0.8250182991803955,0.800..0.846,500,180
+clinical_safety,"mean pairwise ICC(2,1)",specialist_off|non_specialist,0.8293621478611843,0.804..0.848,500,180
+clinical_safety,"mean pairwise ICC(2,1)",non_specialist|non_specialist,0.8208704897918033,0.787..0.847,500,180
+completeness,"mean pairwise ICC(2,1)",specialist_own|non_specialist,0.862785473814855,0.838..0.881,500,180
+completeness,"mean pairwise ICC(2,1)",specialist_own|specialist_off,0.8987398498429574,0.883..0.911,500,180
+completeness,"mean pairwise ICC(2,1)",specialist_off|specialist_off,0.8737164768190423,0.852..0.890,500,180
+completeness,"mean pairwise ICC(2,1)",specialist_off|non_specialist,0.8483085547897279,0.824..0.867,500,180
+completeness,"mean pairwise ICC(2,1)",non_specialist|non_specialist,0.7904573880430641,0.752..0.824,500,180
+informativeness,"mean pairwise ICC(2,1)",specialist_own|non_specialist,0.8543215947943021,0.832..0.872,500,180
+informativeness,"mean pairwise ICC(2,1)",specialist_own|specialist_off,0.8930881939422624,0.877..0.905,500,180
+informativeness,"mean pairwise ICC(2,1)",specialist_off|specialist_off,0.8808996459372936,0.860..0.896,500,180
+informativeness,"mean pairwise ICC(2,1)",specialist_off|non_specialist,0.8388788472821803,0.816..0.857,500,180
+informativeness,"mean pairwise ICC(2,1)",non_specialist|non_specialist,0.7807255832028257,0.746..0.809,500,180
+clarity,"mean pairwise ICC(2,1)",specialist_own|non_specialist,0.9260902521839816,0.910..0.937,500,180
+clarity,"mean pairwise ICC(2,1)",specialist_own|specialist_off,0.9114747277948769,0.893..0.925,500,180
+clarity,"mean pairwise ICC(2,1)",specialist_off|specialist_off,0.923780184537429,0.906..0.936,500,180
+clarity,"mean pairwise ICC(2,1)",specialist_off|non_specialist,0.9305928153967292,0.917..0.940,500,180
+clarity,"mean pairwise ICC(2,1)",non_specialist|non_specialist,0.9393347424953858,0.925..0.950,500,180
+overall,"mean pairwise ICC(2,1)",specialist_own|non_specialist,0.8729699450529977,0.851..0.890,500,180
+overall,"mean pairwise ICC(2,1)",specialist_own|specialist_off,0.8900327393346269,0.873..0.902,500,180
+overall,"mean pairwise ICC(2,1)",specialist_off|specialist_off,0.8808391514943043,0.860..0.897,500,180
+overall,"mean pairwise ICC(2,1)",specialist_off|non_specialist,0.8673410946053549,0.846..0.885,500,180
+overall,"mean pairwise ICC(2,1)",non_specialist|non_specialist,0.8379658003793145,0.806..0.864,500,180
+FLAGS,mean pairwise Cohen kappa (7 classes),specialist_own|non_specialist,0.4409683334708219,0.411..0.462,500,180
+FLAGS,mean pairwise Cohen kappa (7 classes),specialist_own|specialist_off,0.49686230811396853,0.466..0.517,500,180
+FLAGS,mean pairwise Cohen kappa (7 classes),specialist_off|specialist_off,0.5260506433153569,0.486..0.550,500,180
+FLAGS,mean pairwise Cohen kappa (7 classes),specialist_off|non_specialist,0.491286455090151,0.452..0.513,500,180
+FLAGS,mean pairwise Cohen kappa (7 classes),non_specialist|non_specialist,0.39795580989361823,0.355..0.433,500,180

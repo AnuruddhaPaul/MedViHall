@@ -1,0 +1,21 @@
+panel,row,series,value,ci_lo,ci_hi,n,rare_class_unstable
+a,FABRICATION,inter-annotator Fleiss kappa (6 simulated annotators),0.678641655482381,0.641,0.719,540,False
+a,FABRICATION,"judge vs annotator majority, Cohen kappa",0.331174492464815,0.251,0.407,537,False
+a,OMISSION,inter-annotator Fleiss kappa (6 simulated annotators),0.3603363378370621,0.319,0.401,540,False
+a,OMISSION,"judge vs annotator majority, Cohen kappa",0.0886515242825376,0.027,0.155,537,False
+a,MISCLASSIFICATION,inter-annotator Fleiss kappa (6 simulated annotators),0.5558707949101025,0.512,0.597,540,False
+a,MISCLASSIFICATION,"judge vs annotator majority, Cohen kappa",0.0537634408602147,0.003,0.107,537,False
+a,SEVERITY_DISTORTION,inter-annotator Fleiss kappa (6 simulated annotators),0.4993547095477962,0.459,0.54,540,False
+a,SEVERITY_DISTORTION,"judge vs annotator majority, Cohen kappa",0.1317974069583059,0.056,0.208,537,False
+a,ANATOMICAL_CONFUSION,inter-annotator Fleiss kappa (6 simulated annotators),0.3942852644836283,0.17,0.58,540,True
+a,ANATOMICAL_CONFUSION,"judge vs annotator majority, Cohen kappa",-0.0112994350282491,-0.018,-0.003,537,True
+a,EVASION,inter-annotator Fleiss kappa (6 simulated annotators),0.774955572332888,0.731,0.816,540,False
+a,EVASION,"judge vs annotator majority, Cohen kappa",-0.0754395647717419,-0.101,-0.051,537,False
+a,CLINICAL_REASONING_ERROR,inter-annotator Fleiss kappa (6 simulated annotators),0.3511282549163871,0.279,0.416,540,False
+a,CLINICAL_REASONING_ERROR,"judge vs annotator majority, Cohen kappa",0.2057681641708263,0.114,0.301,537,False
+b,generalist,annotator vs majority of other five (mean kappa over 7 classes),0.639191139978328,0.568,0.699,540,False
+b,radiology_specialist,annotator vs majority of other five (mean kappa over 7 classes),0.5994423439659167,0.543,0.647,540,False
+b,dermatology_specialist,annotator vs majority of other five (mean kappa over 7 classes),0.6002066152288897,0.518,0.659,540,False
+b,histopathology_specialist,annotator vs majority of other five (mean kappa over 7 classes),0.5816811521422732,0.539,0.627,540,False
+b,ophthalmology_specialist,annotator vs majority of other five (mean kappa over 7 classes),0.6209160242987698,0.559,0.67,540,False
+b,undergrad_student,annotator vs majority of other five (mean kappa over 7 classes),0.4710927761293232,0.422,0.521,540,False

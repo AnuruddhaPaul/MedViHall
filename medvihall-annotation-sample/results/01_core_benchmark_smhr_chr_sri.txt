@@ -1,0 +1,66 @@
+CORE BENCHMARK - 12 VLMs, 141,000 RESPONSES (11,750 per model)
+
+Question: which models hallucinate least, and do medical specialists beat general models?
+
+SMHR and CHR per model (sorted by SMHR, lower = safer)
+| rank | model     | type       | SMHR  | CHR   | responses | judge parse errors |
+|------|-----------|------------|-------|-------|-----------|--------------------|
+| 1    | qwen25vl  | general    | 0.529 | 0.785 | 11750     | 46                 |
+| 2    | gemma3    | general    | 0.532 | 0.731 | 11750     | 59                 |
+| 3    | internvl3 | general    | 0.539 | 0.760 | 11750     | 65                 |
+| 4    | qwen35    | general    | 0.549 | 0.773 | 11750     | 97                 |
+| 5    | qwen3vl   | general    | 0.562 | 0.730 | 11750     | 51                 |
+| 6    | minicpm   | general    | 0.580 | 0.715 | 11750     | 35                 |
+| 7    | idefics3  | general    | 0.636 | 0.800 | 11750     | 38                 |
+| 8    | qwen2vl   | general    | 0.643 | 0.797 | 11750     | 34                 |
+| 9    | llava16   | general    | 0.675 | 0.741 | 11750     | 21                 |
+| 10   | huatuogpt | specialist | 0.691 | 0.806 | 11750     | 134                |
+| 11   | chexagent | specialist | 0.748 | 0.719 | 11750     | 27                 |
+| 12   | llava_med | specialist | 0.794 | 0.750 | 11750     | 4                  |
+
+SMHR by modality
+| model     | radiology | dermatology | histopathology | ophthalmology |
+|-----------|-----------|-------------|----------------|---------------|
+| qwen25vl  | 0.728     | 0.348       | 0.533          | 0.455         |
+| gemma3    | 0.633     | 0.461       | 0.575          | 0.465         |
+| internvl3 | 0.652     | 0.447       | 0.504          | 0.470         |
+| qwen35    | 0.675     | 0.496       | 0.482          | 0.416         |
+| qwen3vl   | 0.764     | 0.415       | 0.521          | 0.418         |
+| minicpm   | 0.619     | 0.533       | 0.646          | 0.442         |
+| idefics3  | 0.644     | 0.602       | 0.651          | 0.627         |
+| qwen2vl   | 0.828     | 0.435       | 0.564          | 0.571         |
+| llava16   | 0.746     | 0.565       | 0.716          | 0.571         |
+| huatuogpt | 0.827     | 0.574       | 0.631          | 0.564         |
+| chexagent | 0.826     | 0.629       | 0.736          | 0.727         |
+| llava_med | 0.921     | 0.645       | 0.745          | 0.669         |
+
+Best general VLM per modality (denominator of SRI)
+| modality       | best general VLM | its SMHR |
+|----------------|------------------|----------|
+| dermatology    | qwen25vl         | 0.348    |
+| histopathology | qwen35           | 0.482    |
+| ophthalmology  | qwen35           | 0.416    |
+| radiology      | minicpm          | 0.619    |
+
+SRI per specialist per modality (> 1 = specialist hallucinates MORE than the best general VLM)
+| specialist | radiology | dermatology | histopathology | ophthalmology |
+|------------|-----------|-------------|----------------|---------------|
+| chexagent  | 1.34      | 1.81        | 1.53           | 1.75          |
+| huatuogpt  | 1.34      | 1.65        | 1.31           | 1.36          |
+| llava_med  | 1.49      | 1.85        | 1.54           | 1.61          |
+
+Findings
+- The three medical specialists are the three worst models overall (SMHR 0.69-0.79 vs 0.53-0.68 for the
+  nine general models). qwen25vl (0.529) and gemma3 (0.532) are the safest.
+- Every SRI value is above 1 (1.31-1.85): in every modality, each specialist hallucinates more than the best
+  general VLM. Specialization did not reduce hallucination in this benchmark.
+- Radiology has the highest SMHR for 10 of 12 models and dermatology the lowest for 9 of 12, so modality matters as much as model choice.
+- CHR (share of responses with a class-1/2 error) is 0.72-0.81 for all models and does not rank models
+  the same way SMHR does (minicpm and chexagent have the lowest CHR; chexagent has a low CHR but the second-highest SMHR).
+
+Caveats
+- The llava_med figures (SMHR 0.794) were computed on responses whose beginnings were cut off in about
+  one third of cases (decoding bug, see 07_data_quality_and_known_issues.txt). Re-labeling the repaired
+  responses on the 500-image subset gives SMHR 0.728 instead of 0.791, so the llava_med rank and its SRI
+  values are probably overstated. This has not been re-run for the full 11,750 responses.
+- Labels come from a 7B LLM judge plus automatic checks; they were not human-verified.

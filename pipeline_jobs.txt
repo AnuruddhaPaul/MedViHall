@@ -1,0 +1,8 @@
+# One job per line: <python.exe> <script.py> [args]. Run in order, one at a time. All scripts must be resume-safe.
+# Add the next stage here only after it has been approved and tested.
+C:\Python313\python.exe pillar_b_rag.py
+C:\Python313\python.exe pillar_b_contrastive.py
+C:\Python313\python.exe pillar_b_baseline_llava_med.py
+C:\Python313\python.exe build_annotation_sample.py --require-complete
+C:\Python313\python.exe stage3_pb_label.py --require-complete
+C:\Python313\python.exe pillar_b_stage4.py

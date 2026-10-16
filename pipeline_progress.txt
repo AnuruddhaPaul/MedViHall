@@ -1,0 +1,4 @@
+# job script name | output file (relative to project root) | target record count. Used only to report progress at session start.
+pillar_b_rag|medvihall_outputs\pillar_b_rag.jsonl|8395
+pillar_b_contrastive|medvihall_outputs\pillar_b_contrastive.jsonl|8395
+pillar_b_baseline_llava_med|medvihall_outputs\pillar_b_baseline_llava_med_fixed.jsonl|1679

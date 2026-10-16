@@ -1,0 +1,174 @@
+diff --git a/MedViHall_Phase3_Phase4_v4.ipynb b/MedViHall_Phase3_Phase4_v4.ipynb
+index 4b5049f..9f1ef8f 100644
+--- a/MedViHall_Phase3_Phase4_v4.ipynb
++++ b/MedViHall_Phase3_Phase4_v4.ipynb
+@@ -6,7 +6,7 @@
+    "metadata": {},
+    "source": [
+     "# MedViHall — Phase 3 & 4: Model Setup + Inference (v4)\n",
+-    "**13 Local HF + 1 Ollama = 14 models total | API excluded (unusable at scale)**  \n",
++    "**13 Local HF + 1 Ollama registered (14 in this notebook); 12 evaluated in the final results | API models not evaluated**  \n",
+     "Resume-safe | CUDA crash-proof | Append-only JSONL | Per-QT token limits | SET 1 / SET 2 / SET 3 split\n",
+     "\n",
+     "---\n",
+@@ -25,15 +25,17 @@
+     "| 8 | `huatuogpt` | HuatuoGPT-Vision-7B | 7B | ⭐ Medical | SET 2 | ~6 GB |\n",
+     "| 9 | `chexagent` | CheXagent-8B | 8B | ⭐ Medical | SET 3 | ~7 GB |\n",
+     "| 10 | `llava16` | LLaVA-1.6-Mistral-7B | 7B | EcoMyth EHR=0.653 | SET 2 | ~6 GB |\n",
+-    "| 11 | `ayavision` | Aya-Vision-8B | 8B | EcoMyth EHR=0.625 | SET 2 | ~7 GB |\n",
++    "| 11 | `ayavision` | Aya-Vision-8B | 8B | EcoMyth EHR=0.625 | SET 2 (registered, no results) | ~7 GB |\n",
+     "| 12 | `internvl3` | InternVL3-8B | 8B | Strong general VLM | SET 3 | ~7 GB |\n",
+     "| 13 | `minicpm` | MiniCPM-V-2.6 | 8B | Edge deployment | SET 3 | ~6 GB |\n",
+-    "| 14 | `gemma4` | Gemma4:e4b | 4B | EcoMyth Gemma family | OLLAMA | ~4 GB |\n",
++    "| 14 | `gemma4` | Gemma4:e4b | 4B | EcoMyth Gemma family | OLLAMA (registered, no results) | ~4 GB |\n",
+     "\n",
+     "> **qwen3vl_think DROPPED** — chain-of-thought tokens = 2-3× cost, not in original EcoMyth set.  \n",
+-    "> **GPT-4o / Gemini 2.5 EXCLUDED** — free-tier API unusable at 126K+ calls. Standard limitation note added.  \n",
++    "> **Final evaluated set: 12 models** — chexagent, gemma3, huatuogpt, idefics3, internvl3, llava16, llava_med, minicpm, qwen25vl, qwen2vl, qwen35, qwen3vl (medical specialists: chexagent, huatuogpt, llava_med). `ayavision` and `gemma4` are registered in this notebook but have no results; `qwen3vl_think` and `llava_il` were dropped earlier (v2 planned 15 models, v3 18).  \n",
++    "> **GPT-4o / Gemini 2.5 EXCLUDED** — proprietary API models were not evaluated (no funding); free-tier API unusable at 141,000 calls. Standard limitation note added.  \n",
+     "> **3 Medical specialists:** LLaVA-Med, HuatuoGPT, CheXagent.  \n",
+-    "> **Dataset: 3,500 images** — run `subsample_manifest.py` first to generate `manifest_3500.json`.\n",
++    "> **Dataset: 3,500 images** — run `subsample_manifest.py` first to generate `manifest_3500.json`.  \n",
++    "> **Final run:** 3,500 images (S1-S4 300 each; DS1 400, DS2 200, DS3 300; HS1 300, HS2 200, HS3 300; OS1 250, OS2 200, OS3 150); Q1-Q3 on every image plus Q4 on the 1,250 normal-stratum images = 11,750 calls per model, 141,000 in total (12 models). Per-question-type token limits defined in this notebook: Q1 700, Q2 220, Q3 480, Q4 280.\n",
+     "\n",
+     "**Steps:**\n",
+     "| Step | What |\n",
+@@ -420,8 +422,8 @@
+     "SET_2_MODELS  = ['qwen2vl','qwen35','huatuogpt','llava16','ayavision']\n",
+     "SET_3_MODELS  = ['chexagent','internvl3','minicpm']\n",
+     "OLLAMA_MODELS = ['gemma4']\n",
+-    "# API_MODELS excluded — GPT-4o/Gemini free tier (50 RPD / 20 RPD) unusable at 126K+ calls\n",
+-    "# Paper note: \"Proprietary models excluded due to resource constraints; pipeline is model-agnostic.\"\n",
++    "# API_MODELS excluded — GPT-4o/Gemini free tier (50 RPD / 20 RPD) unusable at 141,000 calls\n",
++    "# Paper note: \"Proprietary API models were not evaluated (no funding); the pipeline is model-agnostic.\"\n",
+     "ALL_LOCAL_HF  = SET_1_MODELS + SET_2_MODELS + SET_3_MODELS\n",
+     "ALL_MODELS    = ALL_LOCAL_HF + OLLAMA_MODELS   # 14 total\n",
+     "\n",
+@@ -1515,8 +1517,8 @@
+     "        return f'[ERROR] {e}'\n",
+     "\n",
+     "# ── API models (GPT-4o, Gemini 2.5) — EXCLUDED FROM ACTIVE RUNS ───────────\n",
+-    "# Free tier: OpenAI 50 RPD, Google 20 RPD — unusable at 126K+ calls\n",
+-    "# Paper limitation note: \"Proprietary models excluded due to resource constraints.\n",
++    "# Free tier: OpenAI 50 RPD, Google 20 RPD — unusable at 141,000 calls\n",
++    "# Paper limitation note: \"Proprietary API models were not evaluated (no funding).\n",
+     "#   The benchmark is model-agnostic; these models can be evaluated by researchers\n",
+     "#   with API access using the released pipeline.\"\n",
+     "# Stub functions kept so dispatch table compiles cleanly\n",
+diff --git a/claims_at_risk.md b/claims_at_risk.md
+index 9665ea7..e46ee91 100644
+--- a/claims_at_risk.md
++++ b/claims_at_risk.md
+@@ -11,7 +11,7 @@ Basis: the searches described in `lit_update.md` (arXiv API, OpenAlex, DOI regis
+ | 3 | Specialization paradox | **No as a direction; partly as a measurement** | MedVH 2407.02730 (2024) and the review 2606.13211 | HIGH |
+ | 4 | Cross-modal safety transfer | **Yes** (no overlapping paper found) | 2606.15910 (natural-to-medical transfer of a confidence signal), adjacent only | LOW |
+ | 5 | Calibration robustness across decoding settings | **Yes on the decoding axis; the calibration topic itself is crowded** | Byun et al. 2604.02543 (v2, COLM 2026) | MEDIUM |
+-| 6 | Comparative mitigation (RAG vs contrastive decoding vs fine-tuning) | **Yes as a head-to-head comparison**; each method alone has prior art | 2609.31733 (RAG increases hallucination in CXR) | MEDIUM |
++| 6 | Comparative mitigation (RAG vs contrastive decoding; the planned fine-tuning arm was dropped) | **Yes as a head-to-head comparison**; each method alone has prior art | 2609.31733 (RAG increases hallucination in CXR) | MEDIUM |
+ | 7 | Causal stage localization (visual / knowledge / reasoning) | **No as stated** | ClinHallu 2606.14697 (known), then Med-StepBench 2605.10002 (missed before) | HIGH |
+ | 8 | Context-occlusion robustness | **Partly**: taken for chest X-ray, open for the other modalities and for a hallucination framing | SHOVIR 2606.30201 | HIGH (CXR) |
+ 
+@@ -77,7 +77,7 @@ Adjacent only: 2606.15910 transfers confidence probes trained on natural images
+ 
+ Action: update the Byun citation to v2, re-read it for any new decoding experiments (the changelog is not visible), and make the decoding sweep the stated differentiator.
+ 
+-## 6. Comparative mitigation (RAG vs contrastive decoding vs fine-tuning)
++## 6. Comparative mitigation (RAG vs contrastive decoding; the planned fine-tuning arm was dropped)
+ 
+ **Status: still novel as a single-benchmark head-to-head. No overlapping paper found with these queries** (mitigation group, back-sweep `bs-mitig`). Each ingredient has prior art:
+ - Contrastive decoding in medical VLMs: CCD 2509.23379 (ACL 2026), Med-VCD 2512.01922, ARCD 2512.17189, CAST 2608.17427 (MICCAI 2026). These were not on the known list; CCD, Med-VCD and ARCD predate the June search.
+diff --git a/lit_update.md b/lit_update.md
+index bf0379c..ad6fe0c 100644
+--- a/lit_update.md
++++ b/lit_update.md
+@@ -6,7 +6,7 @@ Tools: `lit_tool.py` (arXiv API, OpenAlex, DOI content negotiation), driver scri
+ ## How to read this
+ - **Verified** = the record was fetched from a primary source (arXiv API for arXiv ids; the DOI registrar via doi.org content negotiation, Crossref, the medRxiv API or the publisher landing page for the others) and the abstract was read. Only verified papers are in the table and in `lit_update.bib`.
+ - **Read** column = how much I actually read. `full text` means I read the arXiv HTML rendering (for several, only the first ~100k characters were returned). `abstract only` means I did NOT read the paper: re-read before quoting numbers.
+-- Contribution numbers: 1 SMHR/CHR/SRI; 2 fingerprints across four modalities (three with no prior benchmark); 3 specialization paradox; 4 cross-modal safety transfer; 5 calibration robustness across decoding; 6 comparative mitigation (RAG, contrastive decoding, fine-tuning); 7 causal stage localization; 8 context-occlusion robustness. Overlap values: `direct` / `partial`; contributions not listed = none.
++- Contribution numbers: 1 SMHR/CHR/SRI; 2 fingerprints across four modalities (three with no prior benchmark); 3 specialization paradox; 4 cross-modal safety transfer; 5 calibration robustness across decoding; 6 comparative mitigation (RAG, contrastive decoding; the planned fine-tuning arm was dropped); 7 causal stage localization; 8 context-occlusion robustness. Overlap values: `direct` / `partial`; contributions not listed = none.
+ - I did not read the MedViHall implementation of contribution 8; I interpreted 'context-occlusion robustness' as removing or masking image regions or accompanying context and measuring the change. If that is wrong, re-rate SHOVIR and MC-CXR.
+ - A paper tagged `missed before` was already public before 2026-06-01 and is not on the known list.
+ 
+diff --git a/medvihall-annotation-sample/RESULTS_AND_ANALYSIS.md b/medvihall-annotation-sample/RESULTS_AND_ANALYSIS.md
+index 76df006..70c561f 100644
+--- a/medvihall-annotation-sample/RESULTS_AND_ANALYSIS.md
++++ b/medvihall-annotation-sample/RESULTS_AND_ANALYSIS.md
+@@ -492,4 +492,8 @@ DATA QUALITY AND KNOWN ISSUES
+    The runs were interrupted several times by power loss and restarts, and slowed for a period while other software was running;
+    every pipeline stage is resume-safe and re-scans its output file, so interruptions lost time, not data.
+    No duplicate records were found in the Pillar B outputs.
++
++8. Scope limits (stated, not defects)
++   Evaluation is English-only; cross-lingual extension is left to future work.
++   Proprietary API models (for example GPT-4o and Gemini) were not evaluated (no funding); the pipeline is model-agnostic.
+ ```
+diff --git a/medvihall-annotation-sample/results/07_data_quality_and_known_issues.txt b/medvihall-annotation-sample/results/07_data_quality_and_known_issues.txt
+index 2127b19..d1bcafe 100644
+--- a/medvihall-annotation-sample/results/07_data_quality_and_known_issues.txt
++++ b/medvihall-annotation-sample/results/07_data_quality_and_known_issues.txt
+@@ -42,3 +42,7 @@ DATA QUALITY AND KNOWN ISSUES
+    The runs were interrupted several times by power loss and restarts, and slowed for a period while other software was running;
+    every pipeline stage is resume-safe and re-scans its output file, so interruptions lost time, not data.
+    No duplicate records were found in the Pillar B outputs.
++
++8. Scope limits (stated, not defects)
++   Evaluation is English-only; cross-lingual extension is left to future work.
++   Proprietary API models (for example GPT-4o and Gemini) were not evaluated (no funding); the pipeline is model-agnostic.
+diff --git a/related_work_report.md b/related_work_report.md
+index 976e345..65138a9 100644
+--- a/related_work_report.md
++++ b/related_work_report.md
+@@ -10,7 +10,7 @@ Your project notes say the `human_annotations/` files are renamed Claude-generat
+ 
+ Reading MedHEval (2503.02157) and HalluCXR (2605.20469) in full changed three of my earlier statements:
+ 
+-1. **Contribution 6 (mitigation comparison).** I said "no overlapping paper found." That was too strong. MedHEval, which is on your known list, evaluates **7 mitigation methods on 11 Med-LVLMs**. All seven are inference-time decoding or attention methods (VCD, OPERA, DoLa, AVISC, M3ID, DAMRO, PAI); there is no RAG and no fine-tuning arm, and it covers X-ray, CT, MRI and chest X-ray only. So the *head-to-head across RAG, contrastive decoding and fine-tuning on non-radiology modalities* is still open, but "comparing mitigation strategies in medical VLMs" is not new.
++1. **Contribution 6 (mitigation comparison).** I said "no overlapping paper found." That was too strong. MedHEval, which is on your known list, evaluates **7 mitigation methods on 11 Med-LVLMs**. All seven are inference-time decoding or attention methods (VCD, OPERA, DoLa, AVISC, M3ID, DAMRO, PAI); there is no RAG and no fine-tuning arm, and it covers X-ray, CT, MRI and chest X-ray only. So the *head-to-head across RAG and contrastive decoding on non-radiology modalities* (the planned fine-tuning arm was dropped) is still open, but "comparing mitigation strategies in medical VLMs" is not new.
+ 2. **Contribution 7 (stage localization).** MedHEval also splits hallucinations by cause (visual misinterpretation, knowledge deficiency, context misalignment). It does this by dataset construction, not by interventions, so ClinHallu remains the closest, but there are now three prior works with stage/cause decompositions.
+ 3. **Contribution 1 (normalization).** MediHall Score (2406.10185) already averages severity-level scores over *all* sentences including correct ones, so "normalized by total units rather than by errors" has a direct precedent (details in Section 2).
+ 
+@@ -20,7 +20,7 @@ Reading MedHEval (2503.02157) and HalluCXR (2605.20469) in full changed three of
+ 
+ 1. **Crowded:** medical VLM hallucination benchmarks (a dozen or more since 2024), radiology-only detectors, calibration of medical VLMs (8+ papers in 2026), and single-method mitigation (contrastive decoding alone has 5+ papers).
+ 2. **Crowded and hostile to your headline:** "medical-specialist models are worse than general ones" has been reported since MedVH (2024) and is now contested by paired base-vs-tuned studies that find *no consistent* effect.
+-3. **Open:** a shared claim-level, severity-graded protocol applied to dermatology, histopathology and ophthalmology for both specialist and general VLMs; a three-family mitigation comparison (RAG, decoding, fine-tuning) outside radiology; rank-transfer analysis across modalities; calibration stability across decoding settings.
++3. **Open:** a shared claim-level, severity-graded protocol applied to dermatology, histopathology and ophthalmology for both specialist and general VLMs; a two-family mitigation comparison (RAG, decoding; the planned fine-tuning arm was dropped) outside radiology; rank-transfer analysis across modalities; calibration stability across decoding settings.
+ 4. **Weak as worded:** "first multi-modality hallucination benchmark" (CARES already spans derm and fundus; a medRxiv study already grades hallucinations in histopathology), and "causal stage localization" (ClinHallu).
+ 5. **Your taxonomy is not new:** five of your seven classes (fabrication, omission, severity distortion, anatomical/spatial confusion, reasoning error) map to HalluCXR's categories; only misclassification and evasion are distinctive.
+ 6. **Most threatening paper 1: MedHEval** (2503.02157): benchmark + cause taxonomy + mitigation evaluation, 11 models.
+@@ -107,7 +107,7 @@ For "no consistent difference, or specialists are better":
+ - **Prompting/ensemble:** EchoBench prompt-level interventions; HalluCXR six-model ensemble cutting fabrication by up to 84.8% at the cost of more omission (abstract).
+ - Mixed outcomes are the norm: MedHEval finds "no method works reliably across all three types" and, in its context task, all methods hurt LLaVA-Med.
+ 
+-**Gap relative to MedViHall.** A *three-family* comparison (retrieval, decoding, fine-tuning) under one metric, outside radiology, is open. Your results will be read against MedHEval (decoding-only) and 2609.31733 (RAG can hurt); say explicitly which of their findings you confirm.
++**Gap relative to MedViHall.** A *two-family* comparison (retrieval, decoding; the planned fine-tuning arm was dropped) under one metric, outside radiology, is open. Your results will be read against MedHEval (decoding-only) and 2609.31733 (RAG can hurt); say explicitly which of their findings you confirm.
+ 
+ ### f. Causal or stage-wise analysis
+ 
+@@ -161,7 +161,7 @@ Covered in Section 5. Headline: judge validation in this literature is thin (two
+ | Quantified specialization paradox across several modalities | **Partly covered and contested** | MedVH (2407.02730); EchoBench; 2604.09841 (4 modalities, no consistent advantage); 2603.22623; 2608.02790 | "Across four modalities, the three specialist models show higher severity-weighted hallucination than the best general models; the paired-base comparison (X) shows how much is due to tuning." Avoid "paradox" as a discovery. |
+ | Cross-modality transfer of safety rankings | **Open** (no paper found with these queries) | Adjacent: EchoBench and 2606.16583 per-modality breakdowns; 2606.15910 natural-to-medical probe transfer | "Rank agreement of model safety across modalities (Kendall tau with bootstrap CIs, n = 12 models)", plus a statement about power. |
+ | Causal stage localization across four modalities | **Partly covered** | ClinHallu (stage-replacement, 4 VQA sets); MedHEval (causes, radiology); Med-StepBench (4 steps, PET/CT) | "Extending stage-replacement analysis (Yang et al. 2026) to four modalities and linking stage failures to severity and to mitigation effectiveness." |
+-| Comparison of three mitigation strategies across four modalities | **Open as a three-family, four-modality comparison; not open as "mitigation comparison"** | MedHEval (7 decoding methods, radiology, 11 models); RULE; 2609.31733 | "We compare retrieval, contrastive decoding and fine-tuning under one severity-weighted metric on four modalities, complementing MedHEval's decoding-only radiology study." |
++| Comparison of two mitigation strategies (RAG, contrastive decoding) across four modalities | **Open as a two-family, four-modality comparison (re-assess: the fine-tuning arm was dropped); not open as "mitigation comparison"** | MedHEval (7 decoding methods, radiology, 11 models); RULE; 2609.31733 | "We compare retrieval and contrastive decoding under one severity-weighted metric on four modalities, complementing MedHEval's decoding-only radiology study." |
+ 
+ ---
+ 
+diff --git a/subsample_manifest.py b/subsample_manifest.py
+index 69eb55f..bab821b 100644
+--- a/subsample_manifest.py
++++ b/subsample_manifest.py
+@@ -136,10 +136,10 @@ normal_count  = sum(1 for e in subsampled if e['stratum'] in NORMAL_STRATA)
+ q4_calls      = normal_count
+ total_calls   = len(subsampled) * 3 + q4_calls   # Q1+Q2+Q3 all, Q4 normal only
+ est_hrs_model = total_calls * 17 / 3600           # avg 17s/call with per-QT limits
+-est_hrs_all   = est_hrs_model * 15
++est_hrs_all   = est_hrs_model * 12
+ 
+ print(f'\nGPU time estimates (per-QT limits, avg 17s/call):')
+ print(f'  Calls per model : {total_calls:,}  (Q4 only on {normal_count} normal strata)')
+ print(f'  Per model       : {est_hrs_model:.1f} h  ({est_hrs_model/24:.1f} days)')
+-print(f'  15 models total : {est_hrs_all:.0f} h = {est_hrs_all/24:.1f} days GPU')
++print(f'  12 models total : {est_hrs_all:.0f} h = {est_hrs_all/24:.1f} days GPU')
+ print(f'\nNow run the inference notebook with manifest_3500.json loaded.')

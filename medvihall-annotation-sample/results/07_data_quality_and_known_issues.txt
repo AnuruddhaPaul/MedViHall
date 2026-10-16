@@ -1,0 +1,44 @@
+DATA QUALITY AND KNOWN ISSUES
+
+1. llava_med decoding bug (found 2026-10-08)
+   What: the inference code cut off the first N tokens of any llava_med answer longer than its prompt (LLaVA's
+   generate() returns only new tokens, but the code removed len(prompt) tokens). About 32-33% of llava_med
+   responses in the core run and in the Pillar D greedy runs start mid-sentence; the median answer was 28 words
+   instead of 40. RAG prompts are longer, so only 0.2% of RAG responses were affected.
+   Fixed for: the Pillar B contrastive run (0 chopped starts in 1,679) and the Pillar B baseline re-run
+   (0 chopped starts, 1,679 calls).
+   Not fixed for: the 11,750-response core benchmark and Pillar D calibration (llava_med rows).
+   Effect measured: on the 500-image subset, llava_med baseline SMHR is 0.728 with the fix vs 0.791 without.
+   So the core-benchmark llava_med SMHR (0.794), its rank and its SRI values are probably overstated; the
+   direction "specialists hallucinate more than general models" still holds for chexagent and huatuogpt, but the
+   size of the llava_med gap has not been re-measured.
+
+2. llava16 token-cap bug (Pillar D)
+   A 220-token cap applied mid-run truncated 6,299 llava16 Q1/Q3/Q4 responses and their trailing confidence
+   statements. They were excluded; 5,361 Q1/Q3 calls were regenerated with the original budgets (700/480). Q4
+   was dropped (no model states a confidence on Q4). Pillar D results use the regenerated responses.
+
+3. Baseline provenance (Pillar B)
+   The baseline is the original core-run response for qwen25vl, llava16, chexagent and huatuogpt, not a fresh run
+   under identical settings. For llava16 the share of responses with no stated confidence differs a lot between
+   baseline (39%), RAG (14%) and contrastive (28%); the cause has not been established.
+
+4. Ground-truth coverage limits (expected, not a pipeline bug)
+   Histopathology misclassification (class 3) can be fully checked only for the NCT-CRC subset (about 42% of
+   histopathology records, 3 tissue classes); the PatchCamelyon subset (about 58%) only has binary tumor
+   presence. See raw/gt_coverage_notes.json.
+
+5. Judge and label quality
+   Labels come from a 7B local judge plus automatic Layer-1 checks; no human validation of the full label set exists
+   yet. Within-pipeline relabeling changed 1.1% (strict) and 2.8% (claim-level) of labels. About 5% of Pillar D
+   responses reused labels from the earlier core run (97% / 87% agreement on 60 checked responses). 9 + 60 Pillar D
+   and 45 Pillar B judge outputs could not be parsed and were left unlabeled.
+
+6. Statistical limits
+   One run per cell (no run-to-run variance); Pillar B has ten unadjusted paired comparisons; Pillar D has four
+   independent decoding settings and five models; Pillar E and C use only 12 models (3 for specialists).
+
+7. Operational notes (no effect on results)
+   The runs were interrupted several times by power loss and restarts, and slowed for a period while other software was running;
+   every pipeline stage is resume-safe and re-scans its output file, so interruptions lost time, not data.
+   No duplicate records were found in the Pillar B outputs.

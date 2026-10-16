@@ -1,0 +1,78 @@
+{
+ "n_perm": 20000,
+ "seed": 42,
+ "cells": [
+  {
+   "model": "huatuogpt",
+   "modality": "dermatology",
+   "ref": "qwen25vl",
+   "sri": 1.6519297536871065,
+   "p_raw": 4.999750012499375e-05,
+   "p_holm": 0.00044997750112494374
+  },
+  {
+   "model": "chexagent",
+   "modality": "dermatology",
+   "ref": "qwen25vl",
+   "sri": 1.8103046578612447,
+   "p_raw": 4.999750012499375e-05,
+   "p_holm": 0.00044997750112494374
+  },
+  {
+   "model": "llava_med",
+   "modality": "dermatology",
+   "ref": "qwen25vl",
+   "sri": 1.854819806840259,
+   "p_raw": 4.999750012499375e-05,
+   "p_holm": 0.00044997750112494374
+  },
+  {
+   "model": "huatuogpt",
+   "modality": "histopathology",
+   "ref": "qwen35",
+   "sri": 1.3091999612021865,
+   "p_raw": 4.999750012499375e-05,
+   "p_holm": 0.00044997750112494374
+  },
+  {
+   "model": "chexagent",
+   "modality": "histopathology",
+   "ref": "qwen35",
+   "sri": 1.5277440221677903,
+   "p_raw": 4.999750012499375e-05,
+   "p_holm": 0.00044997750112494374
+  },
+  {
+   "model": "llava_med",
+   "modality": "histopathology",
+   "ref": "qwen35",
+   "sri": 1.5449685787498992,
+   "p_raw": 4.999750012499375e-05,
+   "p_holm": 0.00044997750112494374
+  },
+  {
+   "model": "huatuogpt",
+   "modality": "ophthalmology",
+   "ref": "qwen35",
+   "sri": 1.3556630952574282,
+   "p_raw": 4.999750012499375e-05,
+   "p_holm": 0.00044997750112494374
+  },
+  {
+   "model": "chexagent",
+   "modality": "ophthalmology",
+   "ref": "qwen35",
+   "sri": 1.747968829088096,
+   "p_raw": 4.999750012499375e-05,
+   "p_holm": 0.00044997750112494374
+  },
+  {
+   "model": "llava_med",
+   "modality": "ophthalmology",
+   "ref": "qwen35",
+   "sri": 1.6076955928263483,
+   "p_raw": 4.999750012499375e-05,
+   "p_holm": 0.00044997750112494374
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+ANNOTATION SAMPLE - THE 720 BLIND ITEMS IN THIS REPOSITORY
+
+Purpose: human (and AI-annotator) review of hallucination in model generations, blind to model and condition.
+
+Design
+- 48 questions (an image plus one of four query types) x 5 models x 3 conditions
+  (baseline, RAG, contrastive) = 720 generations; each of the 48 images appears in 15 generations.
+- Balanced exactly: {'qwen25vl': 144, 'huatuogpt': 144, 'chexagent': 144, 'llava16': 144, 'llava_med': 144} items per model; {'baseline': 240, 'contrastive': 240, 'rag': 240} per condition;
+  {'dermatology': 180, 'ophthalmology': 180, 'radiology': 180, 'histopathology': 180} per modality; {'Q3': 180, 'Q1': 180, 'Q2': 180, 'Q4': 180} per query type.
+- Stratified by modality x query type (3 questions per cell), spread across the image strata
+  (e.g. normal / abnormal levels within each dataset).
+- Filtered before sampling: responses that were empty, errors, under 8 words, or that started mid-sentence were
+  excluded; a key was kept only if all its 15 responses passed. No model needed the "whole model fails" exception, and no cell
+  fell short. Repetition loops (mostly chexagent) were kept and flagged internally.
+- Items are shuffled with random IDs. The sheet shows no model or condition. The key that maps IDs back is NOT in this
+  repository.
+- Selection effect: because only questions with 15 well-formed responses were kept, hallucination rates in this sample
+  describe well-formed outputs and may differ from the full runs. Pre-filter validity (share of responses passing the
+  filter) was lowest for huatuogpt|baseline at 0.940 and above that for every other model/condition cell.
+
+Files: ../annotation_sheet.csv, ../annotation_sheet.jsonl, ../images/, raw/annotation_sample_report.json (aggregate counts only).

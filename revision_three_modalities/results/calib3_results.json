@@ -1,0 +1,32 @@
+{
+ "n_images": 328,
+ "mean_pairwise_rho_boot_mean": 0.9553666666666666,
+ "rho_ci": [
+  0.8166666666666668,
+  1.0
+ ],
+ "p_huatuo_highest": {
+  "temp0.0_greedy": 0.9965,
+  "temp0.0_nucleus": 0.994,
+  "temp0.3_nucleus": 0.9955,
+  "temp0.7_nucleus": 0.997
+ },
+ "min_overconfident_share": 0.7393625372899985,
+ "max_overconfident_share": 1.0,
+ "acc_range": [
+  0.17146017699115043,
+  0.30903790087463556
+ ],
+ "conf_range": [
+  0.476906474820144,
+  0.9085621970920842
+ ],
+ "n_range": [
+  491,
+  977
+ ],
+ "huatuo_minus_llavamed_greedy_ci": [
+  0.012388224094324897,
+  0.08196998219720578
+ ]
+}

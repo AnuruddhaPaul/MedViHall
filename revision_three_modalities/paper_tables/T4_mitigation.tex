@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\centering
+\footnotesize
+\begin{tabular}{lccccc}
+\toprule
+Model & Baseline SMHR & RAG SMHR & $\Delta$ vs. baseline & Contrastive decoding SMHR & $\Delta$ vs. baseline \\
+\midrule
+Qwen2.5-VL & 0.431 & 0.435 & +0.004 [-0.019, +0.026] (up) & 0.444 & +0.013 [-0.012, +0.037] (up) \\
+HuatuoGPT-V$^{\dagger}$ & 0.600 & 0.622 & +0.022 [-0.000, +0.044] (up) & 0.551 & -0.050 [-0.070, -0.030]$^{*}$ \\
+LLaVA-1.6 & 0.599 & 0.537 & -0.063 [-0.092, -0.034]$^{*}$ & 0.545 & -0.053 [-0.083, -0.026]$^{*}$ \\
+LLaVA-Med$^{\dagger}$ & 0.623 & 0.659 & +0.037 [+0.016, +0.058]$^{*}$ (up) & 0.623 & -0.000 [-0.021, +0.020] \\
+CheXagent$^{\dagger}$ & 0.679 & 0.697 & +0.017 [-0.016, +0.049] (up) & 0.727 & +0.048 [+0.007, +0.085]$^{*}$ (up) \\
+\bottomrule
+\end{tabular}
+\caption{Mitigation results on a 500-image subset (greedy decoding, paired image-query responses). $\Delta$ = strategy minus matched baseline with 95\% paired image-level bootstrap CI (2,000 resamples); $^{*}$ CI excludes 0, (up) = SMHR increased; $^{\dagger}$ medical specialist. Fine-tuning results are not available.}
+\label{tab:mitigation}
+\end{table*}

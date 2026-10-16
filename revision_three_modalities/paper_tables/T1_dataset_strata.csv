@@ -1,0 +1,10 @@
+modality,stratum,type,images,responses_per_model,sources
+dermatology,DS1,normal,400,1600,ISIC2020 (329); HAM10000 (71)
+dermatology,DS2,abnormal,200,600,HAM10000 (158); ISIC2020 (42)
+dermatology,DS3,abnormal,300,900,ISIC2020 (174); HAM10000 (126)
+histopathology,HS1,normal,300,1200,PatchCamelyon (187); NCT-CRC-HE-100K (113)
+histopathology,HS2,abnormal,200,600,NCT-CRC-HE-100K (200)
+histopathology,HS3,abnormal,300,900,PatchCamelyon (185); NCT-CRC-HE-100K (115)
+ophthalmology,OS1,normal,250,1000,REFUGE (177); ORIGA-light (73)
+ophthalmology,OS2,abnormal,200,600,G1020 (127); ORIGA-light (73)
+ophthalmology,OS3,abnormal,150,450,G1020 (102); ORIGA-light (48)

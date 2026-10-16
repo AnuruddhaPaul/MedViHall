@@ -1,0 +1,23 @@
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lllp{5.2cm}rr}
+\toprule
+Modality & Stratum & Type & Source dataset (images) & Images & Responses / model \\
+\midrule
+Dermatology & DS1 & normal & ISIC2020 (329); HAM10000 (71) & 400 & 1,600 \\
+Dermatology & DS2 & abnormal & HAM10000 (158); ISIC2020 (42) & 200 & 600 \\
+Dermatology & DS3 & abnormal & ISIC2020 (174); HAM10000 (126) & 300 & 900 \\
+Histopathology & HS1 & normal & PatchCamelyon (187); NCT-CRC-HE-100K (113) & 300 & 1,200 \\
+Histopathology & HS2 & abnormal & NCT-CRC-HE-100K (200) & 200 & 600 \\
+Histopathology & HS3 & abnormal & PatchCamelyon (185); NCT-CRC-HE-100K (115) & 300 & 900 \\
+Ophthalmology & OS1 & normal & REFUGE (177); ORIGA-light (73) & 250 & 1,000 \\
+Ophthalmology & OS2 & abnormal & G1020 (127); ORIGA-light (73) & 200 & 600 \\
+Ophthalmology & OS3 & abnormal & G1020 (102); ORIGA-light (48) & 150 & 450 \\
+\midrule
+Total &  &  &  & 2,300 & 7,850 \\
+\bottomrule
+\end{tabular}
+\caption{Benchmark composition: 2,300 images in 9 design strata. Normal strata receive four prompts (Q1--Q4), abnormal strata three (Q1--Q3).}
+\label{tab:dataset}
+\end{table}

@@ -1,0 +1,17 @@
+item,value
+images,3500.0
+modalities,4.0
+strata,13.0
+vlms,12.0
+general_vlms,9.0
+specialist_vlms,3.0
+prompts,4.0
+responses_per_model,11750.0
+claims_total_incl_omissions,536692.0
+class_weight_1,1.0
+class_weight_2,1.0
+class_weight_3,0.7
+class_weight_4,0.5
+class_weight_5,0.4
+class_weight_6,0.1
+class_weight_7,0.6

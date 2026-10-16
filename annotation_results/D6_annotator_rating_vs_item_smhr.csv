@@ -1,0 +1,7 @@
+annotator,n_items,spearman_factual_vs_item_SMHR,ci95
+generalist,682,-0.3104613592924971,-0.378..-0.241
+radiology_specialist,682,-0.27478690671565315,-0.348..-0.202
+dermatology_specialist,682,-0.269777670651988,-0.344..-0.196
+histopathology_specialist,682,-0.2757479080938215,-0.345..-0.206
+ophthalmology_specialist,682,-0.29684757460199085,-0.375..-0.226
+undergrad_student,682,-0.2664239026955427,-0.337..-0.202

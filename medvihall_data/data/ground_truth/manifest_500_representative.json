@@ -1,0 +1,2298 @@
+[
+ {
+  "image_id": "isic2020_DS1_0572",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0572.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0475",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0475.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0080",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0080.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0269",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0269.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_1002",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_1002.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0623",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0623.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_1141",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_1141.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0485",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0485.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0203",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0203.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0296",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0296.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS1_0134",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS1_0134.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS1_0032",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0032.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0672",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0672.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0659",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0659.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0665",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0665.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0694",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0694.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_1283",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_1283.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_1326",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_1326.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0522",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0522.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS1_0068",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS1_0068.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS1_1314",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_1314.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0359",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0359.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0758",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0758.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0500",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0500.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS1_0002",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS1_0002.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS1_0059",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0059.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0931",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0931.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS1_0192",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS1_0192.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS1_0851",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0851.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS1_0200",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS1_0200.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS1_1115",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_1115.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS1_0235",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS1_0235.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS1_0008",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS1_0008.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS1_0478",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0478.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0465",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0465.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS1_0085",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS1_0085.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS1_1239",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_1239.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0420",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0420.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0201",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0201.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0849",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0849.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_1201",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_1201.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_1220",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_1220.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0237",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0237.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0884",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0884.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0961",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0961.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0822",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0822.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0858",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0858.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0520",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0520.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS1_0083",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS1_0083.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS1_0721",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0721.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_1027",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_1027.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS1_0088",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS1_0088.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS1_0603",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0603.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS1_0222",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS1_0222.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS1_0076",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0076.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_0448",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_0448.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS1_1149",
+  "modality": "dermatology",
+  "stratum": "DS1",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS1_1149.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS2_0498",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0498.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0437",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0437.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0507",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0507.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0542",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0542.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0509",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0509.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS2_1358",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS2_1358.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS2_0341",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0341.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0429",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0429.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS2_1343",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS2_1343.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS2_0430",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0430.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0307",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0307.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0425",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0425.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0426",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0426.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0337",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0337.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0431",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0431.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0378",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0378.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0329",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0329.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0335",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0335.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0371",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0371.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0423",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0423.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS2_1353",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS2_1353.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS2_0486",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0486.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0352",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0352.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0346",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0346.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0571",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0571.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0593",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0593.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS2_0321",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0321.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS2_1374",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS2_1374.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS2_0506",
+  "modality": "dermatology",
+  "stratum": "DS2",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS2_0506.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS3_0728",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS3_0728.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS3_0741",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS3_0741.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS3_1955",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1955.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS3_0705",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS3_0705.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS3_1844",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1844.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS3_0693",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS3_0693.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS3_0681",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS3_0681.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS3_1569",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1569.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS3_0888",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS3_0888.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS3_1669",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1669.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS3_0923",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS3_0923.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS3_0936",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS3_0936.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS3_1876",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1876.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS3_0953",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS3_0953.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS3_0835",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS3_0835.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS3_0624",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS3_0624.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS3_1897",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1897.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS3_0862",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS3_0862.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS3_1908",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1908.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS3_1987",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1987.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS3_1785",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1785.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS3_1709",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1709.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS3_1807",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1807.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS3_1952",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1952.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS3_1870",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1870.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS3_1491",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1491.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS3_1479",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1479.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS3_0877",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS3_0877.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS3_1913",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1913.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS3_1556",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1556.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS3_1494",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1494.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS3_1521",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1521.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS3_1789",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1789.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS3_1889",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1889.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS3_0663",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS3_0663.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS3_1421",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1421.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS3_1643",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1643.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS3_1798",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1798.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "ham10000_DS3_0852",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS3_0852.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "ham10000_DS3_0832",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\ham10000\\ham10000_DS3_0832.jpg",
+  "source": "HAM10000"
+ },
+ {
+  "image_id": "isic2020_DS3_1777",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1777.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS3_1582",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1582.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "isic2020_DS3_1956",
+  "modality": "dermatology",
+  "stratum": "DS3",
+  "image_path": "medvihall_data\\data\\raw\\dermatology\\isic2020\\isic2020_DS3_1956.jpg",
+  "source": "ISIC2020"
+ },
+ {
+  "image_id": "pcam_HS1_0496",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0496.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0273",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0273.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0431",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0431.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0292",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0292.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0613",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0613.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0643",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0643.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0280",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0280.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0331",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0331.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0694",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0694.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0341",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0341.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0281",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0281.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0241",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0241.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0090",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0090.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0511",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0511.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0542",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0542.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS1_0361",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS1_0361.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "pcam_HS1_0166",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0166.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0508",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0508.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0693",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0693.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS1_0373",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS1_0373.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "pcam_HS1_0062",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0062.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS1_0321",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS1_0321.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS1_0125",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS1_0125.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "pcam_HS1_0459",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0459.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS1_0384",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS1_0384.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS1_0058",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS1_0058.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS1_0254",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS1_0254.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "pcam_HS1_0546",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0546.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS1_0039",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS1_0039.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "pcam_HS1_0572",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0572.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS1_0289",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS1_0289.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS1_0050",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS1_0050.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "pcam_HS1_0495",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0495.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0547",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0547.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0461",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0461.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS1_0061",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS1_0061.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS1_0235",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS1_0235.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "pcam_HS1_0284",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0284.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0408",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0408.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0254",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0254.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS1_0243",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0243.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS1_0342",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS1_0342.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "pcam_HS1_0058",
+  "modality": "histopathology",
+  "stratum": "HS1",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS1_0058.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS2_0008",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0008.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0022",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0022.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0141",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0141.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0043",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0043.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0174",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0174.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0035",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0035.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0143",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0143.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0138",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0138.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0005",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0005.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0016",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0016.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0139",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0139.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0122",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0122.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0184",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0184.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0196",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0196.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0088",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0088.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0176",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0176.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0129",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0129.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0125",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0125.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0048",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0048.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0144",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0144.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0097",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0097.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0023",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0023.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0006",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0006.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0162",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0162.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0040",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0040.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0086",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0086.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0017",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0017.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS2_0036",
+  "modality": "histopathology",
+  "stratum": "HS2",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS2_0036.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS3_0243",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0243.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS3_0389",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0389.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "pcam_HS3_0614",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0614.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS3_0123",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0123.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "pcam_HS3_0389",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0389.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS3_0444",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0444.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS3_0521",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0521.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS3_0083",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0083.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS3_0150",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0150.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS3_0381",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0381.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS3_0266",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0266.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "pcam_HS3_0697",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0697.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS3_0158",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0158.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "pcam_HS3_0516",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0516.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS3_0212",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0212.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "pcam_HS3_0527",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0527.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS3_0175",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0175.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS3_0060",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0060.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS3_0535",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0535.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS3_0145",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0145.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS3_0065",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0065.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "pcam_HS3_0493",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0493.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS3_0240",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0240.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS3_0214",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0214.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "pcam_HS3_0006",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0006.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS3_0109",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0109.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS3_0137",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0137.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS3_0231",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0231.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "pcam_HS3_0141",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0141.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS3_0615",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0615.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS3_0010",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0010.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS3_0072",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0072.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS3_0367",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0367.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS3_0331",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0331.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "pcam_HS3_0218",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0218.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS3_0305",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0305.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS3_0130",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0130.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS3_0147",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0147.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS3_0077",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0077.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "pcam_HS3_0452",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0452.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "pcam_HS3_0358",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\pcam\\pcam_HS3_0358.jpg",
+  "source": "PatchCamelyon"
+ },
+ {
+  "image_id": "nct_HS3_0167",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0167.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "nct_HS3_0008",
+  "modality": "histopathology",
+  "stratum": "HS3",
+  "image_path": "medvihall_data\\data\\raw\\histopathology\\nct_crc\\nct_HS3_0008.jpg",
+  "source": "NCT-CRC-HE-100K"
+ },
+ {
+  "image_id": "origa_OS1_0274",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS1_0274.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "refuge_OS1_0287",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0287.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0556",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0556.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0142",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0142.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0459",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0459.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0070",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0070.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "origa_OS1_0032",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS1_0032.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "refuge_OS1_0528",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0528.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0108",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0108.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0105",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0105.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0248",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0248.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0417",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0417.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0383",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0383.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "origa_OS1_0222",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS1_0222.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "refuge_OS1_0558",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0558.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0117",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0117.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0118",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0118.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0173",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0173.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0504",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0504.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "origa_OS1_0079",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS1_0079.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "refuge_OS1_0402",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0402.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0107",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0107.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0431",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0431.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0689",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0689.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0275",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0275.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "origa_OS1_0086",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS1_0086.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "refuge_OS1_0418",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0418.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0282",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0282.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0184",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0184.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0608",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0608.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0547",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0547.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "origa_OS1_0013",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS1_0013.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "refuge_OS1_0104",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0104.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "refuge_OS1_0570",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0570.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "origa_OS1_0135",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS1_0135.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "refuge_OS1_0589",
+  "modality": "ophthalmology",
+  "stratum": "OS1",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\refuge\\refuge_OS1_0589.jpg",
+  "source": "REFUGE"
+ },
+ {
+  "image_id": "g1020_OS2_0048",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS2_0048.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS2_0182",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS2_0182.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS2_0185",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS2_0185.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "origa_OS2_0021",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS2_0021.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "g1020_OS2_0181",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS2_0181.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "origa_OS2_0107",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS2_0107.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "g1020_OS2_0009",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS2_0009.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS2_0103",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS2_0103.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS2_0233",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS2_0233.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS2_0025",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS2_0025.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS2_0252",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS2_0252.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "origa_OS2_0043",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS2_0043.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "origa_OS2_0016",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS2_0016.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "g1020_OS2_0024",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS2_0024.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "origa_OS2_0069",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS2_0069.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "origa_OS2_0099",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS2_0099.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "g1020_OS2_0021",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS2_0021.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS2_0114",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS2_0114.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "origa_OS2_0142",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS2_0142.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "origa_OS2_0109",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS2_0109.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "origa_OS2_0111",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS2_0111.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "g1020_OS2_0127",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS2_0127.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "origa_OS2_0136",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS2_0136.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "g1020_OS2_0216",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS2_0216.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS2_0102",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS2_0102.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS2_0049",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS2_0049.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS2_0202",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS2_0202.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS2_0018",
+  "modality": "ophthalmology",
+  "stratum": "OS2",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS2_0018.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "origa_OS3_0074",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS3_0074.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "g1020_OS3_0473",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS3_0473.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "origa_OS3_0108",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS3_0108.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "origa_OS3_0048",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS3_0048.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "g1020_OS3_0493",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS3_0493.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "origa_OS3_0023",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS3_0023.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "g1020_OS3_0333",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS3_0333.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS3_0524",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS3_0524.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS3_0340",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS3_0340.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS3_0314",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS3_0314.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS3_0505",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS3_0505.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS3_0398",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS3_0398.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS3_0360",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS3_0360.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS3_0304",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS3_0304.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS3_0526",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS3_0526.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "origa_OS3_0042",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS3_0042.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "g1020_OS3_0588",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS3_0588.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "g1020_OS3_0385",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS3_0385.jpg",
+  "source": "G1020"
+ },
+ {
+  "image_id": "origa_OS3_0111",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS3_0111.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "origa_OS3_0061",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\origa\\origa_OS3_0061.jpg",
+  "source": "ORIGA-light"
+ },
+ {
+  "image_id": "g1020_OS3_0394",
+  "modality": "ophthalmology",
+  "stratum": "OS3",
+  "image_path": "medvihall_data\\data\\raw\\ophthalmology\\g1020\\g1020_OS3_0394.jpg",
+  "source": "G1020"
+ }
+]

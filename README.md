@@ -22,5 +22,5 @@ Build the paper: `cd paper && pdflatex main && bibtex main && pdflatex main && p
 - **Images.** Dataset images are not redistributed; obtain them from the original sources under their licences.
 - **Model weights.** Not stored in this repository.
 - **Large files.** GitHub rejects files over 100 MB, so larger files are stored as `<name>.parts/part_000, part_001, ...` (each at most 95 MB) with a `MANIFEST.json`. Restore with `python tools/rejoin_chunks.py --all .`.
-- **Secrets.** Hugging Face tokens in notebooks and scripts are replaced by `hf_REDACTED`. Supply your own token via the `HF_TOKEN` environment variable.
+- **Secrets.** API keys and Hugging Face tokens in notebooks and scripts are replaced by placeholders (`hf_REDACTED`, `sk-REDACTED`). Supply your own via environment variables (`HF_TOKEN`, `OPENAI_API_KEY`).
 - **Annotations.** The inter-annotator study files under `human_annotations/` contain simulated annotations, as described in the paper's audit section; they are not clinician labels.

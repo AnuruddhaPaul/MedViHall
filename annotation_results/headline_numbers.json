@@ -1,0 +1,1042 @@
+{
+ "n_items": 720,
+ "annotators": [
+  "generalist",
+  "radiology_specialist",
+  "dermatology_specialist",
+  "histopathology_specialist",
+  "ophthalmology_specialist",
+  "undergrad_student"
+ ],
+ "bootstrap": {
+  "resamples": 2000,
+  "seed": 42,
+  "unit": "item (image for benchmark-wide weight analysis)"
+ },
+ "A_scores_overall": {
+  "factual_correctness": {
+   "n_items": 720,
+   "n_raters": 6,
+   "ICC2_1": 0.8601736096502848,
+   "ICC2_1_ci": [
+    0.8421492826827649,
+    0.8773781097111477
+   ],
+   "ICC2_k": 0.9736219824608087,
+   "ICC2_k_ci": [
+    0.9697066975014867,
+    0.9772369812813332
+   ],
+   "alpha_interval": 0.8599025584484142,
+   "alpha_ci": [
+    0.8418113338933452,
+    0.8771437000315627
+   ],
+   "QWK_mean_pairwise_0.5bins": 0.8450536631335517,
+   "QWK_ci": [
+    0.8261926857546049,
+    0.8628452461887409
+   ]
+  },
+  "completeness": {
+   "n_items": 720,
+   "n_raters": 6,
+   "ICC2_1": 0.8634098981978252,
+   "ICC2_1_ci": [
+    0.8448764109203315,
+    0.8805890349411651
+   ],
+   "ICC2_k": 0.9743109214925203,
+   "ICC2_k_ci": [
+    0.9703077631987546,
+    0.9778989123069252
+   ],
+   "alpha_interval": 0.8630538124578707,
+   "alpha_ci": [
+    0.8444003178211211,
+    0.8803155387241717
+   ],
+   "QWK_mean_pairwise_0.5bins": 0.8417650462360668,
+   "QWK_ci": [
+    0.8219032043776094,
+    0.8603716611581735
+   ]
+  },
+  "clinical_safety": {
+   "n_items": 720,
+   "n_raters": 6,
+   "ICC2_1": 0.8289106813975072,
+   "ICC2_1_ci": [
+    0.8091231718065756,
+    0.8472938336293451
+   ],
+   "ICC2_k": 0.9667436014231843,
+   "ICC2_k_ci": [
+    0.9621697660241636,
+    0.9708379517733877
+   ],
+   "alpha_interval": 0.8285553001202652,
+   "alpha_ci": [
+    0.8086774089487259,
+    0.8470027677162701
+   ],
+   "QWK_mean_pairwise_0.5bins": 0.8123264201536752,
+   "QWK_ci": [
+    0.7923287733444809,
+    0.8311092577308559
+   ]
+  },
+  "informativeness": {
+   "n_items": 720,
+   "n_raters": 6,
+   "ICC2_1": 0.8578329207199096,
+   "ICC2_1_ci": [
+    0.8400374543741819,
+    0.8738151173039674
+   ],
+   "ICC2_k": 0.9731210711076493,
+   "ICC2_k_ci": [
+    0.9692390796333612,
+    0.9764978382836224
+   ],
+   "alpha_interval": 0.8573254646840219,
+   "alpha_ci": [
+    0.8394434659715483,
+    0.8733725969450079
+   ],
+   "QWK_mean_pairwise_0.5bins": 0.8399517770720396,
+   "QWK_ci": [
+    0.820721610099802,
+    0.8572121866109919
+   ]
+  },
+  "clarity": {
+   "n_items": 720,
+   "n_raters": 6,
+   "ICC2_1": 0.9264208129534307,
+   "ICC2_1_ci": [
+    0.9139618004915785,
+    0.9368787887663563
+   ],
+   "ICC2_k": 0.9869357550570025,
+   "ICC2_k_ci": [
+    0.9845527558448711,
+    0.9888957007803733
+   ],
+   "alpha_interval": 0.9262853663879865,
+   "alpha_ci": [
+    0.9137985136146244,
+    0.9367673774780113
+   ],
+   "QWK_mean_pairwise_0.5bins": 0.9147498345275105,
+   "QWK_ci": [
+    0.9006228128090679,
+    0.9262130766386197
+   ]
+  },
+  "overall": {
+   "n_items": 720,
+   "n_raters": 6,
+   "ICC2_1": 0.8768572092722119,
+   "ICC2_1_ci": [
+    0.8597752237815607,
+    0.8919252328604221
+   ],
+   "ICC2_k": 0.9771292257381062,
+   "ICC2_k_ci": [
+    0.9735368834269704,
+    0.9802047311628626
+   ],
+   "alpha_interval": 0.8766564550675642,
+   "alpha_ci": [
+    0.8595247299027966,
+    0.89175003980327
+   ],
+   "QWK_mean_pairwise_0.5bins": 0.8616769991866893,
+   "QWK_ci": [
+    0.8436613217890544,
+    0.8775505182255567
+   ]
+  }
+ },
+ "A_flags_overall": {
+  "FABRICATION": {
+   "n_items": 720,
+   "prevalence": 0.5905092592592592,
+   "percent_agreement": 0.8545370370370371,
+   "percent_agreement_ci": "0.838..0.871",
+   "mean_pairwise_cohen_kappa": 0.6996952275213929,
+   "cohen_kappa_ci": "0.665..0.731",
+   "fleiss_kappa": 0.699218143208119,
+   "fleiss_kappa_ci": "0.664..0.731",
+   "RARE_class_kappa_unstable": false
+  },
+  "OMISSION": {
+   "n_items": 720,
+   "prevalence": 0.2611111111111111,
+   "percent_agreement": 0.7714814814814815,
+   "percent_agreement_ci": "0.754..0.790",
+   "mean_pairwise_cohen_kappa": 0.3956659161404558,
+   "cohen_kappa_ci": "0.362..0.428",
+   "fleiss_kappa": 0.40777475603903374,
+   "fleiss_kappa_ci": "0.374..0.440",
+   "RARE_class_kappa_unstable": false
+  },
+  "MISCLASSIFICATION": {
+   "n_items": 720,
+   "prevalence": 0.34629629629629627,
+   "percent_agreement": 0.7740740740740741,
+   "percent_agreement_ci": "0.756..0.792",
+   "mean_pairwise_cohen_kappa": 0.502369624848772,
+   "cohen_kappa_ci": "0.464..0.540",
+   "fleiss_kappa": 0.5009922588659468,
+   "fleiss_kappa_ci": "0.462..0.539",
+   "RARE_class_kappa_unstable": false
+  },
+  "SEVERITY_DISTORTION": {
+   "n_items": 720,
+   "prevalence": 0.39537037037037037,
+   "percent_agreement": 0.7670370370370371,
+   "percent_agreement_ci": "0.749..0.785",
+   "mean_pairwise_cohen_kappa": 0.5138842251853109,
+   "cohen_kappa_ci": "0.478..0.549",
+   "fleiss_kappa": 0.5127371059889322,
+   "fleiss_kappa_ci": "0.477..0.548",
+   "RARE_class_kappa_unstable": false
+  },
+  "ANATOMICAL_CONFUSION": {
+   "n_items": 720,
+   "prevalence": 0.04976851851851852,
+   "percent_agreement": 0.939351851851852,
+   "percent_agreement_ci": "0.928..0.951",
+   "mean_pairwise_cohen_kappa": 0.3568747110552076,
+   "cohen_kappa_ci": "0.274..0.434",
+   "fleiss_kappa": 0.35878537234795754,
+   "fleiss_kappa_ci": "0.280..0.434",
+   "RARE_class_kappa_unstable": true
+  },
+  "EVASION": {
+   "n_items": 720,
+   "prevalence": 0.20416666666666666,
+   "percent_agreement": 0.9275925925925925,
+   "percent_agreement_ci": "0.915..0.940",
+   "mean_pairwise_cohen_kappa": 0.777492526256853,
+   "cohen_kappa_ci": "0.738..0.814",
+   "fleiss_kappa": 0.777184172098159,
+   "fleiss_kappa_ci": "0.737..0.814",
+   "RARE_class_kappa_unstable": false
+  },
+  "CLINICAL_REASONING_ERROR": {
+   "n_items": 720,
+   "prevalence": 0.09537037037037037,
+   "percent_agreement": 0.8892592592592595,
+   "percent_agreement_ci": "0.875..0.904",
+   "mean_pairwise_cohen_kappa": 0.34985903613294417,
+   "cohen_kappa_ci": "0.288..0.407",
+   "fleiss_kappa": 0.35820969681310827,
+   "fleiss_kappa_ci": "0.297..0.416",
+   "RARE_class_kappa_unstable": false
+  }
+ },
+ "A_by_type": [
+  {
+   "measure": "factual_correctness",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_own|non_specialist",
+   "value": 0.8532948438076442,
+   "ci95": "0.829..0.872",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "factual_correctness",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_own|specialist_off",
+   "value": 0.873298219422724,
+   "ci95": "0.854..0.886",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "factual_correctness",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_off|specialist_off",
+   "value": 0.8639528023243542,
+   "ci95": "0.841..0.881",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "factual_correctness",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_off|non_specialist",
+   "value": 0.8548990126166784,
+   "ci95": "0.831..0.872",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "factual_correctness",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "non_specialist|non_specialist",
+   "value": 0.8252487011000827,
+   "ci95": "0.793..0.851",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "clinical_safety",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_own|non_specialist",
+   "value": 0.8085720609991136,
+   "ci95": "0.781..0.833",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "clinical_safety",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_own|specialist_off",
+   "value": 0.8113606498034535,
+   "ci95": "0.785..0.831",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "clinical_safety",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_off|specialist_off",
+   "value": 0.8250182991803955,
+   "ci95": "0.800..0.846",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "clinical_safety",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_off|non_specialist",
+   "value": 0.8293621478611843,
+   "ci95": "0.804..0.848",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "clinical_safety",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "non_specialist|non_specialist",
+   "value": 0.8208704897918033,
+   "ci95": "0.787..0.847",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "completeness",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_own|non_specialist",
+   "value": 0.862785473814855,
+   "ci95": "0.838..0.881",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "completeness",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_own|specialist_off",
+   "value": 0.8987398498429574,
+   "ci95": "0.883..0.911",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "completeness",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_off|specialist_off",
+   "value": 0.8737164768190423,
+   "ci95": "0.852..0.890",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "completeness",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_off|non_specialist",
+   "value": 0.8483085547897279,
+   "ci95": "0.824..0.867",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "completeness",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "non_specialist|non_specialist",
+   "value": 0.7904573880430641,
+   "ci95": "0.752..0.824",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "informativeness",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_own|non_specialist",
+   "value": 0.8543215947943021,
+   "ci95": "0.832..0.872",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "informativeness",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_own|specialist_off",
+   "value": 0.8930881939422624,
+   "ci95": "0.877..0.905",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "informativeness",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_off|specialist_off",
+   "value": 0.8808996459372936,
+   "ci95": "0.860..0.896",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "informativeness",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_off|non_specialist",
+   "value": 0.8388788472821803,
+   "ci95": "0.816..0.857",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "informativeness",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "non_specialist|non_specialist",
+   "value": 0.7807255832028257,
+   "ci95": "0.746..0.809",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "clarity",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_own|non_specialist",
+   "value": 0.9260902521839816,
+   "ci95": "0.910..0.937",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "clarity",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_own|specialist_off",
+   "value": 0.9114747277948769,
+   "ci95": "0.893..0.925",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "clarity",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_off|specialist_off",
+   "value": 0.923780184537429,
+   "ci95": "0.906..0.936",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "clarity",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_off|non_specialist",
+   "value": 0.9305928153967292,
+   "ci95": "0.917..0.940",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "clarity",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "non_specialist|non_specialist",
+   "value": 0.9393347424953858,
+   "ci95": "0.925..0.950",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "overall",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_own|non_specialist",
+   "value": 0.8729699450529977,
+   "ci95": "0.851..0.890",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "overall",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_own|specialist_off",
+   "value": 0.8900327393346269,
+   "ci95": "0.873..0.902",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "overall",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_off|specialist_off",
+   "value": 0.8808391514943043,
+   "ci95": "0.860..0.897",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "overall",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "specialist_off|non_specialist",
+   "value": 0.8673410946053549,
+   "ci95": "0.846..0.885",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "overall",
+   "statistic": "mean pairwise ICC(2,1)",
+   "pair_type": "non_specialist|non_specialist",
+   "value": 0.8379658003793145,
+   "ci95": "0.806..0.864",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "FLAGS",
+   "statistic": "mean pairwise Cohen kappa (7 classes)",
+   "pair_type": "specialist_own|non_specialist",
+   "value": 0.4409683334708219,
+   "ci95": "0.411..0.462",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "FLAGS",
+   "statistic": "mean pairwise Cohen kappa (7 classes)",
+   "pair_type": "specialist_own|specialist_off",
+   "value": 0.49686230811396853,
+   "ci95": "0.466..0.517",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "FLAGS",
+   "statistic": "mean pairwise Cohen kappa (7 classes)",
+   "pair_type": "specialist_off|specialist_off",
+   "value": 0.5260506433153569,
+   "ci95": "0.486..0.550",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "FLAGS",
+   "statistic": "mean pairwise Cohen kappa (7 classes)",
+   "pair_type": "specialist_off|non_specialist",
+   "value": 0.491286455090151,
+   "ci95": "0.452..0.513",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  },
+  {
+   "measure": "FLAGS",
+   "statistic": "mean pairwise Cohen kappa (7 classes)",
+   "pair_type": "non_specialist|non_specialist",
+   "value": 0.39795580989361823,
+   "ci95": "0.355..0.433",
+   "n_resamples": 500,
+   "n_items_per_modality": 180
+  }
+ ],
+ "judge_labels_found": 717,
+ "judge_labels_missing_items": [
+  "A0328",
+  "A0510",
+  "A0517"
+ ],
+ "judge_labels_missing_reasons": {
+  "baseline item: no usable core-run pipeline label (judge output absent or unparseable)": 2,
+  "no usable pipeline label (judge output absent or unparseable)": 1
+ },
+ "B_ties_broken": 275,
+ "B_per_class": {
+  "FABRICATION": {
+   "n_items": 717,
+   "human_positive": 420,
+   "judge_positive": 391,
+   "precision": 0.7672634271099744,
+   "precision_ci": "0.727..0.807",
+   "recall": 0.7142857142857143,
+   "recall_ci": "0.670..0.758",
+   "F1": 0.7398273736128237,
+   "F1_ci": "0.706..0.773",
+   "cohen_kappa": 0.4021387331207245,
+   "kappa_ci": "0.335..0.473",
+   "TP": 300,
+   "FP": 91,
+   "FN": 120,
+   "TN": 206
+  },
+  "OMISSION": {
+   "n_items": 717,
+   "human_positive": 217,
+   "judge_positive": 423,
+   "precision": 0.38534278959810875,
+   "precision_ci": "0.339..0.431",
+   "recall": 0.7511520737327189,
+   "recall_ci": "0.694..0.809",
+   "F1": 0.5093749999999999,
+   "F1_ci": "0.461..0.555",
+   "cohen_kappa": 0.18220255868186472,
+   "kappa_ci": "0.121..0.244",
+   "TP": 163,
+   "FP": 260,
+   "FN": 54,
+   "TN": 240
+  },
+  "MISCLASSIFICATION": {
+   "n_items": 717,
+   "human_positive": 226,
+   "judge_positive": 23,
+   "precision": 0.5217391304347826,
+   "precision_ci": "0.320..0.727",
+   "recall": 0.05309734513274336,
+   "recall_ci": "0.026..0.084",
+   "F1": 0.0963855421686747,
+   "F1_ci": "0.049..0.148",
+   "cohen_kappa": 0.04051458037195881,
+   "kappa_ci": "0.002..0.083",
+   "TP": 12,
+   "FP": 11,
+   "FN": 214,
+   "TN": 480
+  },
+  "SEVERITY_DISTORTION": {
+   "n_items": 717,
+   "human_positive": 286,
+   "judge_positive": 105,
+   "precision": 0.5619047619047619,
+   "precision_ci": "0.464..0.657",
+   "recall": 0.2062937062937063,
+   "recall_ci": "0.157..0.254",
+   "F1": 0.3017902813299233,
+   "F1_ci": "0.239..0.359",
+   "cohen_kappa": 0.11142736520993074,
+   "kappa_ci": "0.048..0.174",
+   "TP": 59,
+   "FP": 46,
+   "FN": 227,
+   "TN": 385
+  },
+  "ANATOMICAL_CONFUSION": {
+   "n_items": 717,
+   "human_positive": 30,
+   "judge_positive": 6,
+   "precision": 0.0,
+   "precision_ci": "0.000..0.000",
+   "recall": 0.0,
+   "recall_ci": "0.000..0.000",
+   "F1": NaN,
+   "F1_ci": "nan..nan",
+   "cohen_kappa": -0.014144271570012293,
+   "kappa_ci": "-0.023..-0.005",
+   "TP": 0,
+   "FP": 6,
+   "FN": 30,
+   "TN": 681
+  },
+  "EVASION": {
+   "n_items": 717,
+   "human_positive": 140,
+   "judge_positive": 29,
+   "precision": 0.034482758620689655,
+   "precision_ci": "0.000..0.120",
+   "recall": 0.007142857142857143,
+   "recall_ci": "0.000..0.024",
+   "F1": 0.011834319526627217,
+   "F1_ci": "0.011..0.044",
+   "cohen_kappa": -0.059140403173732294,
+   "kappa_ci": "-0.088..-0.025",
+   "TP": 1,
+   "FP": 28,
+   "FN": 139,
+   "TN": 549
+  },
+  "CLINICAL_REASONING_ERROR": {
+   "n_items": 717,
+   "human_positive": 51,
+   "judge_positive": 153,
+   "precision": 0.16339869281045752,
+   "precision_ci": "0.104..0.225",
+   "recall": 0.49019607843137253,
+   "recall_ci": "0.352..0.630",
+   "F1": 0.24509803921568626,
+   "F1_ci": "0.164..0.324",
+   "cohen_kappa": 0.15493410478945643,
+   "kappa_ci": "0.078..0.235",
+   "TP": 25,
+   "FP": 128,
+   "FN": 26,
+   "TN": 538
+  }
+ },
+ "B_any": [
+  {
+   "scope": "ALL",
+   "judge_output": "layer1_any (omission/fabrication signal)",
+   "n_items": 717,
+   "human_any_positive": 626,
+   "precision": 0.8785714285714286,
+   "recall": 0.7859424920127795,
+   "F1": 0.8296795952782462,
+   "F1_ci": "0.805..0.852",
+   "cohen_kappa": 0.029535921523432113,
+   "target_F1": 0.95,
+   "target_met_point_estimate": false,
+   "target_met_lower_CI": false
+  },
+  {
+   "scope": "ALL",
+   "judge_output": "layer2_any (any claim hallucination)",
+   "n_items": 717,
+   "human_any_positive": 626,
+   "precision": 0.9031578947368422,
+   "recall": 0.6853035143769968,
+   "F1": 0.7792915531335151,
+   "F1_ci": "0.752..0.806",
+   "cohen_kappa": 0.10520909833245173,
+   "target_F1": 0.9,
+   "target_met_point_estimate": false,
+   "target_met_lower_CI": false
+  },
+  {
+   "scope": "ALL",
+   "judge_output": "combined_any (pipeline: any class)",
+   "n_items": 717,
+   "human_any_positive": 626,
+   "precision": 0.8881889763779528,
+   "recall": 0.9009584664536742,
+   "F1": 0.8945281522601111,
+   "F1_ci": "0.877..0.912",
+   "cohen_kappa": 0.12606651575831426,
+   "target_F1": 0.9,
+   "target_met_point_estimate": false,
+   "target_met_lower_CI": false
+  },
+  {
+   "scope": "radiology",
+   "judge_output": "layer1_any (omission/fabrication signal)",
+   "n_items": 180,
+   "human_any_positive": 174,
+   "precision": 0.968944099378882,
+   "recall": 0.896551724137931,
+   "F1": 0.9313432835820896,
+   "F1_ci": "0.902..0.957",
+   "cohen_kappa": 0.030898876404494714,
+   "target_F1": 0.95,
+   "target_met_point_estimate": false,
+   "target_met_lower_CI": false
+  },
+  {
+   "scope": "radiology",
+   "judge_output": "layer2_any (any claim hallucination)",
+   "n_items": 180,
+   "human_any_positive": 174,
+   "precision": 0.9555555555555556,
+   "recall": 0.7413793103448276,
+   "F1": 0.8349514563106797,
+   "F1_ci": "0.788..0.875",
+   "cohen_kappa": -0.062499999999999764,
+   "target_F1": 0.9,
+   "target_met_point_estimate": false,
+   "target_met_lower_CI": false
+  },
+  {
+   "scope": "radiology",
+   "judge_output": "combined_any (pipeline: any class)",
+   "n_items": 180,
+   "human_any_positive": 174,
+   "precision": 0.9659090909090909,
+   "recall": 0.9770114942528736,
+   "F1": 0.9714285714285714,
+   "F1_ci": "0.950..0.986",
+   "cohen_kappa": -0.027397260273971366,
+   "target_F1": 0.9,
+   "target_met_point_estimate": true,
+   "target_met_lower_CI": true
+  },
+  {
+   "scope": "dermatology",
+   "judge_output": "layer1_any (omission/fabrication signal)",
+   "n_items": 178,
+   "human_any_positive": 136,
+   "precision": 0.7739130434782608,
+   "recall": 0.6544117647058824,
+   "F1": 0.7091633466135459,
+   "F1_ci": "0.643..0.770",
+   "cohen_kappa": 0.03015375429168542,
+   "target_F1": 0.95,
+   "target_met_point_estimate": false,
+   "target_met_lower_CI": false
+  },
+  {
+   "scope": "dermatology",
+   "judge_output": "layer2_any (any claim hallucination)",
+   "n_items": 178,
+   "human_any_positive": 136,
+   "precision": 0.8256880733944955,
+   "recall": 0.6617647058823529,
+   "F1": 0.7346938775510203,
+   "F1_ci": "0.667..0.794",
+   "cohen_kappa": 0.17132216014897575,
+   "target_F1": 0.9,
+   "target_met_point_estimate": false,
+   "target_met_lower_CI": false
+  },
+  {
+   "scope": "dermatology",
+   "judge_output": "combined_any (pipeline: any class)",
+   "n_items": 178,
+   "human_any_positive": 136,
+   "precision": 0.8095238095238095,
+   "recall": 0.875,
+   "F1": 0.8409893992932863,
+   "F1_ci": "0.795..0.886",
+   "cohen_kappa": 0.2290664100096246,
+   "target_F1": 0.9,
+   "target_met_point_estimate": false,
+   "target_met_lower_CI": false
+  },
+  {
+   "scope": "histopathology",
+   "judge_output": "layer1_any (omission/fabrication signal)",
+   "n_items": 179,
+   "human_any_positive": 166,
+   "precision": 0.9333333333333333,
+   "recall": 0.7590361445783133,
+   "F1": 0.8372093023255814,
+   "F1_ci": "0.789..0.881",
+   "cohen_kappa": 0.031791588475549,
+   "target_F1": 0.95,
+   "target_met_point_estimate": false,
+   "target_met_lower_CI": false
+  },
+  {
+   "scope": "histopathology",
+   "judge_output": "layer2_any (any claim hallucination)",
+   "n_items": 179,
+   "human_any_positive": 166,
+   "precision": 0.963302752293578,
+   "recall": 0.6325301204819277,
+   "F1": 0.7636363636363636,
+   "F1_ci": "0.706..0.814",
+   "cohen_kappa": 0.1075400782388588,
+   "target_F1": 0.9,
+   "target_met_point_estimate": false,
+   "target_met_lower_CI": false
+  },
+  {
+   "scope": "histopathology",
+   "judge_output": "combined_any (pipeline: any class)",
+   "n_items": 179,
+   "human_any_positive": 166,
+   "precision": 0.9411764705882353,
+   "recall": 0.8674698795180723,
+   "F1": 0.9028213166144202,
+   "F1_ci": "0.867..0.936",
+   "cohen_kappa": 0.11990483743061077,
+   "target_F1": 0.9,
+   "target_met_point_estimate": true,
+   "target_met_lower_CI": false
+  },
+  {
+   "scope": "ophthalmology",
+   "judge_output": "layer1_any (omission/fabrication signal)",
+   "n_items": 180,
+   "human_any_positive": 150,
+   "precision": 0.8120805369127517,
+   "recall": 0.8066666666666666,
+   "F1": 0.8093645484949833,
+   "F1_ci": "0.754..0.855",
+   "cohen_kappa": -0.12499999999999965,
+   "target_F1": 0.95,
+   "target_met_point_estimate": false,
+   "target_met_lower_CI": false
+  },
+  {
+   "scope": "ophthalmology",
+   "judge_output": "layer2_any (any claim hallucination)",
+   "n_items": 180,
+   "human_any_positive": 150,
+   "precision": 0.860655737704918,
+   "recall": 0.7,
+   "F1": 0.7720588235294117,
+   "F1_ci": "0.713..0.824",
+   "cohen_kappa": 0.09708737864077656,
+   "target_F1": 0.9,
+   "target_met_point_estimate": false,
+   "target_met_lower_CI": false
+  },
+  {
+   "scope": "ophthalmology",
+   "judge_output": "combined_any (pipeline: any class)",
+   "n_items": 180,
+   "human_any_positive": 150,
+   "precision": 0.8238993710691824,
+   "recall": 0.8733333333333333,
+   "F1": 0.8478964401294499,
+   "F1_ci": "0.803..0.888",
+   "cohen_kappa": -0.06818181818181841,
+   "target_F1": 0.9,
+   "target_met_point_estimate": false,
+   "target_met_lower_CI": false
+  }
+ ],
+ "B_primary_class_exact_agreement": 0.5536959553695955,
+ "C_weight_sensitivity": [
+  {
+   "weight_set": "(i) assumed weights",
+   "n_weight_vectors": 1,
+   "n_resamples": 2000.0,
+   "n_images": 3500.0,
+   "point_all_three_medical_rank_worst3": 1.0,
+   "point_SRI_gt1_all_12_cells": 1.0,
+   "point_paradox_holds_both": 1.0,
+   "boot_P_rank_worst3": 1.0,
+   "boot_P_rank_worst3_ci": "1.000..1.000",
+   "boot_P_SRI_gt1": 1.0,
+   "boot_P_SRI_gt1_ci": "1.000..1.000",
+   "boot_P_both": 1.0,
+   "boot_P_both_ci": "1.000..1.000",
+   "spearman_vs_assumed_point_mean": 1.0,
+   "spearman_vs_assumed_point_min": 1.0,
+   "spearman_vs_assumed_boot_mean": 1.0,
+   "spearman_boot_ci": "1.000..1.000"
+  },
+  {
+   "weight_set": "(ii) clinician-elicited weights",
+   "n_weight_vectors": 0,
+   "n_resamples": NaN,
+   "n_images": NaN,
+   "point_all_three_medical_rank_worst3": NaN,
+   "point_SRI_gt1_all_12_cells": NaN,
+   "point_paradox_holds_both": "NOT COMPUTED: no clinician weight-elicitation data found in the project or repo",
+   "boot_P_rank_worst3": NaN,
+   "boot_P_rank_worst3_ci": NaN,
+   "boot_P_SRI_gt1": NaN,
+   "boot_P_SRI_gt1_ci": NaN,
+   "boot_P_both": NaN,
+   "boot_P_both_ci": NaN,
+   "spearman_vs_assumed_point_mean": NaN,
+   "spearman_vs_assumed_point_min": NaN,
+   "spearman_vs_assumed_boot_mean": NaN,
+   "spearman_boot_ci": NaN
+  },
+  {
+   "weight_set": "(iii) equal weights (all 1.0)",
+   "n_weight_vectors": 1,
+   "n_resamples": 2000.0,
+   "n_images": 3500.0,
+   "point_all_three_medical_rank_worst3": 1.0,
+   "point_SRI_gt1_all_12_cells": 1.0,
+   "point_paradox_holds_both": 1.0,
+   "boot_P_rank_worst3": 1.0,
+   "boot_P_rank_worst3_ci": "1.000..1.000",
+   "boot_P_SRI_gt1": 1.0,
+   "boot_P_SRI_gt1_ci": "1.000..1.000",
+   "boot_P_both": 1.0,
+   "boot_P_both_ci": "1.000..1.000",
+   "spearman_vs_assumed_point_mean": 0.965034965034965,
+   "spearman_vs_assumed_point_min": 0.965034965034965,
+   "spearman_vs_assumed_boot_mean": 0.9726678321678321,
+   "spearman_boot_ci": "0.944..0.993"
+  },
+  {
+   "weight_set": "(iv) 200 random +/-30% perturbations",
+   "n_weight_vectors": 200,
+   "n_resamples": 2000.0,
+   "n_images": 3500.0,
+   "point_all_three_medical_rank_worst3": 0.855,
+   "point_SRI_gt1_all_12_cells": 1.0,
+   "point_paradox_holds_both": 0.855,
+   "boot_P_rank_worst3": 0.8494200000000001,
+   "boot_P_rank_worst3_ci": "0.760..0.930",
+   "boot_P_SRI_gt1": 1.0,
+   "boot_P_SRI_gt1_ci": "1.000..1.000",
+   "boot_P_both": 0.8494200000000001,
+   "boot_P_both_ci": "0.760..0.930",
+   "spearman_vs_assumed_point_mean": 0.9712937062937064,
+   "spearman_vs_assumed_point_min": 0.8811188811188811,
+   "spearman_vs_assumed_boot_mean": 0.9712230594405582,
+   "spearman_boot_ci": "0.965..0.977"
+  }
+ ],
+ "C_models": [
+  "chexagent",
+  "gemma3",
+  "huatuogpt",
+  "idefics3",
+  "internvl3",
+  "llava16",
+  "llava_med",
+  "minicpm",
+  "qwen25vl",
+  "qwen2vl",
+  "qwen35",
+  "qwen3vl"
+ ],
+ "D_specialist_wilcoxon_significant_holm_0.05": 12,
+ "D_student_icc_factual_vs_clarity": {
+  "factual_correctness": 0.8465172208854607,
+  "clarity": 0.9298580235106569
+ },
+ "E": [
+  {
+   "scope": "ALL",
+   "n_items": 682,
+   "n_excluded_no_claims": 38,
+   "spearman_mean_factual_vs_item_SMHR": -0.30535429030572525,
+   "ci95": "-0.380..-0.232",
+   "p_value": 3.482836529987723e-16
+  },
+  {
+   "scope": "radiology",
+   "n_items": 177,
+   "n_excluded_no_claims": 3,
+   "spearman_mean_factual_vs_item_SMHR": -0.19888561523584822,
+   "ci95": "-0.346..-0.056",
+   "p_value": 0.007958655288058166
+  },
+  {
+   "scope": "dermatology",
+   "n_items": 174,
+   "n_excluded_no_claims": 6,
+   "spearman_mean_factual_vs_item_SMHR": -0.4653038591541737,
+   "ci95": "-0.581..-0.330",
+   "p_value": 9.867022110255645e-11
+  },
+  {
+   "scope": "histopathology",
+   "n_items": 164,
+   "n_excluded_no_claims": 16,
+   "spearman_mean_factual_vs_item_SMHR": -0.076479500800302,
+   "ci95": "-0.238..0.084",
+   "p_value": 0.3303790943308281
+  },
+  {
+   "scope": "ophthalmology",
+   "n_items": 167,
+   "n_excluded_no_claims": 13,
+   "spearman_mean_factual_vs_item_SMHR": -0.336794648359496,
+   "ci95": "-0.478..-0.182",
+   "p_value": 8.572114741397077e-06
+  }
+ ]
+}

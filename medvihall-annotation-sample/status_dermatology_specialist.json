@@ -1,0 +1,1 @@
+{"annotator": "dermatology_specialist", "done": 720, "skipped": 0, "remaining": 0, "last_item_id": "A0669", "state": "complete", "notes": "Only 48 distinct image files back the 720 items (15 texts per image); all 12 radiology image files are byte-identical (same CXR). Rated per item against the file as given.", "updated_at": "2026-10-11T09:53:27.670580Z"}

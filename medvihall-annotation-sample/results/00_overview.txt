@@ -1,0 +1,47 @@
+MEDVIHALL - OVERVIEW OF EXPERIMENTS AND WHERE TO FIND EACH RESULT
+
+NOTE FOR ANNOTATORS: this folder contains aggregate model-level results. If you are annotating the
+720-item sheet in this repository, annotate first and read these results afterwards, so that the
+blind annotation is not influenced by which model or strategy performs better.
+
+What MediViHall is
+A benchmark and analysis of hallucination in medical vision-language models (VLMs). Models answer
+questions about medical images in four modalities (radiology, dermatology, histopathology,
+ophthalmology). Every answer is split into individual claims, each claim is checked against structured
+ground truth and a language-model judge, and errors are classified into a 7-class hallucination
+taxonomy. Results are reported with SMHR (severity-weighted hallucination rate), CHR and SRI.
+
+Metrics
+- SMHR: class-weighted share of hallucinated claims (weights: classes 1,2 = 1.0; 3 = 0.7; 4 = 0.5;
+  5 = 0.4; 6 = 0.1; 7 = 0.6; a Layer-1 omission counts as a class-2 error and as one extra claim).
+  Lower is safer.
+- CHR: share of responses that contain at least one class 1 or class 2 hallucination (or an omission).
+- SRI (specialist ratio index): SMHR of a medical specialist model / SMHR of the best general model in
+  the same modality. SRI > 1 means the specialist hallucinates MORE than the best general VLM.
+- CREST (Pillar C): mean clinical-risk rating (1-3) over erroneous claims; higher = worse.
+- MediHall Score (Pillar C): mean per-claim score in [0,1]; higher = better.
+- ECE / ACE (Pillar D): calibration error of the model's stated 0-100% confidence against whether the
+  response contained zero hallucinations (10 equal-width / 10 equal-mass bins).
+
+Labeling pipeline (used for all experiments)
+Claim extraction (local Qwen2.5-7B-Instruct, 4-bit) -> Layer 1 automatic check (CheXbert for radiology;
+scispaCy/negspaCy lexicons for the other modalities) -> Layer 2 LLM judge assigning the 7-class
+taxonomy. The judge is a 7B model; within-pipeline relabeling changed 1.1% (strict) / 2.8% (claim-level)
+of labels.
+
+Experiments and files
+| Experiment | Question | File |
+| Core benchmark | Which of 12 VLMs hallucinate least? Do specialists beat general models? | 01_core_benchmark_smhr_chr_sri.txt |
+| Pillar B (RQ8) | Which mitigation (RAG, visual contrastive decoding) reduces hallucination most? | 02_pillar_b_mitigation_rq8.txt |
+| Pillar C (RQ9) | Do CREST / MediHall Score agree with SMHR? | 03_pillar_c_metric_concordance_rq9.txt |
+| Pillar D (RQ10) | Is verbalized calibration a weights property or a decoding artifact? | 04_pillar_d_calibration_rq10.txt |
+| Pillar E (RQ5) | Does hallucination safety transfer across modalities? | 05_pillar_e_cross_modal_transfer_rq5.txt |
+| Annotation sample | The 720 blind items in this repository | 06_annotation_sample.txt |
+| Known issues | Data-quality problems found and what they affect | 07_data_quality_and_known_issues.txt |
+| Raw numbers | Machine-readable result files | raw/*.json |
+
+Models (core benchmark, 12): general - qwen25vl, qwen3vl, qwen2vl, qwen35, gemma3, idefics3, internvl3,
+minicpm, llava16; medical specialists - chexagent (radiology), huatuogpt, llava_med.
+Pillars B and D use a 5-model representative subset: qwen25vl (best general), llava16 (worst general),
+chexagent, huatuogpt, llava_med (the three specialists), on a 500-image stratified subset
+(1,679 image-question calls per model).

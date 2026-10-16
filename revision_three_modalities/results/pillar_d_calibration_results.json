@@ -1,0 +1,1353 @@
+{
+ "cells": {
+  "chexagent|temp0.0_greedy": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 890,
+    "labeled": 889,
+    "unlabeled": 1
+   },
+   "mean_conf": 0.7851518560179978,
+   "strict": {
+    "n": 889,
+    "accuracy": 0.28683914510686165,
+    "ece": 0.5905511811023622,
+    "ace": 0.5908963227783453,
+    "ece_ci95": [
+     0.5580399325084364,
+     0.6245219347581552
+    ]
+   },
+   "claims": {
+    "n": 889,
+    "accuracy": 0.6737907761529809,
+    "ece": 0.44881889763779514,
+    "ace": 0.4307201225740552,
+    "ece_ci95": [
+     0.41518560179977504,
+     0.48267997750281216
+    ]
+   }
+  },
+  "chexagent|temp0.0_nucleus": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 901,
+    "labeled": 899,
+    "unlabeled": 2
+   },
+   "mean_conf": 0.8208008898776418,
+   "strict": {
+    "n": 899,
+    "accuracy": 0.2903225806451613,
+    "ece": 0.5905450500556173,
+    "ace": 0.5800237203495631,
+    "ece_ci95": [
+     0.5561707452725251,
+     0.6238042269187986
+    ]
+   },
+   "claims": {
+    "n": 899,
+    "accuracy": 0.67853170189099,
+    "ece": 0.42703003337041157,
+    "ace": 0.4182883895131086,
+    "ece_ci95": [
+     0.39488320355951056,
+     0.45817853170189105
+    ]
+   }
+  },
+  "chexagent|temp0.3_greedy": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 890,
+    "labeled": 889,
+    "unlabeled": 1
+   },
+   "mean_conf": 0.7851518560179978,
+   "strict": {
+    "n": 889,
+    "accuracy": 0.28683914510686165,
+    "ece": 0.5905511811023622,
+    "ace": 0.5908963227783453,
+    "ece_ci95": [
+     0.5580399325084364,
+     0.6245219347581552
+    ]
+   },
+   "claims": {
+    "n": 889,
+    "accuracy": 0.6737907761529809,
+    "ece": 0.44881889763779514,
+    "ace": 0.4307201225740552,
+    "ece_ci95": [
+     0.41518560179977504,
+     0.48267997750281216
+    ]
+   }
+  },
+  "chexagent|temp0.3_nucleus": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 863,
+    "labeled": 860,
+    "unlabeled": 3
+   },
+   "mean_conf": 0.7521046511627907,
+   "strict": {
+    "n": 860,
+    "accuracy": 0.27209302325581397,
+    "ece": 0.598360465116279,
+    "ace": 0.5939651162790697,
+    "ece_ci95": [
+     0.5647616279069766,
+     0.6288372093023257
+    ]
+   },
+   "claims": {
+    "n": 860,
+    "accuracy": 0.6988372093023256,
+    "ece": 0.450453488372093,
+    "ace": 0.4211511627906977,
+    "ece_ci95": [
+     0.4179970930232558,
+     0.48431046511627895
+    ]
+   }
+  },
+  "chexagent|temp0.7_greedy": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 890,
+    "labeled": 889,
+    "unlabeled": 1
+   },
+   "mean_conf": 0.7851518560179978,
+   "strict": {
+    "n": 889,
+    "accuracy": 0.28683914510686165,
+    "ece": 0.5905511811023622,
+    "ace": 0.5908963227783453,
+    "ece_ci95": [
+     0.5580399325084364,
+     0.6245219347581552
+    ]
+   },
+   "claims": {
+    "n": 889,
+    "accuracy": 0.6737907761529809,
+    "ece": 0.44881889763779514,
+    "ace": 0.4307201225740552,
+    "ece_ci95": [
+     0.41518560179977504,
+     0.48267997750281216
+    ]
+   }
+  },
+  "chexagent|temp0.7_nucleus": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 747,
+    "labeled": 744,
+    "unlabeled": 3
+   },
+   "mean_conf": 0.7028897849462364,
+   "strict": {
+    "n": 744,
+    "accuracy": 0.2567204301075269,
+    "ece": 0.5784274193548388,
+    "ace": 0.5697445045045045,
+    "ece_ci95": [
+     0.5441740591397851,
+     0.613293682795699
+    ]
+   },
+   "claims": {
+    "n": 744,
+    "accuracy": 0.6881720430107527,
+    "ece": 0.4275940860215054,
+    "ace": 0.42118594594594594,
+    "ece_ci95": [
+     0.3928558467741936,
+     0.46236659946236564
+    ]
+   }
+  },
+  "huatuogpt|temp0.0_greedy": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 906,
+    "labeled": 904,
+    "unlabeled": 2
+   },
+   "mean_conf": 0.8585176991150444,
+   "strict": {
+    "n": 904,
+    "accuracy": 0.17146017699115043,
+    "ece": 0.6870575221238938,
+    "ace": 0.6869304029304031,
+    "ece_ci95": [
+     0.6632148783185841,
+     0.7110660951327433
+    ]
+   },
+   "claims": {
+    "n": 904,
+    "accuracy": 0.29535398230088494,
+    "ece": 0.5631637168141592,
+    "ace": 0.5630598290598292,
+    "ece_ci95": [
+     0.5344510508849558,
+     0.5898783185840708
+    ]
+   }
+  },
+  "huatuogpt|temp0.0_nucleus": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 912,
+    "labeled": 912,
+    "unlabeled": 0
+   },
+   "mean_conf": 0.8566337719298247,
+   "strict": {
+    "n": 912,
+    "accuracy": 0.17434210526315788,
+    "ece": 0.6822916666666666,
+    "ace": 0.6822348303870045,
+    "ece_ci95": [
+     0.656466557017544,
+     0.706469298245614
+    ]
+   },
+   "claims": {
+    "n": 912,
+    "accuracy": 0.3081140350877193,
+    "ece": 0.5485197368421053,
+    "ace": 0.5484077878643098,
+    "ece_ci95": [
+     0.5189131030701755,
+     0.5769819078947369
+    ]
+   }
+  },
+  "huatuogpt|temp0.3_greedy": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 906,
+    "labeled": 904,
+    "unlabeled": 2
+   },
+   "mean_conf": 0.8585176991150444,
+   "strict": {
+    "n": 904,
+    "accuracy": 0.17146017699115043,
+    "ece": 0.6870575221238938,
+    "ace": 0.6869304029304031,
+    "ece_ci95": [
+     0.6632148783185841,
+     0.7110660951327433
+    ]
+   },
+   "claims": {
+    "n": 904,
+    "accuracy": 0.29535398230088494,
+    "ece": 0.5631637168141592,
+    "ace": 0.5630598290598292,
+    "ece_ci95": [
+     0.5344510508849558,
+     0.5898783185840708
+    ]
+   }
+  },
+  "huatuogpt|temp0.3_nucleus": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 911,
+    "labeled": 911,
+    "unlabeled": 0
+   },
+   "mean_conf": 0.8647639956092208,
+   "strict": {
+    "n": 911,
+    "accuracy": 0.19978046103183314,
+    "ece": 0.6649835345773877,
+    "ace": 0.665011347348304,
+    "ece_ci95": [
+     0.6386374862788147,
+     0.69089462129528
+    ]
+   },
+   "claims": {
+    "n": 911,
+    "accuracy": 0.3106476399560922,
+    "ece": 0.557848518111965,
+    "ace": 0.5542015050167225,
+    "ece_ci95": [
+     0.5283726673984632,
+     0.5878169593852909
+    ]
+   }
+  },
+  "huatuogpt|temp0.7_greedy": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 906,
+    "labeled": 904,
+    "unlabeled": 2
+   },
+   "mean_conf": 0.8585176991150444,
+   "strict": {
+    "n": 904,
+    "accuracy": 0.17146017699115043,
+    "ece": 0.6870575221238938,
+    "ace": 0.6869304029304031,
+    "ece_ci95": [
+     0.6632148783185841,
+     0.7110660951327433
+    ]
+   },
+   "claims": {
+    "n": 904,
+    "accuracy": 0.29535398230088494,
+    "ece": 0.5631637168141592,
+    "ace": 0.5630598290598292,
+    "ece_ci95": [
+     0.5344510508849558,
+     0.5898783185840708
+    ]
+   }
+  },
+  "huatuogpt|temp0.7_nucleus": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 844,
+    "labeled": 844,
+    "unlabeled": 0
+   },
+   "mean_conf": 0.8564573459715641,
+   "strict": {
+    "n": 844,
+    "accuracy": 0.1872037914691943,
+    "ece": 0.6756516587677726,
+    "ace": 0.6695343137254903,
+    "ece_ci95": [
+     0.6492876184834122,
+     0.702138625592417
+    ]
+   },
+   "claims": {
+    "n": 844,
+    "accuracy": 0.29739336492890994,
+    "ece": 0.5795616113744076,
+    "ace": 0.5593662464985997,
+    "ece_ci95": [
+     0.5508886255924171,
+     0.6111966824644551
+    ]
+   }
+  },
+  "llava16|temp0.0_greedy": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 680,
+    "labeled": 679,
+    "unlabeled": 1
+   },
+   "mean_conf": 0.5314432989690722,
+   "strict": {
+    "n": 679,
+    "accuracy": 0.24742268041237114,
+    "ece": 0.5025773195876289,
+    "ace": 0.4947003950834065,
+    "ece_ci95": [
+     0.4690721649484537,
+     0.538659793814433
+    ]
+   },
+   "claims": {
+    "n": 679,
+    "accuracy": 0.5846833578792342,
+    "ece": 0.6645802650957291,
+    "ace": 0.6604817822651448,
+    "ece_ci95": [
+     0.6329860088365242,
+     0.699779086892489
+    ]
+   }
+  },
+  "llava16|temp0.0_nucleus": {
+   "coverage": {
+    "total": 984,
+    "with_conf": 695,
+    "labeled": 695,
+    "unlabeled": 0
+   },
+   "mean_conf": 0.476906474820144,
+   "strict": {
+    "n": 695,
+    "accuracy": 0.25755395683453236,
+    "ece": 0.45820143884892095,
+    "ace": 0.45658799171842646,
+    "ece_ci95": [
+     0.42467625899280587,
+     0.49367086330935256
+    ]
+   },
+   "claims": {
+    "n": 695,
+    "accuracy": 0.60431654676259,
+    "ece": 0.6452517985611511,
+    "ace": 0.613287784679089,
+    "ece_ci95": [
+     0.6099262589928058,
+     0.6784910071942447
+    ]
+   }
+  },
+  "llava16|temp0.3_greedy": {
+   "coverage": {
+    "total": 984,
+    "with_conf": 680,
+    "labeled": 679,
+    "unlabeled": 1
+   },
+   "mean_conf": 0.5314432989690722,
+   "strict": {
+    "n": 679,
+    "accuracy": 0.24742268041237114,
+    "ece": 0.5025773195876291,
+    "ace": 0.49356782265144866,
+    "ece_ci95": [
+     0.4673766568483064,
+     0.5364580265095729
+    ]
+   },
+   "claims": {
+    "n": 679,
+    "accuracy": 0.5846833578792342,
+    "ece": 0.6645802650957293,
+    "ace": 0.6575625548726953,
+    "ece_ci95": [
+     0.632247790868925,
+     0.7004436671575848
+    ]
+   }
+  },
+  "llava16|temp0.3_nucleus": {
+   "coverage": {
+    "total": 984,
+    "with_conf": 690,
+    "labeled": 686,
+    "unlabeled": 4
+   },
+   "mean_conf": 0.5798104956268222,
+   "strict": {
+    "n": 686,
+    "accuracy": 0.30903790087463556,
+    "ece": 0.4929300291545189,
+    "ace": 0.4874392583120205,
+    "ece_ci95": [
+     0.45852587463556865,
+     0.530697886297376
+    ]
+   },
+   "claims": {
+    "n": 686,
+    "accuracy": 0.6137026239067055,
+    "ece": 0.5526967930029154,
+    "ace": 0.5259132566069906,
+    "ece_ci95": [
+     0.5179282069970845,
+     0.5895827259475217
+    ]
+   }
+  },
+  "llava16|temp0.7_greedy": {
+   "coverage": {
+    "total": 984,
+    "with_conf": 680,
+    "labeled": 679,
+    "unlabeled": 1
+   },
+   "mean_conf": 0.5314432989690722,
+   "strict": {
+    "n": 679,
+    "accuracy": 0.24742268041237114,
+    "ece": 0.5025773195876291,
+    "ace": 0.49356782265144866,
+    "ece_ci95": [
+     0.4673766568483064,
+     0.5364580265095729
+    ]
+   },
+   "claims": {
+    "n": 679,
+    "accuracy": 0.5846833578792342,
+    "ece": 0.6645802650957293,
+    "ace": 0.6575625548726953,
+    "ece_ci95": [
+     0.632247790868925,
+     0.7004436671575848
+    ]
+   }
+  },
+  "llava16|temp0.7_nucleus": {
+   "coverage": {
+    "total": 984,
+    "with_conf": 683,
+    "labeled": 677,
+    "unlabeled": 6
+   },
+   "mean_conf": 0.6547267355982275,
+   "strict": {
+    "n": 677,
+    "accuracy": 0.2865583456425406,
+    "ece": 0.513810930576071,
+    "ace": 0.5016911764705883,
+    "ece_ci95": [
+     0.47931868537666183,
+     0.5511078286558346
+    ]
+   },
+   "claims": {
+    "n": 677,
+    "accuracy": 0.5775480059084195,
+    "ece": 0.5217872968980799,
+    "ace": 0.5197552677787532,
+    "ece_ci95": [
+     0.48987998522895126,
+     0.5643389955686853
+    ]
+   }
+  },
+  "llava_med|temp0.0_greedy": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 619,
+    "labeled": 619,
+    "unlabeled": 0
+   },
+   "mean_conf": 0.9085621970920842,
+   "strict": {
+    "n": 619,
+    "accuracy": 0.26978998384491115,
+    "ece": 0.638772213247173,
+    "ace": 0.6390031729243786,
+    "ece_ci95": [
+     0.6050060581583198,
+     0.6744830371567044
+    ]
+   },
+   "claims": {
+    "n": 619,
+    "accuracy": 0.5783521809369951,
+    "ece": 0.3366720516962845,
+    "ace": 0.3647831835007932,
+    "ece_ci95": [
+     0.2997556542810986,
+     0.3766579159935381
+    ]
+   }
+  },
+  "llava_med|temp0.0_nucleus": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 620,
+    "labeled": 620,
+    "unlabeled": 0
+   },
+   "mean_conf": 0.9081451612903227,
+   "strict": {
+    "n": 620,
+    "accuracy": 0.267741935483871,
+    "ece": 0.6404032258064518,
+    "ace": 0.6404032258064515,
+    "ece_ci95": [
+     0.6064475806451615,
+     0.6758911290322579
+    ]
+   },
+   "claims": {
+    "n": 620,
+    "accuracy": 0.5741935483870968,
+    "ece": 0.34201612903225825,
+    "ace": 0.3645967741935484,
+    "ece_ci95": [
+     0.3051592741935484,
+     0.3813870967741936
+    ]
+   }
+  },
+  "llava_med|temp0.3_greedy": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 619,
+    "labeled": 619,
+    "unlabeled": 0
+   },
+   "mean_conf": 0.9085621970920842,
+   "strict": {
+    "n": 619,
+    "accuracy": 0.26978998384491115,
+    "ece": 0.638772213247173,
+    "ace": 0.6390031729243786,
+    "ece_ci95": [
+     0.6050060581583198,
+     0.6744830371567044
+    ]
+   },
+   "claims": {
+    "n": 619,
+    "accuracy": 0.5783521809369951,
+    "ece": 0.3366720516962845,
+    "ace": 0.3647831835007932,
+    "ece_ci95": [
+     0.2997556542810986,
+     0.3766579159935381
+    ]
+   }
+  },
+  "llava_med|temp0.3_nucleus": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 595,
+    "labeled": 595,
+    "unlabeled": 0
+   },
+   "mean_conf": 0.8909411764705882,
+   "strict": {
+    "n": 595,
+    "accuracy": 0.2857142857142857,
+    "ece": 0.6119495798319329,
+    "ace": 0.6059759887005651,
+    "ece_ci95": [
+     0.5767844537815127,
+     0.6476155462184875
+    ]
+   },
+   "claims": {
+    "n": 595,
+    "accuracy": 0.584873949579832,
+    "ece": 0.3507731092436975,
+    "ace": 0.31360593220338995,
+    "ece_ci95": [
+     0.3124176470588236,
+     0.3916012605042018
+    ]
+   }
+  },
+  "llava_med|temp0.7_greedy": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 619,
+    "labeled": 619,
+    "unlabeled": 0
+   },
+   "mean_conf": 0.9085621970920842,
+   "strict": {
+    "n": 619,
+    "accuracy": 0.26978998384491115,
+    "ece": 0.638772213247173,
+    "ace": 0.6390031729243786,
+    "ece_ci95": [
+     0.6050060581583198,
+     0.6744830371567044
+    ]
+   },
+   "claims": {
+    "n": 619,
+    "accuracy": 0.5783521809369951,
+    "ece": 0.3366720516962845,
+    "ace": 0.3647831835007932,
+    "ece_ci95": [
+     0.2997556542810986,
+     0.3766579159935381
+    ]
+   }
+  },
+  "llava_med|temp0.7_nucleus": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 492,
+    "labeled": 491,
+    "unlabeled": 1
+   },
+   "mean_conf": 0.8776374745417515,
+   "strict": {
+    "n": 491,
+    "accuracy": 0.2708757637474542,
+    "ece": 0.6142973523421587,
+    "ace": 0.6074089795918367,
+    "ece_ci95": [
+     0.5737825865580449,
+     0.655187881873727
+    ]
+   },
+   "claims": {
+    "n": 491,
+    "accuracy": 0.5254582484725051,
+    "ece": 0.38749490835030537,
+    "ace": 0.37520326530612247,
+    "ece_ci95": [
+     0.3441517311608961,
+     0.43670315682281063
+    ]
+   }
+  },
+  "qwen25vl|temp0.0_greedy": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 980,
+    "labeled": 977,
+    "unlabeled": 3
+   },
+   "mean_conf": 0.7403275332650971,
+   "strict": {
+    "n": 977,
+    "accuracy": 0.20266120777891505,
+    "ece": 0.5456499488229274,
+    "ace": 0.5380338733431517,
+    "ece_ci95": [
+     0.5176049129989764,
+     0.5743628454452404
+    ]
+   },
+   "claims": {
+    "n": 977,
+    "accuracy": 0.4032753326509724,
+    "ece": 0.533367451381781,
+    "ace": 0.5076341258152745,
+    "ece_ci95": [
+     0.5035273797338793,
+     0.5633597748208802
+    ]
+   }
+  },
+  "qwen25vl|temp0.0_nucleus": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 978,
+    "labeled": 968,
+    "unlabeled": 10
+   },
+   "mean_conf": 0.7552169421487602,
+   "strict": {
+    "n": 968,
+    "accuracy": 0.20867768595041322,
+    "ece": 0.5589359504132231,
+    "ace": 0.5487585910652921,
+    "ece_ci95": [
+     0.5299018595041323,
+     0.5882270144628099
+    ]
+   },
+   "claims": {
+    "n": 968,
+    "accuracy": 0.41115702479338845,
+    "ece": 0.5196797520661156,
+    "ace": 0.4885244845360825,
+    "ece_ci95": [
+     0.4907541322314049,
+     0.5514979338842975
+    ]
+   }
+  },
+  "qwen25vl|temp0.3_greedy": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 980,
+    "labeled": 977,
+    "unlabeled": 3
+   },
+   "mean_conf": 0.7403275332650971,
+   "strict": {
+    "n": 977,
+    "accuracy": 0.20266120777891505,
+    "ece": 0.5456499488229274,
+    "ace": 0.5380338733431517,
+    "ece_ci95": [
+     0.5176049129989764,
+     0.5743628454452404
+    ]
+   },
+   "claims": {
+    "n": 977,
+    "accuracy": 0.4032753326509724,
+    "ece": 0.533367451381781,
+    "ace": 0.5076341258152745,
+    "ece_ci95": [
+     0.5035273797338793,
+     0.5633597748208802
+    ]
+   }
+  },
+  "qwen25vl|temp0.3_nucleus": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 975,
+    "labeled": 972,
+    "unlabeled": 3
+   },
+   "mean_conf": 0.7737139917695472,
+   "strict": {
+    "n": 972,
+    "accuracy": 0.2037037037037037,
+    "ece": 0.5700102880658435,
+    "ace": 0.570808962760362,
+    "ece_ci95": [
+     0.5425925925925926,
+     0.5983024691358023
+    ]
+   },
+   "claims": {
+    "n": 972,
+    "accuracy": 0.4104938271604938,
+    "ece": 0.5169238683127572,
+    "ace": 0.5069882179675994,
+    "ece_ci95": [
+     0.4878073559670783,
+     0.5491370884773663
+    ]
+   }
+  },
+  "qwen25vl|temp0.7_greedy": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 980,
+    "labeled": 977,
+    "unlabeled": 3
+   },
+   "mean_conf": 0.7403275332650971,
+   "strict": {
+    "n": 977,
+    "accuracy": 0.20266120777891505,
+    "ece": 0.5456499488229274,
+    "ace": 0.5380338733431517,
+    "ece_ci95": [
+     0.5176049129989764,
+     0.5743628454452404
+    ]
+   },
+   "claims": {
+    "n": 977,
+    "accuracy": 0.4032753326509724,
+    "ece": 0.533367451381781,
+    "ace": 0.5076341258152745,
+    "ece_ci95": [
+     0.5035273797338793,
+     0.5633597748208802
+    ]
+   }
+  },
+  "qwen25vl|temp0.7_nucleus": {
+   "coverage": {
+    "total": 1120,
+    "with_conf": 960,
+    "labeled": 956,
+    "unlabeled": 4
+   },
+   "mean_conf": 0.7551255230125523,
+   "strict": {
+    "n": 956,
+    "accuracy": 0.19142259414225943,
+    "ece": 0.5670502092050209,
+    "ace": 0.567139802631579,
+    "ece_ci95": [
+     0.5402183577405858,
+     0.5949293933054393
+    ]
+   },
+   "claims": {
+    "n": 956,
+    "accuracy": 0.4006276150627615,
+    "ece": 0.5120292887029287,
+    "ace": 0.4998152412280702,
+    "ece_ci95": [
+     0.4823221757322177,
+     0.5429981694560668
+    ]
+   }
+  }
+ },
+ "rank_stability": {
+  "strict": {
+   "all_6_configs": {
+    "models": [
+     "qwen25vl",
+     "llava16",
+     "chexagent",
+     "huatuogpt",
+     "llava_med"
+    ],
+    "pairwise_rho": {
+     "temp0.0_greedy vs temp0.0_nucleus": 0.9999999999999999,
+     "temp0.0_greedy vs temp0.3_greedy": 0.9999999999999999,
+     "temp0.0_greedy vs temp0.3_nucleus": 0.9999999999999999,
+     "temp0.0_greedy vs temp0.7_greedy": 0.9999999999999999,
+     "temp0.0_greedy vs temp0.7_nucleus": 0.9999999999999999,
+     "temp0.0_nucleus vs temp0.3_greedy": 0.9999999999999999,
+     "temp0.0_nucleus vs temp0.3_nucleus": 0.9999999999999999,
+     "temp0.0_nucleus vs temp0.7_greedy": 0.9999999999999999,
+     "temp0.0_nucleus vs temp0.7_nucleus": 0.9999999999999999,
+     "temp0.3_greedy vs temp0.3_nucleus": 0.9999999999999999,
+     "temp0.3_greedy vs temp0.7_greedy": 0.9999999999999999,
+     "temp0.3_greedy vs temp0.7_nucleus": 0.9999999999999999,
+     "temp0.3_nucleus vs temp0.7_greedy": 0.9999999999999999,
+     "temp0.3_nucleus vs temp0.7_nucleus": 0.9999999999999999,
+     "temp0.7_greedy vs temp0.7_nucleus": 0.9999999999999999
+    },
+    "mean_rho": 0.9999999999999999,
+    "min_rho": 0.9999999999999999,
+    "rankings": {
+     "temp0.0_greedy": [
+      "llava16",
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ],
+     "temp0.0_nucleus": [
+      "llava16",
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ],
+     "temp0.3_greedy": [
+      "llava16",
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ],
+     "temp0.3_nucleus": [
+      "llava16",
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ],
+     "temp0.7_greedy": [
+      "llava16",
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ],
+     "temp0.7_nucleus": [
+      "llava16",
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ]
+    },
+    "verdict": "STABLE -- calibration ranking is a weights property"
+   },
+   "distinct_4_settings": {
+    "models": [
+     "qwen25vl",
+     "llava16",
+     "chexagent",
+     "huatuogpt",
+     "llava_med"
+    ],
+    "pairwise_rho": {
+     "temp0.0_greedy vs temp0.0_nucleus": 0.9999999999999999,
+     "temp0.0_greedy vs temp0.3_nucleus": 0.9999999999999999,
+     "temp0.0_greedy vs temp0.7_nucleus": 0.9999999999999999,
+     "temp0.0_nucleus vs temp0.3_nucleus": 0.9999999999999999,
+     "temp0.0_nucleus vs temp0.7_nucleus": 0.9999999999999999,
+     "temp0.3_nucleus vs temp0.7_nucleus": 0.9999999999999999
+    },
+    "mean_rho": 0.9999999999999999,
+    "min_rho": 0.9999999999999999,
+    "rankings": {
+     "temp0.0_greedy": [
+      "llava16",
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ],
+     "temp0.0_nucleus": [
+      "llava16",
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ],
+     "temp0.3_nucleus": [
+      "llava16",
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ],
+     "temp0.7_nucleus": [
+      "llava16",
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ]
+    },
+    "verdict": "STABLE -- calibration ranking is a weights property"
+   },
+   "all_6_configs_excl_llava16": {
+    "models": [
+     "qwen25vl",
+     "chexagent",
+     "huatuogpt",
+     "llava_med"
+    ],
+    "pairwise_rho": {
+     "temp0.0_greedy vs temp0.0_nucleus": 1.0,
+     "temp0.0_greedy vs temp0.3_greedy": 1.0,
+     "temp0.0_greedy vs temp0.3_nucleus": 1.0,
+     "temp0.0_greedy vs temp0.7_greedy": 1.0,
+     "temp0.0_greedy vs temp0.7_nucleus": 1.0,
+     "temp0.0_nucleus vs temp0.3_greedy": 1.0,
+     "temp0.0_nucleus vs temp0.3_nucleus": 1.0,
+     "temp0.0_nucleus vs temp0.7_greedy": 1.0,
+     "temp0.0_nucleus vs temp0.7_nucleus": 1.0,
+     "temp0.3_greedy vs temp0.3_nucleus": 1.0,
+     "temp0.3_greedy vs temp0.7_greedy": 1.0,
+     "temp0.3_greedy vs temp0.7_nucleus": 1.0,
+     "temp0.3_nucleus vs temp0.7_greedy": 1.0,
+     "temp0.3_nucleus vs temp0.7_nucleus": 1.0,
+     "temp0.7_greedy vs temp0.7_nucleus": 1.0
+    },
+    "mean_rho": 1.0,
+    "min_rho": 1.0,
+    "rankings": {
+     "temp0.0_greedy": [
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ],
+     "temp0.0_nucleus": [
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ],
+     "temp0.3_greedy": [
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ],
+     "temp0.3_nucleus": [
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ],
+     "temp0.7_greedy": [
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ],
+     "temp0.7_nucleus": [
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ]
+    },
+    "verdict": "STABLE -- calibration ranking is a weights property"
+   },
+   "distinct_4_settings_excl_llava16": {
+    "models": [
+     "qwen25vl",
+     "chexagent",
+     "huatuogpt",
+     "llava_med"
+    ],
+    "pairwise_rho": {
+     "temp0.0_greedy vs temp0.0_nucleus": 1.0,
+     "temp0.0_greedy vs temp0.3_nucleus": 1.0,
+     "temp0.0_greedy vs temp0.7_nucleus": 1.0,
+     "temp0.0_nucleus vs temp0.3_nucleus": 1.0,
+     "temp0.0_nucleus vs temp0.7_nucleus": 1.0,
+     "temp0.3_nucleus vs temp0.7_nucleus": 1.0
+    },
+    "mean_rho": 1.0,
+    "min_rho": 1.0,
+    "rankings": {
+     "temp0.0_greedy": [
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ],
+     "temp0.0_nucleus": [
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ],
+     "temp0.3_nucleus": [
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ],
+     "temp0.7_nucleus": [
+      "qwen25vl",
+      "chexagent",
+      "llava_med",
+      "huatuogpt"
+     ]
+    },
+    "verdict": "STABLE -- calibration ranking is a weights property"
+   }
+  },
+  "claims": {
+   "all_6_configs": {
+    "models": [
+     "qwen25vl",
+     "llava16",
+     "chexagent",
+     "huatuogpt",
+     "llava_med"
+    ],
+    "pairwise_rho": {
+     "temp0.0_greedy vs temp0.0_nucleus": 0.9999999999999999,
+     "temp0.0_greedy vs temp0.3_greedy": 0.9999999999999999,
+     "temp0.0_greedy vs temp0.3_nucleus": 0.8999999999999998,
+     "temp0.0_greedy vs temp0.7_greedy": 0.9999999999999999,
+     "temp0.0_greedy vs temp0.7_nucleus": 0.8999999999999998,
+     "temp0.0_nucleus vs temp0.3_greedy": 0.9999999999999999,
+     "temp0.0_nucleus vs temp0.3_nucleus": 0.8999999999999998,
+     "temp0.0_nucleus vs temp0.7_greedy": 0.9999999999999999,
+     "temp0.0_nucleus vs temp0.7_nucleus": 0.8999999999999998,
+     "temp0.3_greedy vs temp0.3_nucleus": 0.8999999999999998,
+     "temp0.3_greedy vs temp0.7_greedy": 0.9999999999999999,
+     "temp0.3_greedy vs temp0.7_nucleus": 0.8999999999999998,
+     "temp0.3_nucleus vs temp0.7_greedy": 0.8999999999999998,
+     "temp0.3_nucleus vs temp0.7_nucleus": 0.9999999999999999,
+     "temp0.7_greedy vs temp0.7_nucleus": 0.8999999999999998
+    },
+    "mean_rho": 0.9466666666666668,
+    "min_rho": 0.8999999999999998,
+    "rankings": {
+     "temp0.0_greedy": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "huatuogpt",
+      "llava16"
+     ],
+     "temp0.0_nucleus": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "huatuogpt",
+      "llava16"
+     ],
+     "temp0.3_greedy": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "huatuogpt",
+      "llava16"
+     ],
+     "temp0.3_nucleus": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "llava16",
+      "huatuogpt"
+     ],
+     "temp0.7_greedy": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "huatuogpt",
+      "llava16"
+     ],
+     "temp0.7_nucleus": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "llava16",
+      "huatuogpt"
+     ]
+    },
+    "verdict": "STABLE -- calibration ranking is a weights property"
+   },
+   "distinct_4_settings": {
+    "models": [
+     "qwen25vl",
+     "llava16",
+     "chexagent",
+     "huatuogpt",
+     "llava_med"
+    ],
+    "pairwise_rho": {
+     "temp0.0_greedy vs temp0.0_nucleus": 0.9999999999999999,
+     "temp0.0_greedy vs temp0.3_nucleus": 0.8999999999999998,
+     "temp0.0_greedy vs temp0.7_nucleus": 0.8999999999999998,
+     "temp0.0_nucleus vs temp0.3_nucleus": 0.8999999999999998,
+     "temp0.0_nucleus vs temp0.7_nucleus": 0.8999999999999998,
+     "temp0.3_nucleus vs temp0.7_nucleus": 0.9999999999999999
+    },
+    "mean_rho": 0.9333333333333331,
+    "min_rho": 0.8999999999999998,
+    "rankings": {
+     "temp0.0_greedy": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "huatuogpt",
+      "llava16"
+     ],
+     "temp0.0_nucleus": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "huatuogpt",
+      "llava16"
+     ],
+     "temp0.3_nucleus": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "llava16",
+      "huatuogpt"
+     ],
+     "temp0.7_nucleus": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "llava16",
+      "huatuogpt"
+     ]
+    },
+    "verdict": "STABLE -- calibration ranking is a weights property"
+   },
+   "all_6_configs_excl_llava16": {
+    "models": [
+     "qwen25vl",
+     "chexagent",
+     "huatuogpt",
+     "llava_med"
+    ],
+    "pairwise_rho": {
+     "temp0.0_greedy vs temp0.0_nucleus": 1.0,
+     "temp0.0_greedy vs temp0.3_greedy": 1.0,
+     "temp0.0_greedy vs temp0.3_nucleus": 1.0,
+     "temp0.0_greedy vs temp0.7_greedy": 1.0,
+     "temp0.0_greedy vs temp0.7_nucleus": 1.0,
+     "temp0.0_nucleus vs temp0.3_greedy": 1.0,
+     "temp0.0_nucleus vs temp0.3_nucleus": 1.0,
+     "temp0.0_nucleus vs temp0.7_greedy": 1.0,
+     "temp0.0_nucleus vs temp0.7_nucleus": 1.0,
+     "temp0.3_greedy vs temp0.3_nucleus": 1.0,
+     "temp0.3_greedy vs temp0.7_greedy": 1.0,
+     "temp0.3_greedy vs temp0.7_nucleus": 1.0,
+     "temp0.3_nucleus vs temp0.7_greedy": 1.0,
+     "temp0.3_nucleus vs temp0.7_nucleus": 1.0,
+     "temp0.7_greedy vs temp0.7_nucleus": 1.0
+    },
+    "mean_rho": 1.0,
+    "min_rho": 1.0,
+    "rankings": {
+     "temp0.0_greedy": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "huatuogpt"
+     ],
+     "temp0.0_nucleus": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "huatuogpt"
+     ],
+     "temp0.3_greedy": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "huatuogpt"
+     ],
+     "temp0.3_nucleus": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "huatuogpt"
+     ],
+     "temp0.7_greedy": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "huatuogpt"
+     ],
+     "temp0.7_nucleus": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "huatuogpt"
+     ]
+    },
+    "verdict": "STABLE -- calibration ranking is a weights property"
+   },
+   "distinct_4_settings_excl_llava16": {
+    "models": [
+     "qwen25vl",
+     "chexagent",
+     "huatuogpt",
+     "llava_med"
+    ],
+    "pairwise_rho": {
+     "temp0.0_greedy vs temp0.0_nucleus": 1.0,
+     "temp0.0_greedy vs temp0.3_nucleus": 1.0,
+     "temp0.0_greedy vs temp0.7_nucleus": 1.0,
+     "temp0.0_nucleus vs temp0.3_nucleus": 1.0,
+     "temp0.0_nucleus vs temp0.7_nucleus": 1.0,
+     "temp0.3_nucleus vs temp0.7_nucleus": 1.0
+    },
+    "mean_rho": 1.0,
+    "min_rho": 1.0,
+    "rankings": {
+     "temp0.0_greedy": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "huatuogpt"
+     ],
+     "temp0.0_nucleus": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "huatuogpt"
+     ],
+     "temp0.3_nucleus": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "huatuogpt"
+     ],
+     "temp0.7_nucleus": [
+      "llava_med",
+      "chexagent",
+      "qwen25vl",
+      "huatuogpt"
+     ]
+    },
+    "verdict": "STABLE -- calibration ranking is a weights property"
+   }
+  }
+ },
+ "notes": {
+  "excluded_capped_llava16": 3977,
+  "regenerated_llava16": 3297,
+  "min_n": 50
+ }
+}

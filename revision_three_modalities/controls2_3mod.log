@@ -1,0 +1,4 @@
+dermatology pooled {'fab': 48, 'omi': 22, 'mis': 1, 'sev': 6, 'ana': 1, 'eva': 3, 'rea': 19} macro {'fab': 44, 'omi': 27, 'mis': 1, 'sev': 6, 'ana': 1, 'eva': 3, 'rea': 19}
+histopathology pooled {'fab': 61, 'omi': 23, 'mis': 4, 'sev': 0, 'ana': 2, 'eva': 1, 'rea': 10} macro {'fab': 56, 'omi': 29, 'mis': 4, 'sev': 0, 'ana': 2, 'eva': 1, 'rea': 8}
+ophthalmology pooled {'fab': 35, 'omi': 36, 'mis': 1, 'sev': 15, 'ana': 0, 'eva': 3, 'rea': 10} macro {'fab': 34, 'omi': 38, 'mis': 1, 'sev': 14, 'ana': 0, 'eva': 3, 'rea': 9}
+184064.0
