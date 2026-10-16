@@ -1,0 +1,21 @@
+2026-10-07T12:25:55 skip: pillar_b_rag.py already running
+2026-10-07T12:29:47 start pillar_b_rag (attempt 1)
+2026-10-08T01:04:44 start pillar_b_rag (attempt 1)
+2026-10-08T08:57:00 pillar_b_rag exited with code 0
+2026-10-08T11:25:52 start pillar_b_contrastive (attempt 1)
+2026-10-08T17:43:55 pillar_b_contrastive exited with code -1
+2026-10-08T17:44:55 start pillar_b_contrastive (attempt 2)
+2026-10-08T23:26:48 start pillar_b_contrastive (attempt 1)
+2026-10-09T01:17:09 start pillar_b_contrastive (attempt 1)
+2026-10-09T22:19:13 start pillar_b_contrastive (attempt 1)
+2026-10-10T10:45:18 pillar_b_contrastive exited with code 0
+2026-10-10T10:45:18 start pillar_b_baseline_llava_med (attempt 1)
+2026-10-10T12:46:24 pillar_b_baseline_llava_med exited with code 0
+2026-10-10T12:46:24 start build_annotation_sample (attempt 1)
+2026-10-10T12:46:25 build_annotation_sample exited with code 0
+2026-10-10T12:46:25 start stage3_pb_label (attempt 1)
+2026-10-10T20:56:56 start stage3_pb_label (attempt 1)
+2026-10-10T22:38:03 start stage3_pb_label (attempt 1)
+2026-10-11T02:24:33 stage3_pb_label exited with code 0
+2026-10-11T02:24:33 start pillar_b_stage4 (attempt 1)
+2026-10-11T02:24:37 pillar_b_stage4 exited with code 0

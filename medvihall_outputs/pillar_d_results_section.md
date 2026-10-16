@@ -1,0 +1,79 @@
+# Pillar D (RQ10): Is verbalized calibration a weights property or a decoding artifact?
+
+## Setup
+Five models (qwen25vl, llava16, chexagent, huatuogpt, llava_med) were run on a 500-image stratified subset
+(4 modalities, 1,679 image-query calls per config) under six decoding configurations: temperature
+{0.0, 0.3, 0.7} x {greedy, nucleus (top-p 0.9)}, 50,370 calls in total. Greedy decoding ignores
+temperature, so the three greedy configs produce byte-identical responses for four of the five models;
+only four decoding settings are independent (greedy, and nucleus at 0.0, 0.3, 0.7). Inference functions
+were patched so that greedy truly uses do_sample=False (several originally hardcoded do_sample=True).
+
+Data integrity note: a 220-token cap applied to llava16 mid-run truncated 6,299 Q1/Q3/Q4 responses (and
+their trailing confidence statement). These were excluded and the 5,361 Q1/Q3 calls regenerated with the
+original token budgets (700/480); Q4 was dropped because no model states a confidence on Q4.
+
+## Method
+- Confidence: the stated 0-100% value parsed from each response. Responses with no stated confidence
+  cannot enter ECE/ACE; coverage ranges from about 42% (llava_med) to about 89% (qwen25vl).
+- Correctness label: a response is correct iff it contains zero Class 1-7 hallucinations (strict label:
+  Layer 2 claim judgments plus Layer 1 omissions). A claim-level-only variant is reported as a sensitivity check.
+- Labels: byte-identical responses reuse the core pipeline's labels (1,080 responses); the other 19,862
+  distinct responses were labeled by the same local pipeline (Qwen2.5-7B claim extraction, CheXbert /
+  scispaCy Layer 1, Layer 2 judge). On 60 validation responses with known core labels the strict label
+  agreed 58/60 (97%); the claim-level label agreed 52/60 (87%). That gap most likely reflects differences
+  between the earlier core run and this pipeline rather than random noise: relabeling 1,000 of the
+  responses with a shuffled order and a different batch size changed only 1.1% of strict labels (95% CI
+  0.6-2.0%) and 2.8% of claim-level labels (1.9-4.0%); Layer 1 was fully deterministic (0 differences).
+- ECE: 10 equal-width bins. ACE: 10 equal-mass bins. Rank stability: mean pairwise Spearman rho between
+  the five models' ECE rankings across configs; rho >= 0.8 is read as stable, <= 0.4 as shifting.
+
+## Results (strict label; ECE / ACE, n)
+| Model | t0.0 greedy | t0.0 nucleus | t0.3 greedy | t0.3 nucleus | t0.7 greedy | t0.7 nucleus |
+|---|---|---|---|---|---|---|
+| chexagent | 0.508/0.508 (1400) | 0.528/0.528 (1410) | 0.508/0.508 | 0.533/0.531 (1360) | 0.508/0.508 | 0.547/0.547 (1172) |
+| llava16 | 0.549/0.542 (1179) | 0.503/0.502 (1033) | 0.549/0.542 | 0.595/0.585 (1030) | 0.549/0.542 | 0.589/0.586 (1029) |
+| qwen25vl | 0.666/0.665 (1489) | 0.677/0.676 (1495) | 0.666/0.665 | 0.661/0.661 (1478) | 0.666/0.665 | 0.651/0.649 (1468) |
+| llava_med | 0.673/0.673 (796) | 0.674/0.674 (797) | 0.673/0.673 | 0.672/0.668 (801) | 0.673/0.673 | 0.669/0.662 (699) |
+| huatuogpt | 0.693/0.693 (1367) | 0.706/0.706 (1322) | 0.693/0.693 | 0.717/0.717 (1268) | 0.693/0.693 | 0.730/0.726 (1210) |
+
+| Label | All 6 configs | 4 distinct settings |
+|---|---|---|
+| Strict | mean rho 0.93 (min 0.80) | 0.90 (min 0.80) |
+| Claim-level only | 0.81 (min 0.60) | 0.75 (min 0.60) |
+
+ECE moves by 0.04 or less across decoding settings for most models. Accuracy under the strict label is
+only 12-28% against 54-91% mean stated confidence, so ECE here mainly measures overconfidence.
+
+## Robustness
+- Binning: identical rho with 5, 10, 15 or 20 bins.
+- Leave-one-model-out: rho stays 0.90-0.93 when any of four models is dropped; dropping huatuogpt (the
+  consistently worst-calibrated model) lowers it to 0.80-0.87, so the result leans on the contrast
+  between the best (chexagent) and worst (huatuogpt) models.
+- By modality: stable in histopathology and ophthalmology (rho 0.95-0.97 over the 4 settings) but weaker
+  in radiology (0.75) and dermatology (0.65). Model orderings also differ by modality (e.g. qwen25vl has
+  the worst ECE in radiology, 0.895, and the best in ophthalmology, 0.286), so a single pooled ECE per
+  model hides large modality dependence.
+- Common-coverage subset (items where all five models stated a confidence; 303-555 items per config):
+  rho falls to 0.81 (all 6) and 0.75 (4 distinct), so coverage differences contribute to the pooled result.
+- Label noise: random label flips (one draw per distinct response, 200 repetitions) at 5% leave the
+  verdict intact (P[rho >= 0.8] = 0.99). The measured within-pipeline flip rate is 1.1% (strict) and 2.8%
+  (claim-level), well inside that regime. At 13% mean rho is 0.82-0.85 and P[rho >= 0.8] is 0.52-0.70; at
+  20% it is 0.15-0.39; these are stress tests above the measured noise, not expected conditions.
+
+## Verdict
+For the strict label, the ECE ranking of the five models is stable across decoding settings
+(mean rho 0.90-0.93), consistent with calibration being primarily a property of the model weights rather
+than a decoding artifact. The conclusion is supported with moderate rather than high confidence: it is
+robust to binning and to individual models, holds within histopathology and ophthalmology, but weakens
+in radiology and dermatology, on the common-coverage subset (rho about 0.75-0.81), and under the
+claim-level label (distinct-settings rho 0.75). It is robust to realistic label noise (measured 1-3%) and
+only degrades under simulated noise of about 13% or more.
+
+## Limitations
+- Only four independent decoding settings; with five models rho is coarse.
+- ECE is dominated by overconfidence under a strict "zero hallucination" label.
+- Confidence is only available on a model-dependent subset of responses.
+- The correctness label comes from a 7B LLM judge: 1.1% (strict) and 2.8% (claim-level) of labels change
+  between runs on identical text, and about 5% of responses reuse labels from the earlier core run, which
+  agreed with fresh labels on 97% (strict) / 87% (claim-level) of 60 checked responses.
+- Per-model rankings depend on modality; pooled ECE should not be read as one number per model.

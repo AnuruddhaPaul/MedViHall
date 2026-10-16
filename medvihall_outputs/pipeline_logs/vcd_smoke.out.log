@@ -1,0 +1,36 @@
+[2026-10-08T10:48:06.833316] contrastive: 500 images, 1679 calls/model, models=['qwen25vl', 'llava16', 'chexagent', 'huatuogpt', 'llava_med']
+  0 calls already done (any model)
+
+[2026-10-08T10:48:06.833933] qwen25vl: 1679 calls remaining
+  --limit: only 12 calls this run
+  OK Qwen2.5-VL-7B loaded | 5.5 GB
+[2026-10-08T10:51:37.553140] qwen25vl done this run: 12 calls, 0 errors
+  VRAM after unload: 7.8 GB free
+
+[2026-10-08T10:51:37.689400] llava16: 1679 calls remaining
+  --limit: only 12 calls this run
+  OK LLaVA-1.6 loaded | 9.5 GB
+[2026-10-08T10:57:47.330392] llava16 done this run: 12 calls, 0 errors
+  VRAM after unload: 4.8 GB free
+
+[2026-10-08T10:57:47.493963] chexagent: 1679 calls remaining
+  --limit: only 12 calls this run
+  OK CheXagent loaded | 8.4 GB
+[2026-10-08T11:02:03.451370] chexagent done this run: 12 calls, 0 errors
+  VRAM after unload: 4.8 GB free
+
+[2026-10-08T11:02:03.620949] huatuogpt: 1679 calls remaining
+  --limit: only 12 calls this run
+loading vision model from openai/clip-vit-large-patch14-336
+  OK HuatuoGPT-Vision-7B loaded | 10.2 GB
+[2026-10-08T11:05:03.980244] huatuogpt done this run: 12 calls, 0 errors
+  VRAM after unload: 3.9 GB free
+
+[2026-10-08T11:05:04.138761] llava_med: 1679 calls remaining
+  --limit: only 12 calls this run
+  OK LLaVA-Med loaded | 10.2 GB
+[2026-10-08T11:08:23.098823] llava_med done this run: 12 calls, 0 errors
+  VRAM after unload: 5.1 GB free
+
+[2026-10-08T11:08:23.252947] contrastive run finished.
+exit 0

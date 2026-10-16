@@ -1,0 +1,8 @@
+{
+  "condition": "contrastive",
+  "model": "llava_med",
+  "done_this_model": 1660,
+  "todo_this_model": 1679,
+  "started_at": "2026-10-09T16:49:22.631545+00:00",
+  "last_updated": "2026-10-10T05:13:22.083270+00:00"
+}

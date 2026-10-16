@@ -1,0 +1,114 @@
+{
+  "modalities": [
+    "dermatology",
+    "histopathology",
+    "ophthalmology",
+    "radiology"
+  ],
+  "smhr_cross_modal_correlation": [
+    {
+      "modality_a": "dermatology",
+      "modality_b": "histopathology",
+      "n_models": 12,
+      "spearman_r": 0.8111888111888111,
+      "t_stat": 4.386581726367267,
+      "significance": "significant (p<0.05)"
+    },
+    {
+      "modality_a": "dermatology",
+      "modality_b": "ophthalmology",
+      "n_models": 12,
+      "spearman_r": 0.6643356643356644,
+      "t_stat": 2.8107000932162083,
+      "significance": "significant (p<0.05)"
+    },
+    {
+      "modality_a": "dermatology",
+      "modality_b": "radiology",
+      "n_models": 12,
+      "spearman_r": 0.2097902097902098,
+      "t_stat": 0.678514263075727,
+      "significance": "not significant (p>=0.05)"
+    },
+    {
+      "modality_a": "histopathology",
+      "modality_b": "ophthalmology",
+      "n_models": 12,
+      "spearman_r": 0.7692307692307693,
+      "t_stat": 3.806934938134405,
+      "significance": "significant (p<0.05)"
+    },
+    {
+      "modality_a": "histopathology",
+      "modality_b": "radiology",
+      "n_models": 12,
+      "spearman_r": 0.2727272727272727,
+      "t_stat": 0.8964214570007952,
+      "significance": "not significant (p>=0.05)"
+    },
+    {
+      "modality_a": "ophthalmology",
+      "modality_b": "radiology",
+      "n_models": 12,
+      "spearman_r": 0.48951048951048953,
+      "t_stat": 1.7751980339337625,
+      "significance": "not significant (p>=0.05)"
+    }
+  ],
+  "sri_cross_modal_correlation_specialists_only": [
+    {
+      "modality_a": "dermatology",
+      "modality_b": "histopathology",
+      "n_specialists": 3,
+      "spearman_r": 1.0,
+      "t_stat": Infinity,
+      "significance": "significant (perfect correlation)",
+      "note": "n=3 specialists -- correlation is coarse/low-power at this sample size"
+    },
+    {
+      "modality_a": "dermatology",
+      "modality_b": "ophthalmology",
+      "n_specialists": 3,
+      "spearman_r": 0.5,
+      "t_stat": 0.5773502691896257,
+      "significance": "not significant (p>=0.05)",
+      "note": "n=3 specialists -- correlation is coarse/low-power at this sample size"
+    },
+    {
+      "modality_a": "dermatology",
+      "modality_b": "radiology",
+      "n_specialists": 3,
+      "spearman_r": 0.5,
+      "t_stat": 0.5773502691896257,
+      "significance": "not significant (p>=0.05)",
+      "note": "n=3 specialists -- correlation is coarse/low-power at this sample size"
+    },
+    {
+      "modality_a": "histopathology",
+      "modality_b": "ophthalmology",
+      "n_specialists": 3,
+      "spearman_r": 0.5,
+      "t_stat": 0.5773502691896257,
+      "significance": "not significant (p>=0.05)",
+      "note": "n=3 specialists -- correlation is coarse/low-power at this sample size"
+    },
+    {
+      "modality_a": "histopathology",
+      "modality_b": "radiology",
+      "n_specialists": 3,
+      "spearman_r": 0.5,
+      "t_stat": 0.5773502691896257,
+      "significance": "not significant (p>=0.05)",
+      "note": "n=3 specialists -- correlation is coarse/low-power at this sample size"
+    },
+    {
+      "modality_a": "ophthalmology",
+      "modality_b": "radiology",
+      "n_specialists": 3,
+      "spearman_r": -0.5,
+      "t_stat": -0.5773502691896257,
+      "significance": "not significant (p>=0.05)",
+      "note": "n=3 specialists -- correlation is coarse/low-power at this sample size"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|##5       | 1/4 [00:30<01:31, 30.37s/it]Loading checkpoint shards:  50%|#####     | 2/4 [01:00<01:00, 30.08s/it]Loading checkpoint shards:  75%|#######5  | 3/4 [01:29<00:29, 29.90s/it]Loading checkpoint shards: 100%|##########| 4/4 [01:57<00:00, 28.79s/it]Loading checkpoint shards: 100%|##########| 4/4 [01:57<00:00, 29.26s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+Token indices sequence length is longer than the specified maximum sequence length for this model (693 > 512). Running this sequence through the model will result in indexing errors
+C:\Users\PC\AppData\Local\Programs\Python\Python312\Lib\site-packages\spacy\language.py:2195: FutureWarning: Possible set union at position 6328
+  deserializers["tokenizer"] = lambda p: self.tokenizer.from_disk(  # type: ignore[union-attr]
+`torch_dtype` is deprecated! Use `dtype` instead!
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|##5       | 1/4 [00:02<00:06,  2.14s/it]Loading checkpoint shards:  50%|#####     | 2/4 [00:07<00:07,  3.82s/it]Loading checkpoint shards:  75%|#######5  | 3/4 [00:09<00:03,  3.07s/it]Loading checkpoint shards: 100%|##########| 4/4 [00:11<00:00,  2.59s/it]Loading checkpoint shards: 100%|##########| 4/4 [00:11<00:00,  2.79s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.

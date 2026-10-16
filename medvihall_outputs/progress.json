@@ -1,0 +1,29 @@
+{
+  "_meta": {
+    "last_updated": "2026-09-11T05:45:11.678753Z",
+    "total_completed": 165750,
+    "active_set": "SET_3",
+    "edit_guide": "Reset model → remove from completed_models or in_progress. Skip model → add to skipped_models."
+  },
+  "completed_models": [
+    "chexagent",
+    "gemma3",
+    "huatuogpt",
+    "idefics3",
+    "internvl3",
+    "llava16",
+    "llava_med",
+    "minicpm",
+    "qwen25vl",
+    "qwen2vl",
+    "qwen35",
+    "qwen3vl"
+  ],
+  "skipped_models": [
+    "ayavision"
+  ],
+  "in_progress": {},
+  "pending_models": [
+    "gemma4"
+  ]
+}

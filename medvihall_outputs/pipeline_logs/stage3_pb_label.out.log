@@ -1,0 +1,273 @@
+
+>>> Python313 module stage1_extract_claims
+[2026-10-10T22:38:03.822815] Loading source records from medvihall_outputs\pillar_b_stage3\pd_results.jsonl ...
+  17443 total records
+[2026-10-10T22:38:03.899730] Scanning medvihall_outputs\pillar_b_stage3\claims.jsonl for already-completed keys ...
+  14841 already done
+  2602 remaining to process
+[2026-10-10T22:38:03.979294] Loading Qwen2.5-7B-Instruct (4-bit) from D:/medvihall_models/Qwen2.5-7B-Instruct ...
+  Model loaded. Batch size=32
+  [160/2602] elapsed=8.6min rate=0.31rec/s errors=0 degenerate_skipped=0 ETA=2.2h
+  [320/2602] elapsed=17.6min rate=0.30rec/s errors=2 degenerate_skipped=0 ETA=2.1h
+  [480/2602] elapsed=25.8min rate=0.31rec/s errors=3 degenerate_skipped=0 ETA=1.9h
+  [640/2602] elapsed=28.7min rate=0.37rec/s errors=3 degenerate_skipped=0 ETA=1.5h
+  [800/2602] elapsed=33.1min rate=0.40rec/s errors=3 degenerate_skipped=0 ETA=1.2h
+  [960/2602] elapsed=37.3min rate=0.43rec/s errors=3 degenerate_skipped=0 ETA=1.1h
+  [1120/2602] elapsed=41.6min rate=0.45rec/s errors=3 degenerate_skipped=0 ETA=0.9h
+  [1280/2602] elapsed=45.5min rate=0.47rec/s errors=3 degenerate_skipped=0 ETA=0.8h
+  [1440/2602] elapsed=49.3min rate=0.49rec/s errors=3 degenerate_skipped=0 ETA=0.7h
+  [1600/2602] elapsed=53.1min rate=0.50rec/s errors=3 degenerate_skipped=0 ETA=0.6h
+  [1760/2602] elapsed=54.6min rate=0.54rec/s errors=3 degenerate_skipped=0 ETA=0.4h
+  [1920/2602] elapsed=56.5min rate=0.57rec/s errors=3 degenerate_skipped=0 ETA=0.3h
+  [2080/2602] elapsed=58.1min rate=0.60rec/s errors=3 degenerate_skipped=0 ETA=0.2h
+  [2240/2602] elapsed=59.9min rate=0.62rec/s errors=3 degenerate_skipped=0 ETA=0.2h
+  [2400/2602] elapsed=61.0min rate=0.66rec/s errors=3 degenerate_skipped=0 ETA=0.1h
+  [2560/2602] elapsed=62.3min rate=0.68rec/s errors=3 degenerate_skipped=0 ETA=0.0h
+
+[2026-10-10T23:43:06.188384] Stage 1 run finished.
+  Processed this run: 2602  |  Errors (parse/exception): 3  |  Degenerate skipped: 0
+  Total done overall: 17443 / 17443
+
+>>> Python313 module stage2_radiology_chexbert
+[2026-10-10T23:43:07.497474] Loading radiology GT index ...
+  2000 GT records
+[2026-10-10T23:43:07.510314] Loading source records ...
+  5780 radiology records total
+[2026-10-10T23:43:07.575880] Scanning medvihall_outputs\pillar_b_stage3\layer1_radiology.jsonl for done keys ...
+  0 already done
+  5780 remaining
+[2026-10-10T23:43:07.577053] Loading F1CheXbert (this loads the actual CheXbert model) ...
+  Loaded. Classes: ['Enlarged Cardiomediastinum', 'Cardiomegaly', 'Lung Opacity', 'Lung Lesion', 'Edema', 'Consolidation', 'Pneumonia', 'Atelectasis', 'Pneumothorax', 'Pleural Effusion', 'Pleural Other', 'Fracture', 'Support Devices', 'No Finding']
+  [200/5780] elapsed=0.0min rate=94.08rec/s ETA=0.02h
+  [400/5780] elapsed=0.1min rate=100.74rec/s ETA=0.01h
+  [600/5780] elapsed=0.1min rate=104.07rec/s ETA=0.01h
+  [800/5780] elapsed=0.1min rate=105.53rec/s ETA=0.01h
+  [1000/5780] elapsed=0.2min rate=106.07rec/s ETA=0.01h
+  [1200/5780] elapsed=0.2min rate=106.19rec/s ETA=0.01h
+  [1400/5780] elapsed=0.2min rate=106.57rec/s ETA=0.01h
+  [1600/5780] elapsed=0.3min rate=106.52rec/s ETA=0.01h
+  [1800/5780] elapsed=0.3min rate=106.70rec/s ETA=0.01h
+  [2000/5780] elapsed=0.3min rate=107.45rec/s ETA=0.01h
+  [2200/5780] elapsed=0.3min rate=107.23rec/s ETA=0.01h
+  [2400/5780] elapsed=0.4min rate=105.53rec/s ETA=0.01h
+  [2600/5780] elapsed=0.4min rate=103.94rec/s ETA=0.01h
+  [2800/5780] elapsed=0.5min rate=102.67rec/s ETA=0.01h
+  [3000/5780] elapsed=0.5min rate=103.12rec/s ETA=0.01h
+  [3200/5780] elapsed=0.5min rate=103.39rec/s ETA=0.01h
+  [3400/5780] elapsed=0.5min rate=103.56rec/s ETA=0.01h
+  [3600/5780] elapsed=0.6min rate=103.33rec/s ETA=0.01h
+  [3800/5780] elapsed=0.6min rate=103.42rec/s ETA=0.01h
+  [4000/5780] elapsed=0.6min rate=102.62rec/s ETA=0.00h
+  [4200/5780] elapsed=0.7min rate=101.97rec/s ETA=0.00h
+  [4400/5780] elapsed=0.7min rate=101.41rec/s ETA=0.00h
+  [4600/5780] elapsed=0.8min rate=101.68rec/s ETA=0.00h
+  [4800/5780] elapsed=0.8min rate=101.96rec/s ETA=0.00h
+  [5000/5780] elapsed=0.8min rate=101.66rec/s ETA=0.00h
+  [5200/5780] elapsed=0.9min rate=100.73rec/s ETA=0.00h
+  [5400/5780] elapsed=0.9min rate=99.93rec/s ETA=0.00h
+  [5600/5780] elapsed=0.9min rate=99.82rec/s ETA=0.00h
+
+[2026-10-10T23:44:14.972215] Stage 2 radiology run finished. Processed: 5780
+  Total done overall: 5780 / 5780
+
+>>> Python312 module stage2_other_modalities
+[2026-10-10T23:44:15.885032] Loading GT indexes ...
+  dermatology: 3000 GT records
+  histopathology: 2400 GT records
+  ophthalmology: 1946 GT records
+[2026-10-10T23:44:15.916056] Loading source records ...
+  11663 records total across ['dermatology', 'histopathology', 'ophthalmology']
+[2026-10-10T23:44:15.990621] Scanning medvihall_outputs\pillar_b_stage3\layer1_other.jsonl for done keys ...
+  0 already done
+  11663 remaining
+[2026-10-10T23:44:15.992620] Loading spaCy + scispaCy + negspaCy pipeline ...
+  Loaded.
+  [500/11663] elapsed=0.1min rate=106.14rec/s no_gt=0 ETA=0.03h
+  [1000/11663] elapsed=0.2min rate=103.95rec/s no_gt=0 ETA=0.03h
+  [1500/11663] elapsed=0.2min rate=112.97rec/s no_gt=0 ETA=0.02h
+  [2000/11663] elapsed=0.3min rate=114.86rec/s no_gt=0 ETA=0.02h
+  [2500/11663] elapsed=0.4min rate=110.07rec/s no_gt=0 ETA=0.02h
+  [3000/11663] elapsed=0.5min rate=102.60rec/s no_gt=0 ETA=0.02h
+  [3500/11663] elapsed=0.6min rate=100.93rec/s no_gt=0 ETA=0.02h
+  [4000/11663] elapsed=0.6min rate=106.03rec/s no_gt=0 ETA=0.02h
+  [4500/11663] elapsed=0.7min rate=109.79rec/s no_gt=0 ETA=0.02h
+  [5000/11663] elapsed=0.8min rate=99.83rec/s no_gt=0 ETA=0.02h
+  [5500/11663] elapsed=1.0min rate=94.28rec/s no_gt=0 ETA=0.02h
+  [6000/11663] elapsed=1.1min rate=92.70rec/s no_gt=0 ETA=0.02h
+  [6500/11663] elapsed=1.2min rate=89.94rec/s no_gt=0 ETA=0.02h
+  [7000/11663] elapsed=1.3min rate=91.55rec/s no_gt=0 ETA=0.01h
+  [7500/11663] elapsed=1.3min rate=93.46rec/s no_gt=0 ETA=0.01h
+  [8000/11663] elapsed=1.4min rate=93.27rec/s no_gt=0 ETA=0.01h
+  [8500/11663] elapsed=1.5min rate=91.51rec/s no_gt=0 ETA=0.01h
+  [9000/11663] elapsed=1.7min rate=90.85rec/s no_gt=0 ETA=0.01h
+  [9500/11663] elapsed=1.7min rate=93.00rec/s no_gt=0 ETA=0.01h
+  [10000/11663] elapsed=1.8min rate=94.51rec/s no_gt=0 ETA=0.00h
+  [10500/11663] elapsed=1.9min rate=92.32rec/s no_gt=0 ETA=0.00h
+  [11000/11663] elapsed=2.0min rate=90.85rec/s no_gt=0 ETA=0.00h
+  [11500/11663] elapsed=2.1min rate=92.51rec/s no_gt=0 ETA=0.00h
+
+[2026-10-10T23:46:32.217386] Stage 2 other-modalities run finished. Processed: 11663, no_gt=0
+  Total done overall: 11663 / 11663
+merged layer1 verdicts: 17443 records -> medvihall_outputs\pillar_b_stage3\layer1_verdicts.jsonl
+
+>>> Python313 module stage3_layer2_judge
+[2026-10-10T23:46:33.108715] Loading GT index ...
+[2026-10-10T23:46:33.138583] Loading Layer 1 verdicts ...
+  17443 Layer 1 records
+[2026-10-10T23:46:33.207035] Loading claims records ...
+  17443 records (all models)
+[2026-10-10T23:46:33.296409] Scanning medvihall_outputs\pillar_b_stage3\layer2_judge.jsonl for done keys ...
+  0 already done (any model)
+  17443 remaining
+[2026-10-10T23:46:33.304016] Loading Qwen2.5-7B-Instruct (4-bit) from D:/medvihall_models/Qwen2.5-7B-Instruct ...
+  Model loaded. Batch size=24
+  [120/17443] elapsed=0.0min rate=35805.40rec/s errors=0 empty_skipped=120 ETA=0.00h
+  [240/17443] elapsed=0.0min rate=49398.03rec/s errors=0 empty_skipped=240 ETA=0.00h
+  [360/17443] elapsed=0.0min rate=57763.94rec/s errors=0 empty_skipped=360 ETA=0.00h
+  [480/17443] elapsed=0.0min rate=62999.22rec/s errors=0 empty_skipped=480 ETA=0.00h
+  [600/17443] elapsed=0.0min rate=66745.77rec/s errors=0 empty_skipped=600 ETA=0.00h
+  [720/17443] elapsed=0.0min rate=69525.25rec/s errors=0 empty_skipped=720 ETA=0.00h
+  [840/17443] elapsed=0.0min rate=71401.09rec/s errors=0 empty_skipped=840 ETA=0.00h
+  [960/17443] elapsed=0.0min rate=72602.45rec/s errors=0 empty_skipped=960 ETA=0.00h
+  [1080/17443] elapsed=0.0min rate=73988.11rec/s errors=0 empty_skipped=1080 ETA=0.00h
+  [1200/17443] elapsed=0.0min rate=74728.15rec/s errors=0 empty_skipped=1200 ETA=0.00h
+  [1320/17443] elapsed=0.0min rate=75810.02rec/s errors=0 empty_skipped=1320 ETA=0.00h
+  [1440/17443] elapsed=0.0min rate=76477.34rec/s errors=0 empty_skipped=1440 ETA=0.00h
+  [1560/17443] elapsed=0.0min rate=77261.41rec/s errors=0 empty_skipped=1560 ETA=0.00h
+  [1680/17443] elapsed=0.0min rate=77791.49rec/s errors=0 empty_skipped=1680 ETA=0.00h
+  [1800/17443] elapsed=0.0min rate=78429.97rec/s errors=0 empty_skipped=1800 ETA=0.00h
+  [1920/17443] elapsed=0.0min rate=78778.60rec/s errors=0 empty_skipped=1920 ETA=0.00h
+  [2040/17443] elapsed=0.0min rate=79142.20rec/s errors=0 empty_skipped=2040 ETA=0.00h
+  [2160/17443] elapsed=0.0min rate=79607.19rec/s errors=0 empty_skipped=2160 ETA=0.00h
+  [2280/17443] elapsed=0.0min rate=80027.89rec/s errors=0 empty_skipped=2280 ETA=0.00h
+  [2400/17443] elapsed=0.0min rate=80364.12rec/s errors=0 empty_skipped=2400 ETA=0.00h
+  [2520/17443] elapsed=0.0min rate=78127.58rec/s errors=0 empty_skipped=2520 ETA=0.00h
+  [2640/17443] elapsed=0.0min rate=78390.99rec/s errors=0 empty_skipped=2640 ETA=0.00h
+  [2760/17443] elapsed=0.0min rate=78781.28rec/s errors=0 empty_skipped=2760 ETA=0.00h
+  [2880/17443] elapsed=0.0min rate=79069.43rec/s errors=0 empty_skipped=2880 ETA=0.00h
+  [3000/17443] elapsed=0.0min rate=79183.13rec/s errors=0 empty_skipped=3000 ETA=0.00h
+  [3120/17443] elapsed=0.0min rate=79536.55rec/s errors=0 empty_skipped=3120 ETA=0.00h
+  [3240/17443] elapsed=0.0min rate=79872.72rec/s errors=0 empty_skipped=3240 ETA=0.00h
+  [3360/17443] elapsed=0.0min rate=79928.21rec/s errors=0 empty_skipped=3360 ETA=0.00h
+  [3480/17443] elapsed=0.0min rate=78919.59rec/s errors=0 empty_skipped=3480 ETA=0.00h
+  [3600/17443] elapsed=0.0min rate=78048.49rec/s errors=0 empty_skipped=3600 ETA=0.00h
+  [3720/17443] elapsed=0.0min rate=78035.12rec/s errors=0 empty_skipped=3720 ETA=0.00h
+  [3840/17443] elapsed=0.0min rate=77435.91rec/s errors=0 empty_skipped=3840 ETA=0.00h
+  [3960/17443] elapsed=0.4min rate=164.82rec/s errors=0 empty_skipped=3882 ETA=0.02h
+  [4080/17443] elapsed=1.0min rate=70.77rec/s errors=0 empty_skipped=3882 ETA=0.05h
+  [4200/17443] elapsed=1.6min rate=45.16rec/s errors=0 empty_skipped=3882 ETA=0.08h
+  [4320/17443] elapsed=2.1min rate=33.71rec/s errors=0 empty_skipped=3882 ETA=0.11h
+  [4440/17443] elapsed=2.7min rate=27.00rec/s errors=0 empty_skipped=3882 ETA=0.13h
+  [4560/17443] elapsed=3.3min rate=22.99rec/s errors=0 empty_skipped=3882 ETA=0.16h
+  [4680/17443] elapsed=3.9min rate=20.09rec/s errors=0 empty_skipped=3882 ETA=0.18h
+  [4800/17443] elapsed=4.5min rate=17.95rec/s errors=0 empty_skipped=3882 ETA=0.20h
+  [4920/17443] elapsed=5.0min rate=16.29rec/s errors=0 empty_skipped=3882 ETA=0.21h
+  [5040/17443] elapsed=5.6min rate=14.96rec/s errors=0 empty_skipped=3882 ETA=0.23h
+  [5160/17443] elapsed=6.2min rate=13.91rec/s errors=0 empty_skipped=3882 ETA=0.25h
+  [5280/17443] elapsed=6.8min rate=13.03rec/s errors=0 empty_skipped=3882 ETA=0.26h
+  [5400/17443] elapsed=7.3min rate=12.34rec/s errors=0 empty_skipped=3882 ETA=0.27h
+  [5520/17443] elapsed=7.9min rate=11.71rec/s errors=0 empty_skipped=3882 ETA=0.28h
+  [5640/17443] elapsed=8.4min rate=11.16rec/s errors=0 empty_skipped=3882 ETA=0.29h
+  [5760/17443] elapsed=9.0min rate=10.61rec/s errors=0 empty_skipped=3882 ETA=0.31h
+  [5880/17443] elapsed=9.6min rate=10.20rec/s errors=0 empty_skipped=3882 ETA=0.32h
+  [6000/17443] elapsed=10.2min rate=9.79rec/s errors=0 empty_skipped=3882 ETA=0.32h
+  [6120/17443] elapsed=10.8min rate=9.42rec/s errors=0 empty_skipped=3882 ETA=0.33h
+  [6240/17443] elapsed=11.4min rate=9.14rec/s errors=0 empty_skipped=3882 ETA=0.34h
+  [6360/17443] elapsed=12.0min rate=8.87rec/s errors=0 empty_skipped=3882 ETA=0.35h
+  [6480/17443] elapsed=12.5min rate=8.63rec/s errors=0 empty_skipped=3882 ETA=0.35h
+  [6600/17443] elapsed=13.1min rate=8.41rec/s errors=0 empty_skipped=3882 ETA=0.36h
+  [6720/17443] elapsed=13.6min rate=8.21rec/s errors=0 empty_skipped=3882 ETA=0.36h
+  [6840/17443] elapsed=14.2min rate=8.02rec/s errors=0 empty_skipped=3882 ETA=0.37h
+  [6960/17443] elapsed=14.8min rate=7.85rec/s errors=0 empty_skipped=3882 ETA=0.37h
+  [7080/17443] elapsed=15.4min rate=7.68rec/s errors=0 empty_skipped=3882 ETA=0.37h
+  [7200/17443] elapsed=15.9min rate=7.52rec/s errors=1 empty_skipped=3882 ETA=0.38h
+  [7320/17443] elapsed=16.5min rate=7.39rec/s errors=1 empty_skipped=3882 ETA=0.38h
+  [7440/17443] elapsed=17.4min rate=7.14rec/s errors=5 empty_skipped=3882 ETA=0.39h
+  [7560/17443] elapsed=18.2min rate=6.91rec/s errors=5 empty_skipped=3882 ETA=0.40h
+  [7680/17443] elapsed=19.1min rate=6.71rec/s errors=5 empty_skipped=3882 ETA=0.40h
+  [7800/17443] elapsed=19.9min rate=6.53rec/s errors=5 empty_skipped=3882 ETA=0.41h
+  [7920/17443] elapsed=20.8min rate=6.35rec/s errors=5 empty_skipped=3882 ETA=0.42h
+  [8040/17443] elapsed=21.7min rate=6.18rec/s errors=6 empty_skipped=3882 ETA=0.42h
+  [8160/17443] elapsed=22.5min rate=6.03rec/s errors=6 empty_skipped=3882 ETA=0.43h
+  [8280/17443] elapsed=23.4min rate=5.90rec/s errors=6 empty_skipped=3882 ETA=0.43h
+  [8400/17443] elapsed=24.3min rate=5.77rec/s errors=6 empty_skipped=3882 ETA=0.44h
+  [8520/17443] elapsed=25.2min rate=5.64rec/s errors=6 empty_skipped=3882 ETA=0.44h
+  [8640/17443] elapsed=26.1min rate=5.52rec/s errors=6 empty_skipped=3882 ETA=0.44h
+  [8760/17443] elapsed=26.9min rate=5.42rec/s errors=6 empty_skipped=3882 ETA=0.45h
+  [8880/17443] elapsed=27.8min rate=5.32rec/s errors=6 empty_skipped=3882 ETA=0.45h
+  [9000/17443] elapsed=28.8min rate=5.22rec/s errors=6 empty_skipped=3882 ETA=0.45h
+  [9120/17443] elapsed=29.6min rate=5.14rec/s errors=6 empty_skipped=3882 ETA=0.45h
+  [9240/17443] elapsed=30.8min rate=5.00rec/s errors=6 empty_skipped=3882 ETA=0.46h
+  [9360/17443] elapsed=32.0min rate=4.87rec/s errors=6 empty_skipped=3882 ETA=0.46h
+  [9480/17443] elapsed=33.2min rate=4.76rec/s errors=8 empty_skipped=3882 ETA=0.46h
+  [9600/17443] elapsed=34.4min rate=4.66rec/s errors=8 empty_skipped=3882 ETA=0.47h
+  [9720/17443] elapsed=35.6min rate=4.56rec/s errors=8 empty_skipped=3882 ETA=0.47h
+  [9840/17443] elapsed=36.8min rate=4.46rec/s errors=8 empty_skipped=3882 ETA=0.47h
+  [9960/17443] elapsed=37.9min rate=4.38rec/s errors=9 empty_skipped=3882 ETA=0.47h
+  [10080/17443] elapsed=39.1min rate=4.30rec/s errors=9 empty_skipped=3882 ETA=0.48h
+  [10200/17443] elapsed=40.3min rate=4.21rec/s errors=10 empty_skipped=3882 ETA=0.48h
+  [10320/17443] elapsed=41.5min rate=4.14rec/s errors=10 empty_skipped=3882 ETA=0.48h
+  [10440/17443] elapsed=42.7min rate=4.07rec/s errors=10 empty_skipped=3882 ETA=0.48h
+  [10560/17443] elapsed=43.9min rate=4.01rec/s errors=11 empty_skipped=3882 ETA=0.48h
+  [10680/17443] elapsed=45.1min rate=3.95rec/s errors=11 empty_skipped=3882 ETA=0.48h
+  [10800/17443] elapsed=46.2min rate=3.89rec/s errors=13 empty_skipped=3882 ETA=0.47h
+  [10920/17443] elapsed=47.4min rate=3.84rec/s errors=13 empty_skipped=3882 ETA=0.47h
+  [11040/17443] elapsed=48.6min rate=3.79rec/s errors=13 empty_skipped=3882 ETA=0.47h
+  [11160/17443] elapsed=49.8min rate=3.74rec/s errors=14 empty_skipped=3882 ETA=0.47h
+  [11280/17443] elapsed=51.0min rate=3.69rec/s errors=14 empty_skipped=3882 ETA=0.46h
+  [11400/17443] elapsed=52.2min rate=3.64rec/s errors=14 empty_skipped=3882 ETA=0.46h
+  [11520/17443] elapsed=53.4min rate=3.60rec/s errors=14 empty_skipped=3882 ETA=0.46h
+  [11640/17443] elapsed=54.8min rate=3.54rec/s errors=15 empty_skipped=3882 ETA=0.46h
+  [11760/17443] elapsed=56.2min rate=3.49rec/s errors=15 empty_skipped=3882 ETA=0.45h
+  [11880/17443] elapsed=57.8min rate=3.43rec/s errors=15 empty_skipped=3882 ETA=0.45h
+  [12000/17443] elapsed=59.4min rate=3.37rec/s errors=15 empty_skipped=3882 ETA=0.45h
+  [12120/17443] elapsed=60.9min rate=3.31rec/s errors=16 empty_skipped=3882 ETA=0.45h
+  [12240/17443] elapsed=62.4min rate=3.27rec/s errors=16 empty_skipped=3882 ETA=0.44h
+  [12360/17443] elapsed=63.9min rate=3.23rec/s errors=17 empty_skipped=3882 ETA=0.44h
+  [12480/17443] elapsed=65.3min rate=3.18rec/s errors=19 empty_skipped=3882 ETA=0.43h
+  [12600/17443] elapsed=66.8min rate=3.14rec/s errors=19 empty_skipped=3882 ETA=0.43h
+  [12720/17443] elapsed=68.3min rate=3.10rec/s errors=19 empty_skipped=3882 ETA=0.42h
+  [12840/17443] elapsed=69.8min rate=3.07rec/s errors=20 empty_skipped=3882 ETA=0.42h
+  [12960/17443] elapsed=71.3min rate=3.03rec/s errors=20 empty_skipped=3882 ETA=0.41h
+  [13080/17443] elapsed=72.8min rate=2.99rec/s errors=20 empty_skipped=3882 ETA=0.40h
+  [13200/17443] elapsed=74.4min rate=2.96rec/s errors=21 empty_skipped=3882 ETA=0.40h
+  [13320/17443] elapsed=75.9min rate=2.93rec/s errors=22 empty_skipped=3882 ETA=0.39h
+  [13440/17443] elapsed=77.4min rate=2.89rec/s errors=22 empty_skipped=3882 ETA=0.38h
+  [13560/17443] elapsed=78.8min rate=2.87rec/s errors=22 empty_skipped=3882 ETA=0.38h
+  [13680/17443] elapsed=80.3min rate=2.84rec/s errors=23 empty_skipped=3882 ETA=0.37h
+  [13800/17443] elapsed=81.9min rate=2.81rec/s errors=23 empty_skipped=3882 ETA=0.36h
+  [13920/17443] elapsed=83.4min rate=2.78rec/s errors=23 empty_skipped=3882 ETA=0.35h
+  [14040/17443] elapsed=84.9min rate=2.75rec/s errors=24 empty_skipped=3882 ETA=0.34h
+  [14160/17443] elapsed=86.9min rate=2.72rec/s errors=25 empty_skipped=3882 ETA=0.34h
+  [14280/17443] elapsed=88.8min rate=2.68rec/s errors=27 empty_skipped=3882 ETA=0.33h
+  [14400/17443] elapsed=90.7min rate=2.65rec/s errors=27 empty_skipped=3882 ETA=0.32h
+  [14520/17443] elapsed=92.7min rate=2.61rec/s errors=30 empty_skipped=3882 ETA=0.31h
+  [14640/17443] elapsed=94.5min rate=2.58rec/s errors=30 empty_skipped=3882 ETA=0.30h
+  [14760/17443] elapsed=96.4min rate=2.55rec/s errors=32 empty_skipped=3882 ETA=0.29h
+  [14880/17443] elapsed=98.2min rate=2.52rec/s errors=35 empty_skipped=3882 ETA=0.28h
+  [15000/17443] elapsed=100.1min rate=2.50rec/s errors=36 empty_skipped=3882 ETA=0.27h
+  [15120/17443] elapsed=101.9min rate=2.47rec/s errors=37 empty_skipped=3882 ETA=0.26h
+  [15240/17443] elapsed=103.9min rate=2.44rec/s errors=39 empty_skipped=3882 ETA=0.25h
+  [15360/17443] elapsed=106.1min rate=2.41rec/s errors=39 empty_skipped=3882 ETA=0.24h
+  [15480/17443] elapsed=108.4min rate=2.38rec/s errors=40 empty_skipped=3882 ETA=0.23h
+  [15600/17443] elapsed=110.7min rate=2.35rec/s errors=40 empty_skipped=3882 ETA=0.22h
+  [15720/17443] elapsed=112.9min rate=2.32rec/s errors=40 empty_skipped=3882 ETA=0.21h
+  [15840/17443] elapsed=115.1min rate=2.29rec/s errors=40 empty_skipped=3882 ETA=0.19h
+  [15960/17443] elapsed=117.3min rate=2.27rec/s errors=40 empty_skipped=3882 ETA=0.18h
+  [16080/17443] elapsed=119.7min rate=2.24rec/s errors=41 empty_skipped=3882 ETA=0.17h
+  [16200/17443] elapsed=122.4min rate=2.21rec/s errors=42 empty_skipped=3882 ETA=0.16h
+  [16320/17443] elapsed=125.0min rate=2.18rec/s errors=43 empty_skipped=3882 ETA=0.14h
+  [16440/17443] elapsed=127.6min rate=2.15rec/s errors=44 empty_skipped=3882 ETA=0.13h
+  [16560/17443] elapsed=130.3min rate=2.12rec/s errors=45 empty_skipped=3882 ETA=0.12h
+  [16680/17443] elapsed=133.4min rate=2.08rec/s errors=45 empty_skipped=3882 ETA=0.10h
+  [16800/17443] elapsed=136.3min rate=2.05rec/s errors=45 empty_skipped=3882 ETA=0.09h
+  [16920/17443] elapsed=139.3min rate=2.02rec/s errors=45 empty_skipped=3882 ETA=0.07h
+  [17040/17443] elapsed=142.5min rate=1.99rec/s errors=45 empty_skipped=3882 ETA=0.06h
+  [17160/17443] elapsed=146.0min rate=1.96rec/s errors=45 empty_skipped=3882 ETA=0.04h
+  [17280/17443] elapsed=149.8min rate=1.92rec/s errors=45 empty_skipped=3882 ETA=0.02h
+  [17400/17443] elapsed=154.5min rate=1.88rec/s errors=45 empty_skipped=3882 ETA=0.01h
+
+[2026-10-11T02:24:32.693513] Stage 3 run finished.
+  Processed this run: 17443  |  Errors: 45  |  Empty-claims skipped: 3882
+
+Pillar B labeling complete.

@@ -1,0 +1,328 @@
+{
+ "A_bins": {
+  "5": {
+   "all6": {
+    "mean_rho": 0.9333333333333332,
+    "min_rho": 0.7999999999999999,
+    "n_models": 5
+   },
+   "distinct4": {
+    "mean_rho": 0.8999999999999999,
+    "min_rho": 0.7999999999999999,
+    "n_models": 5
+   }
+  },
+  "10": {
+   "all6": {
+    "mean_rho": 0.9333333333333332,
+    "min_rho": 0.7999999999999999,
+    "n_models": 5
+   },
+   "distinct4": {
+    "mean_rho": 0.8999999999999999,
+    "min_rho": 0.7999999999999999,
+    "n_models": 5
+   }
+  },
+  "15": {
+   "all6": {
+    "mean_rho": 0.9333333333333332,
+    "min_rho": 0.7999999999999999,
+    "n_models": 5
+   },
+   "distinct4": {
+    "mean_rho": 0.8999999999999999,
+    "min_rho": 0.7999999999999999,
+    "n_models": 5
+   }
+  },
+  "20": {
+   "all6": {
+    "mean_rho": 0.9333333333333332,
+    "min_rho": 0.7999999999999999,
+    "n_models": 5
+   },
+   "distinct4": {
+    "mean_rho": 0.8999999999999999,
+    "min_rho": 0.7999999999999999,
+    "n_models": 5
+   }
+  }
+ },
+ "B_modality": {
+  "radiology": {
+   "models_used": [
+    "qwen25vl",
+    "llava16",
+    "chexagent",
+    "huatuogpt",
+    "llava_med"
+   ],
+   "min_n_per_model": {
+    "qwen25vl": 506,
+    "llava16": 338,
+    "chexagent": 428,
+    "huatuogpt": 357,
+    "llava_med": 177
+   },
+   "rho": {
+    "all6": {
+     "mean_rho": 0.8066666666666665,
+     "min_rho": 0.6,
+     "n_models": 5
+    },
+    "distinct4": {
+     "mean_rho": 0.7499999999999999,
+     "min_rho": 0.6,
+     "n_models": 5
+    }
+   },
+   "ece_greedy": {
+    "qwen25vl": 0.8947265625000002,
+    "llava16": 0.6118,
+    "chexagent": 0.3641878669275929,
+    "huatuogpt": 0.7034557235421167,
+    "llava_med": 0.7918079096045201
+   }
+  },
+  "dermatology": {
+   "models_used": [
+    "qwen25vl",
+    "llava16",
+    "chexagent",
+    "huatuogpt",
+    "llava_med"
+   ],
+   "min_n_per_model": {
+    "qwen25vl": 378,
+    "llava16": 220,
+    "chexagent": 290,
+    "huatuogpt": 366,
+    "llava_med": 215
+   },
+   "rho": {
+    "all6": {
+     "mean_rho": 0.7399999999999999,
+     "min_rho": 0.49999999999999994,
+     "n_models": 5
+    },
+    "distinct4": {
+     "mean_rho": 0.6499999999999999,
+     "min_rho": 0.49999999999999994,
+     "n_models": 5
+    }
+   },
+   "ece_greedy": {
+    "qwen25vl": 0.5873056994818653,
+    "llava16": 0.49636363636363656,
+    "chexagent": 0.5689655172413793,
+    "huatuogpt": 0.6317829457364343,
+    "llava_med": 0.6120370370370373
+   }
+  },
+  "histopathology": {
+   "models_used": [
+    "qwen25vl",
+    "llava16",
+    "chexagent",
+    "huatuogpt",
+    "llava_med"
+   ],
+   "min_n_per_model": {
+    "qwen25vl": 336,
+    "llava16": 236,
+    "chexagent": 258,
+    "huatuogpt": 276,
+    "llava_med": 120
+   },
+   "rho": {
+    "all6": {
+     "mean_rho": 0.9666666666666667,
+     "min_rho": 0.8999999999999998,
+     "n_models": 5
+    },
+    "distinct4": {
+     "mean_rho": 0.9499999999999997,
+     "min_rho": 0.8999999999999998,
+     "n_models": 5
+    }
+   },
+   "ece_greedy": {
+    "qwen25vl": 0.6938416422287389,
+    "llava16": 0.5397959183673471,
+    "chexagent": 0.6614906832298136,
+    "huatuogpt": 0.7514184397163123,
+    "llava_med": 0.39776119402985094
+   }
+  },
+  "ophthalmology": {
+   "models_used": [
+    "qwen25vl",
+    "llava16",
+    "chexagent",
+    "huatuogpt",
+    "llava_med"
+   ],
+   "min_n_per_model": {
+    "qwen25vl": 239,
+    "llava16": 182,
+    "chexagent": 196,
+    "huatuogpt": 202,
+    "llava_med": 156
+   },
+   "rho": {
+    "all6": {
+     "mean_rho": 0.9666666666666667,
+     "min_rho": 0.8999999999999998,
+     "n_models": 5
+    },
+    "distinct4": {
+     "mean_rho": 0.9499999999999997,
+     "min_rho": 0.8999999999999998,
+     "n_models": 5
+    }
+   },
+   "ece_greedy": {
+    "qwen25vl": 0.28559999999999997,
+    "llava16": 0.4700934579439253,
+    "chexagent": 0.5205479452054795,
+    "huatuogpt": 0.7008510638297873,
+    "llava_med": 0.893167701863354
+   }
+  }
+ },
+ "C_common_coverage": {
+  "n_items_per_config": {
+   "temp0.0_greedy": 537,
+   "temp0.0_nucleus": 555,
+   "temp0.3_greedy": 537,
+   "temp0.3_nucleus": 426,
+   "temp0.7_greedy": 537,
+   "temp0.7_nucleus": 303
+  },
+  "rho": {
+   "all6": {
+    "mean_rho": 0.8066666666666665,
+    "min_rho": 0.49999999999999994,
+    "n_models": 5
+   },
+   "distinct4": {
+    "mean_rho": 0.7499999999999999,
+    "min_rho": 0.49999999999999994,
+    "n_models": 5
+   }
+  }
+ },
+ "D_noise": {
+  "baseline": {
+   "all6": {
+    "mean_rho": 0.9333333333333332,
+    "min_rho": 0.7999999999999999,
+    "n_models": 5
+   },
+   "distinct4": {
+    "mean_rho": 0.8999999999999999,
+    "min_rho": 0.7999999999999999,
+    "n_models": 5
+   }
+  },
+  "0.05": {
+   "all6": {
+    "mean": 0.9310666666666667,
+    "p05": 0.8533333333333333,
+    "frac_ge_0.8": 0.995
+   },
+   "distinct4": {
+    "mean": 0.9073333333333332,
+    "p05": 0.8333333333333331,
+    "frac_ge_0.8": 0.99
+   }
+  },
+  "0.13": {
+   "all6": {
+    "mean": 0.8460666666666665,
+    "p05": 0.7329999999999998,
+    "frac_ge_0.8": 0.705
+   },
+   "distinct4": {
+    "mean": 0.8199999999999998,
+    "p05": 0.6999999999999998,
+    "frac_ge_0.8": 0.52
+   }
+  },
+  "0.2": {
+   "all6": {
+    "mean": 0.7759666666666667,
+    "p05": 0.5996666666666667,
+    "frac_ge_0.8": 0.385
+   },
+   "distinct4": {
+    "mean": 0.7235833333333332,
+    "p05": 0.5325,
+    "frac_ge_0.8": 0.155
+   }
+  }
+ },
+ "E_leave_one_out": {
+  "qwen25vl": {
+   "all6": {
+    "mean_rho": 0.9333333333333333,
+    "min_rho": 0.7999999999999999,
+    "n_models": 4
+   },
+   "distinct4": {
+    "mean_rho": 0.8999999999999999,
+    "min_rho": 0.7999999999999999,
+    "n_models": 4
+   }
+  },
+  "llava16": {
+   "all6": {
+    "mean_rho": 0.9333333333333333,
+    "min_rho": 0.7999999999999999,
+    "n_models": 4
+   },
+   "distinct4": {
+    "mean_rho": 0.8999999999999999,
+    "min_rho": 0.7999999999999999,
+    "n_models": 4
+   }
+  },
+  "chexagent": {
+   "all6": {
+    "mean_rho": 0.9333333333333333,
+    "min_rho": 0.7999999999999999,
+    "n_models": 4
+   },
+   "distinct4": {
+    "mean_rho": 0.8999999999999999,
+    "min_rho": 0.7999999999999999,
+    "n_models": 4
+   }
+  },
+  "huatuogpt": {
+   "all6": {
+    "mean_rho": 0.8666666666666667,
+    "min_rho": 0.6000000000000001,
+    "n_models": 4
+   },
+   "distinct4": {
+    "mean_rho": 0.8000000000000002,
+    "min_rho": 0.6000000000000001,
+    "n_models": 4
+   }
+  },
+  "llava_med": {
+   "all6": {
+    "mean_rho": 0.9333333333333333,
+    "min_rho": 0.7999999999999999,
+    "n_models": 4
+   },
+   "distinct4": {
+    "mean_rho": 0.8999999999999999,
+    "min_rho": 0.7999999999999999,
+    "n_models": 4
+   }
+  }
+ }
+}

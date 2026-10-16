@@ -1,0 +1,31 @@
+{
+  "best_general_vlm": {
+    "model": "qwen25vl",
+    "smhr_overall": 0.5293624989711117
+  },
+  "worst_general_vlm": {
+    "model": "llava16",
+    "smhr_overall": 0.6753342381103626
+  },
+  "medical_specialists": [
+    {
+      "model": "chexagent",
+      "smhr_overall": 0.7482195665383923
+    },
+    {
+      "model": "huatuogpt",
+      "smhr_overall": 0.6911349741338697
+    },
+    {
+      "model": "llava_med",
+      "smhr_overall": 0.7936509394955718
+    }
+  ],
+  "representative_subset": [
+    "qwen25vl",
+    "llava16",
+    "chexagent",
+    "huatuogpt",
+    "llava_med"
+  ]
+}

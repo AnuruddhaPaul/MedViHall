@@ -1,0 +1,160 @@
+{
+  "purpose": "Documents, per modality, which of the 7 hallucination classes are checkable against structured ground truth, and the rationale for the GROUND_TRUTH payload fields chosen for Stage 3. This is a known, expected limitation of the ground truth (not a pipeline bug) and should be cited in the paper as-is.",
+  "histopathology_tissue_type_check": {
+    "field_checked": "tissue_type",
+    "unique_values_incl_null": [
+      "breast",
+      null
+    ],
+    "n_unique_non_null": 1,
+    "verdict": "NOT multi-class -- effectively a constant ('breast') on the PatchCamelyon subset, absent entirely on the NCT-CRC subset. MISCLASSIFICATION detection using this field alone is not viable.",
+    "mitigation_found": "NCT-CRC-HE-100K subset (1000/2400 histopathology records = 41.7%) carries a separate, genuinely multi-class field: tissue_class (3 values: STR=Cancer-associated stroma, TUM=Colorectal adenocarcinoma, DEB=Debris/mucus/blood), with counts STR=400, TUM=400, DEB=200. PatchCamelyon subset (1400/2400 = 58.3%) has no equivalent multi-class field -- only binary tumor_present.",
+    "payload_decision": "Use tissue_class/tissue_full as the primary multi-class field when present (NCT-CRC records); fall back to tumor_present + constant tissue_type for PatchCamelyon records. MISCLASSIFICATION (class 3) is therefore FULLY checkable for ~42% of histopathology records and only PARTIALLY checkable (presence/absence only, no category confusion detectable) for the remaining ~58%."
+  },
+  "ground_truth_payload_fields": {
+    "radiology": [
+      "positive_labels",
+      "negative_labels",
+      "no_finding",
+      "n_positive"
+    ],
+    "dermatology": [
+      "diagnosis",
+      "malignant",
+      "anatomical_site"
+    ],
+    "histopathology": [
+      "tissue_class + tissue_full (NCT-CRC subset, 41.7% of records) OR tissue_type (PatchCamelyon subset, 58.3%, constant='breast')",
+      "tumor_present",
+      "expert_verified",
+      "ambiguous"
+    ],
+    "ophthalmology": [
+      "glaucoma",
+      "cup_disc_ratio",
+      "cdr_suspicious"
+    ]
+  },
+  "class_coverage": {
+    "radiology": {
+      "1_FABRICATION": {
+        "coverage": "full",
+        "reason": "13-class CheXpert positive_labels/negative_labels vocabulary lets us check any claimed finding for direct GT support."
+      },
+      "2_OMISSION": {
+        "coverage": "full",
+        "reason": "Set difference between GT positive_labels and claims extracted from the model response directly identifies missed findings."
+      },
+      "3_MISCLASSIFICATION": {
+        "coverage": "full",
+        "reason": "13-class label vocabulary supports detecting confusion between distinct pathology categories (e.g. claiming Pneumonia when GT says Pneumothorax)."
+      },
+      "4_SEVERITY_DISTORTION": {
+        "coverage": "partial",
+        "reason": "No severity/grading field in GT; only presence/absence and n_positive (finding count) as a weak severity-burden proxy -- cannot verify claims like 'mild' vs 'severe'."
+      },
+      "5_ANATOMICAL_CONFUSION": {
+        "coverage": "partial",
+        "reason": "No laterality/lobe/location field; label names imply broad location (e.g. Enlarged Cardiomediastinum) but left/right or upper/lower lobe claims are not verifiable."
+      },
+      "6_EVASION": {
+        "coverage": "full",
+        "reason": "Text-pattern based (is_evasion flag + judge evasion_detected), independent of GT -- works identically across all modalities."
+      },
+      "7_CLINICAL_REASONING_ERROR": {
+        "coverage": "partial",
+        "reason": "Diagnosis-to-action linkage relies on the judge model's general medical knowledge; GT confirms only the underlying finding, not the appropriateness of the recommended action."
+      }
+    },
+    "dermatology": {
+      "1_FABRICATION": {
+        "coverage": "full",
+        "reason": "Single-label diagnosis field directly supports checking whether a claimed diagnosis/finding has GT support."
+      },
+      "2_OMISSION": {
+        "coverage": "partial",
+        "reason": "GT is single-label (one diagnosis per image), not a list of independent findings, so omission is only meaningful for the one primary diagnosis, not multi-finding omission as in radiology."
+      },
+      "3_MISCLASSIFICATION": {
+        "coverage": "full",
+        "reason": "14-class diagnosis vocabulary (melanoma, nevus, bcc, akiec, bkl, df, vasc, etc.) supports detecting confusion between distinct diagnostic categories."
+      },
+      "4_SEVERITY_DISTORTION": {
+        "coverage": "partial",
+        "reason": "malignant binary is a coarse severity proxy only; no Breslow depth, staging, or grading field."
+      },
+      "5_ANATOMICAL_CONFUSION": {
+        "coverage": "full",
+        "reason": "anatomical_site field (e.g. 'lower extremity') is present and directly checkable against claimed location."
+      },
+      "6_EVASION": {
+        "coverage": "full",
+        "reason": "Same as radiology -- text-pattern based, GT-independent."
+      },
+      "7_CLINICAL_REASONING_ERROR": {
+        "coverage": "partial",
+        "reason": "Management-appropriateness (reassurance/biopsy/urgent referral) judged qualitatively by the judge model, not directly checkable against a structured GT field."
+      }
+    },
+    "histopathology": {
+      "1_FABRICATION": {
+        "coverage": "partial",
+        "reason": "Full for NCT-CRC subset (tissue_class distinguishes tumor/stroma/debris); limited to presence/absence for PatchCamelyon subset (binary tumor_present only)."
+      },
+      "2_OMISSION": {
+        "coverage": "partial",
+        "reason": "Binary tumor_present supports detecting a missed tumor call, but there is no list of independent findings to check exhaustively."
+      },
+      "3_MISCLASSIFICATION": {
+        "coverage": "partial",
+        "reason": "See histopathology_tissue_type_check above: FULL for the ~42% NCT-CRC subset (3-class tissue_class), NOT CHECKABLE for the ~58% PatchCamelyon subset (no category vocabulary beyond tumor/no-tumor)."
+      },
+      "4_SEVERITY_DISTORTION": {
+        "coverage": "none",
+        "reason": "No severity/grading field anywhere in histopathology GT (tumor_present is strictly binary)."
+      },
+      "5_ANATOMICAL_CONFUSION": {
+        "coverage": "partial",
+        "reason": "PatchCamelyon tissue_type='breast' gives a constant organ label (weak signal only, since it never varies); NCT-CRC tissue_full gives a tissue-compartment description (e.g. 'Cancer-associated stroma') that is a weak anatomical proxy at best."
+      },
+      "6_EVASION": {
+        "coverage": "full",
+        "reason": "Same as radiology -- text-pattern based, GT-independent."
+      },
+      "7_CLINICAL_REASONING_ERROR": {
+        "coverage": "partial",
+        "reason": "Management-implication claims judged qualitatively; GT confirms only tumor presence/type, not treatment appropriateness."
+      }
+    },
+    "ophthalmology": {
+      "1_FABRICATION": {
+        "coverage": "full",
+        "reason": "Binary glaucoma field directly supports checking whether a claimed glaucoma finding has GT support."
+      },
+      "2_OMISSION": {
+        "coverage": "partial",
+        "reason": "Single binary primary finding (glaucoma), not a list of independent findings -- same limitation as dermatology."
+      },
+      "3_MISCLASSIFICATION": {
+        "coverage": "none",
+        "reason": "GT only labels glaucoma presence/absence -- no alternative disease categories (e.g. diabetic retinopathy) are labeled, so confusing glaucoma for another named condition cannot be verified against GT."
+      },
+      "4_SEVERITY_DISTORTION": {
+        "coverage": "full",
+        "reason": "cup_disc_ratio is a continuous, clinically meaningful severity measure -- directly supports verifying claimed CDR/severity against GT (this is the modality's strongest severity-check field of the four)."
+      },
+      "5_ANATOMICAL_CONFUSION": {
+        "coverage": "none",
+        "reason": "Single anatomical structure of interest (optic disc/retina) in every image -- there is no site variation to confuse."
+      },
+      "6_EVASION": {
+        "coverage": "full",
+        "reason": "Same as radiology -- text-pattern based, GT-independent."
+      },
+      "7_CLINICAL_REASONING_ERROR": {
+        "coverage": "partial",
+        "reason": "Surgical/clinical action appropriateness judged qualitatively; GT confirms only glaucoma presence and CDR, not management correctness."
+      }
+    }
+  }
+}

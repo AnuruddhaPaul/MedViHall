@@ -1,0 +1,138 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+[2026-09-21T11:23:49.278924] Loading source records from medvihall_outputs\medvihall_results_deduped.jsonl ...
+  141000 total records
+[2026-09-21T11:23:50.410090] Scanning medvihall_outputs\extracted_claims.jsonl for already-completed keys ...
+  22491 already done
+  118509 remaining to process
+[2026-09-21T11:23:50.576276] Loading Qwen2.5-7B-Instruct (4-bit) from D:/medvihall_models/Qwen2.5-7B-Instruct ...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|##5       | 1/4 [01:18<03:56, 78.76s/it]Loading checkpoint shards:  50%|#####     | 2/4 [01:48<01:39, 49.74s/it]Loading checkpoint shards:  75%|#######5  | 3/4 [02:18<00:40, 40.67s/it]Loading checkpoint shards: 100%|##########| 4/4 [02:45<00:00, 35.34s/it]Loading checkpoint shards: 100%|##########| 4/4 [02:45<00:00, 41.31s/it]
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+  Model loaded. Batch size=32
+Traceback (most recent call last):
+  File "C:\Users\PC\Desktop\Programs\MediViHall\stage1_extract_claims.py", line 276, in <module>
+    main()
+    ~~~~^^
+  File "C:\Users\PC\Desktop\Programs\MediViHall\stage1_extract_claims.py", line 217, in main
+    raw_outputs = run_batch_extraction(mdl, tok, batch_input)
+  File "C:\Users\PC\Desktop\Programs\MediViHall\stage1_extract_claims.py", line 146, in run_batch_extraction
+    out = mdl.generate(
+        **inp, max_new_tokens=MAX_NEW_TOKENS, do_sample=False,
+        pad_token_id=tok.pad_token_id,
+    )
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\torch\utils\_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\transformers\generation\utils.py", line 2566, in generate
+    result = decoding_method(
+        self,
+    ...<5 lines>...
+        **model_kwargs,
+    )
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\transformers\generation\utils.py", line 2789, in _sample
+    outputs = model_forward(**model_inputs, return_dict=True)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\accelerate\hooks.py", line 170, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\transformers\utils\generic.py", line 918, in wrapper
+    output = func(self, *args, **kwargs)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\transformers\models\qwen2\modeling_qwen2.py", line 449, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+                                       ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<6 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\accelerate\hooks.py", line 170, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\transformers\utils\generic.py", line 1072, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\transformers\models\qwen2\modeling_qwen2.py", line 384, in forward
+    hidden_states = decoder_layer(
+        hidden_states,
+    ...<6 lines>...
+        **kwargs,
+    )
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\transformers\modeling_layers.py", line 94, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\accelerate\hooks.py", line 170, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\transformers\utils\deprecation.py", line 172, in wrapped_func
+    return func(*args, **kwargs)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\transformers\models\qwen2\modeling_qwen2.py", line 249, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\accelerate\hooks.py", line 170, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\transformers\models\qwen2\modeling_qwen2.py", line 46, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+                                           ~~~~~~~~~~~~~~^^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\torch\nn\modules\module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\accelerate\hooks.py", line 170, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\bitsandbytes\nn\modules.py", line 532, in forward
+    return bnb.matmul_4bit(x, weight, bias=bias, quant_state=self.weight.quant_state).to(inp_dtype)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\bitsandbytes\autograd\_functions.py", line 448, in matmul_4bit
+    return MatMul4Bit.apply(A, B, out, bias, quant_state)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\torch\autograd\function.py", line 583, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\bitsandbytes\autograd\_functions.py", line 373, in forward
+    output = torch.nn.functional.linear(A, F.dequantize_4bit(B, quant_state).to(A.dtype).t(), bias)
+                                           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\bitsandbytes\functional.py", line 994, in dequantize_4bit
+    out = torch.ops.bitsandbytes.dequantize_4bit.default(
+        A,
+    ...<4 lines>...
+        quant_state.dtype,
+    )
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\torch\_ops.py", line 819, in __call__
+    return self._op(*args, **kwargs)
+           ~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\torch\_compile.py", line 54, in inner
+    return disable_fn(*args, **kwargs)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\torch\_dynamo\eval_frame.py", line 1181, in _fn
+    return fn(*args, **kwargs)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\torch\library.py", line 742, in func_no_dynamo
+    return func(*args, **kwargs)
+  File "C:\Users\PC\AppData\Roaming\Python\Python313\site-packages\bitsandbytes\backends\cuda\ops.py", line 360, in _
+    out = torch.empty(shape, dtype=dtype, device=A.device)
+KeyboardInterrupt
+`torch_dtype` is deprecated! Use `dtype` instead!
+[2026-09-21T11:35:14.623626] Loading source records from medvihall_outputs\medvihall_results_deduped.jsonl ...
+  141000 total records
+[2026-09-21T11:35:17.245197] Scanning medvihall_outputs\extracted_claims.jsonl for already-completed keys ...
+  22600 already done
+  118400 remaining to process
+[2026-09-21T11:35:17.659366] Loading Qwen2.5-7B-Instruct (4-bit) from D:/medvihall_models/Qwen2.5-7B-Instruct ...
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|##5       | 1/4 [00:29<01:29, 29.76s/it]forrtl: error (200): program aborting due to window-CLOSE event
+Image              PC                Routine            Line        Source             
+KERNELBASE.dll     00007FFFDDCCB0CD  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFFDEA9E8D7  Unknown               Unknown  Unknown
+ntdll.dll          00007FFFE02BC34C  Unknown               Unknown  Unknown

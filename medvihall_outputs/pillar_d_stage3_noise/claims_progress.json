@@ -1,0 +1,8 @@
+{
+  "last_updated": "2026-10-06T12:36:05.267548+00:00",
+  "started_at": "2026-10-06T12:00:02.828950+00:00",
+  "records_done": 1000,
+  "records_total": 1000,
+  "parse_errors": 3,
+  "batch_size": 16
+}

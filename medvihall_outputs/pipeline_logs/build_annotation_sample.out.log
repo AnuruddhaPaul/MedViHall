@@ -1,0 +1,10 @@
+baseline: llava_med rows replaced by the fixed rerun (pillar_b_baseline_llava_med_fixed.jsonl)
+baseline: 8395 records
+rag: 8395 records
+contrastive: 8395 records
+
+ANNOTATION LIST COMPLETE: 720 items (48 keys x 3 conditions x 5 models)
+per model: {'qwen25vl': 144, 'huatuogpt': 144, 'chexagent': 144, 'llava16': 144, 'llava_med': 144}
+waived cells: []
+shortfall cells: none
+valid rates: {'chexagent|baseline': 0.978, 'chexagent|contrastive': 0.994, 'chexagent|rag': 0.9923, 'huatuogpt|baseline': 0.9398, 'huatuogpt|contrastive': 0.9518, 'huatuogpt|rag': 0.9446, 'llava16|baseline': 1.0, 'llava16|contrastive': 1.0, 'llava16|rag': 1.0, 'llava_med|baseline': 1.0, 'llava_med|contrastive': 0.9994, 'llava_med|rag': 0.9982, 'qwen25vl|baseline': 0.9845, 'qwen25vl|contrastive': 0.9958, 'qwen25vl|rag': 0.9994}

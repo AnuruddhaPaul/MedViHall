@@ -1,0 +1,17 @@
+{
+  "original": "medvihall_results.jsonl",
+  "bytes": 139154083,
+  "sha256": "eeb9f828e73ca0b6847f13699544d62f29e9bbddd2be3def66b744eb3c22dec6",
+  "parts": [
+    {
+      "name": "part_000",
+      "bytes": 99614720,
+      "sha256": "e5902b11981275ea0016532631bd877a8358312e71a3d9736dbc25d17bda34d0"
+    },
+    {
+      "name": "part_001",
+      "bytes": 39539363,
+      "sha256": "934b9ea8e46e588e9934d997a134acb5cf6c82ca038a002d47ac84e65a8bccce"
+    }
+  ]
+}

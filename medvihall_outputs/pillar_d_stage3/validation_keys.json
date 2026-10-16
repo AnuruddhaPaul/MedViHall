@@ -1,0 +1,982 @@
+[
+ {
+  "pseudo_model": "chexagent__v883b47296ce0",
+  "image_id": "origa_OS1_0032",
+  "query_type": "Q3",
+  "core_key": [
+   "chexagent",
+   "origa_OS1_0032",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v2b18e843ea16",
+  "image_id": "pcam_HS3_0305",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "pcam_HS3_0305",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__vabd4cc13ef1d",
+  "image_id": "isic2020_DS3_1913",
+  "query_type": "Q1",
+  "core_key": [
+   "huatuogpt",
+   "isic2020_DS3_1913",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v0a9ca3c7589d",
+  "image_id": "isic2020_DS1_0520",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "isic2020_DS1_0520",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v811e3b174f9a",
+  "image_id": "pcam_HS3_0218",
+  "query_type": "Q3",
+  "core_key": [
+   "chexagent",
+   "pcam_HS3_0218",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v811e3b174f9a",
+  "image_id": "nct_HS2_0129",
+  "query_type": "Q3",
+  "core_key": [
+   "chexagent",
+   "nct_HS2_0129",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v983fa78000c5",
+  "image_id": "nct_HS1_0039",
+  "query_type": "Q2",
+  "core_key": [
+   "chexagent",
+   "nct_HS1_0039",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__vec1bcf895713",
+  "image_id": "ham10000_DS2_0429",
+  "query_type": "Q1",
+  "core_key": [
+   "llava_med",
+   "ham10000_DS2_0429",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v983fa78000c5",
+  "image_id": "nct_HS1_0373",
+  "query_type": "Q2",
+  "core_key": [
+   "chexagent",
+   "nct_HS1_0373",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v1fbf424da1b2",
+  "image_id": "isic2020_DS1_0296",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "isic2020_DS1_0296",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v0a9ca3c7589d",
+  "image_id": "isic2020_DS1_1115",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "isic2020_DS1_1115",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v10e9b83c4cfc",
+  "image_id": "refuge_OS1_0547",
+  "query_type": "Q1",
+  "core_key": [
+   "llava_med",
+   "refuge_OS1_0547",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__vdbad978080ac",
+  "image_id": "g1020_OS3_0385",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "g1020_OS3_0385",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v6410cd0a1f20",
+  "image_id": "ham10000_DS2_0341",
+  "query_type": "Q1",
+  "core_key": [
+   "llava_med",
+   "ham10000_DS2_0341",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v0a9ca3c7589d",
+  "image_id": "isic2020_DS1_0465",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "isic2020_DS1_0465",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__vce468e17a9cf",
+  "image_id": "isic2020_DS1_0849",
+  "query_type": "Q3",
+  "core_key": [
+   "llava_med",
+   "isic2020_DS1_0849",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v8535860e9f98",
+  "image_id": "refuge_OS1_0117",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "refuge_OS1_0117",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__vc900f8066c13",
+  "image_id": "ham10000_DS2_0429",
+  "query_type": "Q3",
+  "core_key": [
+   "llava_med",
+   "ham10000_DS2_0429",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v0cb6efcb918b",
+  "image_id": "ham10000_DS3_0877",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "ham10000_DS3_0877",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v811e3b174f9a",
+  "image_id": "nct_HS1_0342",
+  "query_type": "Q3",
+  "core_key": [
+   "chexagent",
+   "nct_HS1_0342",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v96fd960309e4",
+  "image_id": "nct_HS2_0016",
+  "query_type": "Q2",
+  "core_key": [
+   "chexagent",
+   "nct_HS2_0016",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v7b6d8af4ce4c",
+  "image_id": "pcam_HS1_0254",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "pcam_HS1_0254",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v93b154d1f0ba",
+  "image_id": "isic2020_DS1_1326",
+  "query_type": "Q3",
+  "core_key": [
+   "llava_med",
+   "isic2020_DS1_1326",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v983fa78000c5",
+  "image_id": "pcam_HS1_0273",
+  "query_type": "Q2",
+  "core_key": [
+   "chexagent",
+   "pcam_HS1_0273",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__vc1f2ddaee453",
+  "image_id": "isic2020_DS1_1201",
+  "query_type": "Q2",
+  "core_key": [
+   "chexagent",
+   "isic2020_DS1_1201",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v9829cecc4854",
+  "image_id": "g1020_OS2_0025",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "g1020_OS2_0025",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__vae97fb36f89e",
+  "image_id": "ham10000_DS2_0571",
+  "query_type": "Q1",
+  "core_key": [
+   "chexagent",
+   "ham10000_DS2_0571",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v670f9e5b9164",
+  "image_id": "isic2020_DS1_0758",
+  "query_type": "Q1",
+  "core_key": [
+   "huatuogpt",
+   "isic2020_DS1_0758",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v38ac756137af",
+  "image_id": "isic2020_DS1_1314",
+  "query_type": "Q2",
+  "core_key": [
+   "chexagent",
+   "isic2020_DS1_1314",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v72e5bbae4d2e",
+  "image_id": "nct_HS2_0086",
+  "query_type": "Q2",
+  "core_key": [
+   "chexagent",
+   "nct_HS2_0086",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v6681ee0f0afb",
+  "image_id": "isic2020_DS1_1027",
+  "query_type": "Q2",
+  "core_key": [
+   "llava_med",
+   "isic2020_DS1_1027",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__va95558a57389",
+  "image_id": "ham10000_DS2_0498",
+  "query_type": "Q1",
+  "core_key": [
+   "huatuogpt",
+   "ham10000_DS2_0498",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v03a9196bc361",
+  "image_id": "pcam_HS1_0284",
+  "query_type": "Q3",
+  "core_key": [
+   "huatuogpt",
+   "pcam_HS1_0284",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v35457fe62824",
+  "image_id": "ham10000_DS3_0705",
+  "query_type": "Q1",
+  "core_key": [
+   "chexagent",
+   "ham10000_DS3_0705",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v51e96b9bff26",
+  "image_id": "isic2020_DS3_1494",
+  "query_type": "Q1",
+  "core_key": [
+   "llava_med",
+   "isic2020_DS3_1494",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v3ed6da0854dc",
+  "image_id": "pcam_HS1_0461",
+  "query_type": "Q3",
+  "core_key": [
+   "huatuogpt",
+   "pcam_HS1_0461",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v1fbf424da1b2",
+  "image_id": "isic2020_DS1_0420",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "isic2020_DS1_0420",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__vbc7713419fec",
+  "image_id": "isic2020_DS1_0858",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "isic2020_DS1_0858",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava16__v71eaf00b3fc7",
+  "image_id": "pcam_HS1_0243",
+  "query_type": "Q2",
+  "core_key": [
+   "llava16",
+   "pcam_HS1_0243",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v10e9b83c4cfc",
+  "image_id": "g1020_OS2_0216",
+  "query_type": "Q1",
+  "core_key": [
+   "llava_med",
+   "g1020_OS2_0216",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v320b60c92276",
+  "image_id": "pcam_HS1_0341",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "pcam_HS1_0341",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v24ab7e1525d3",
+  "image_id": "ham10000_DS2_0329",
+  "query_type": "Q3",
+  "core_key": [
+   "chexagent",
+   "ham10000_DS2_0329",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__vfc1afa5f47d9",
+  "image_id": "ham10000_DS2_0542",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "ham10000_DS2_0542",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava16__vb445546b2c2c",
+  "image_id": "pcam_HS1_0166",
+  "query_type": "Q2",
+  "core_key": [
+   "llava16",
+   "pcam_HS1_0166",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__va95558a57389",
+  "image_id": "ham10000_DS3_0693",
+  "query_type": "Q1",
+  "core_key": [
+   "huatuogpt",
+   "ham10000_DS3_0693",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v0de0e0e0493c",
+  "image_id": "refuge_OS1_0275",
+  "query_type": "Q3",
+  "core_key": [
+   "llava_med",
+   "refuge_OS1_0275",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__vbebda742ed47",
+  "image_id": "g1020_OS2_0103",
+  "query_type": "Q2",
+  "core_key": [
+   "llava_med",
+   "g1020_OS2_0103",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v6681ee0f0afb",
+  "image_id": "isic2020_DS1_1326",
+  "query_type": "Q2",
+  "core_key": [
+   "llava_med",
+   "isic2020_DS1_1326",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v8f13e5950cf0",
+  "image_id": "pcam_HS3_0697",
+  "query_type": "Q1",
+  "core_key": [
+   "chexagent",
+   "pcam_HS3_0697",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__vf0332339bbb7",
+  "image_id": "pcam_HS1_0273",
+  "query_type": "Q3",
+  "core_key": [
+   "huatuogpt",
+   "pcam_HS1_0273",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v00209ca57c47",
+  "image_id": "nct_HS1_0039",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "nct_HS1_0039",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__va2a330c2b390",
+  "image_id": "pcam_HS1_0058",
+  "query_type": "Q3",
+  "core_key": [
+   "huatuogpt",
+   "pcam_HS1_0058",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v62e0099ceefd",
+  "image_id": "ham10000_DS3_0862",
+  "query_type": "Q3",
+  "core_key": [
+   "llava_med",
+   "ham10000_DS3_0862",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__vbebda742ed47",
+  "image_id": "g1020_OS2_0182",
+  "query_type": "Q2",
+  "core_key": [
+   "llava_med",
+   "g1020_OS2_0182",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v2b99f991e717",
+  "image_id": "pcam_HS3_0141",
+  "query_type": "Q2",
+  "core_key": [
+   "chexagent",
+   "pcam_HS3_0141",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v10e9b83c4cfc",
+  "image_id": "refuge_OS1_0108",
+  "query_type": "Q1",
+  "core_key": [
+   "llava_med",
+   "refuge_OS1_0108",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v811e3b174f9a",
+  "image_id": "nct_HS1_0289",
+  "query_type": "Q3",
+  "core_key": [
+   "chexagent",
+   "nct_HS1_0289",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v80dc31137c57",
+  "image_id": "nct_HS3_0212",
+  "query_type": "Q3",
+  "core_key": [
+   "chexagent",
+   "nct_HS3_0212",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v883b47296ce0",
+  "image_id": "refuge_OS1_0589",
+  "query_type": "Q3",
+  "core_key": [
+   "chexagent",
+   "refuge_OS1_0589",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v5ae0384c7dba",
+  "image_id": "g1020_OS3_0526",
+  "query_type": "Q3",
+  "core_key": [
+   "chexagent",
+   "g1020_OS3_0526",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v573c8c398abb",
+  "image_id": "isic2020_DS3_1908",
+  "query_type": "Q3",
+  "core_key": [
+   "llava_med",
+   "isic2020_DS3_1908",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v00209ca57c47",
+  "image_id": "nct_HS1_0342",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "nct_HS1_0342",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v883b47296ce0",
+  "image_id": "origa_OS2_0016",
+  "query_type": "Q3",
+  "core_key": [
+   "chexagent",
+   "origa_OS2_0016",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v93b154d1f0ba",
+  "image_id": "isic2020_DS1_0269",
+  "query_type": "Q3",
+  "core_key": [
+   "llava_med",
+   "isic2020_DS1_0269",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v93b154d1f0ba",
+  "image_id": "isic2020_DS1_1027",
+  "query_type": "Q3",
+  "core_key": [
+   "llava_med",
+   "isic2020_DS1_1027",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v00209ca57c47",
+  "image_id": "pcam_HS1_0062",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "pcam_HS1_0062",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v10e9b83c4cfc",
+  "image_id": "refuge_OS1_0383",
+  "query_type": "Q1",
+  "core_key": [
+   "llava_med",
+   "refuge_OS1_0383",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v10e9b83c4cfc",
+  "image_id": "refuge_OS1_0589",
+  "query_type": "Q1",
+  "core_key": [
+   "llava_med",
+   "refuge_OS1_0589",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v2c2135402780",
+  "image_id": "nct_HS3_0077",
+  "query_type": "Q2",
+  "core_key": [
+   "chexagent",
+   "nct_HS3_0077",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__vae65ae819a0c",
+  "image_id": "pcam_HS1_0694",
+  "query_type": "Q1",
+  "core_key": [
+   "llava_med",
+   "pcam_HS1_0694",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__va0216264ba42",
+  "image_id": "origa_OS1_0086",
+  "query_type": "Q2",
+  "core_key": [
+   "chexagent",
+   "origa_OS1_0086",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava16__vb445546b2c2c",
+  "image_id": "nct_HS1_0254",
+  "query_type": "Q2",
+  "core_key": [
+   "llava16",
+   "nct_HS1_0254",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v4abbdb3c3a5d",
+  "image_id": "isic2020_DS3_1556",
+  "query_type": "Q1",
+  "core_key": [
+   "huatuogpt",
+   "isic2020_DS3_1556",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__va45e9c8790bf",
+  "image_id": "g1020_OS2_0025",
+  "query_type": "Q1",
+  "core_key": [
+   "chexagent",
+   "g1020_OS2_0025",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v3e44bf07e2f7",
+  "image_id": "isic2020_DS3_1709",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "isic2020_DS3_1709",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v27252aa4f856",
+  "image_id": "isic2020_DS3_1913",
+  "query_type": "Q2",
+  "core_key": [
+   "chexagent",
+   "isic2020_DS3_1913",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v65a38b56466f",
+  "image_id": "pcam_HS1_0058",
+  "query_type": "Q1",
+  "core_key": [
+   "llava_med",
+   "pcam_HS1_0058",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v9ef686185037",
+  "image_id": "ham10000_DS2_0542",
+  "query_type": "Q2",
+  "core_key": [
+   "chexagent",
+   "ham10000_DS2_0542",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__vd915482a1fd1",
+  "image_id": "pcam_HS1_0280",
+  "query_type": "Q2",
+  "core_key": [
+   "chexagent",
+   "pcam_HS1_0280",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v8f13e5950cf0",
+  "image_id": "pcam_HS1_0408",
+  "query_type": "Q1",
+  "core_key": [
+   "chexagent",
+   "pcam_HS1_0408",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v10e9b83c4cfc",
+  "image_id": "origa_OS1_0135",
+  "query_type": "Q1",
+  "core_key": [
+   "llava_med",
+   "origa_OS1_0135",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "qwen25vl__vfefab582cb18",
+  "image_id": "refuge_OS1_0689",
+  "query_type": "Q2",
+  "core_key": [
+   "qwen25vl",
+   "refuge_OS1_0689",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v93b154d1f0ba",
+  "image_id": "ham10000_DS2_0498",
+  "query_type": "Q3",
+  "core_key": [
+   "llava_med",
+   "ham10000_DS2_0498",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v0d06ab3f319d",
+  "image_id": "ham10000_DS2_0593",
+  "query_type": "Q1",
+  "core_key": [
+   "huatuogpt",
+   "ham10000_DS2_0593",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__vf10dc6d7bbd0",
+  "image_id": "g1020_OS3_0505",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "g1020_OS3_0505",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava16__v737aef6bf417",
+  "image_id": "origa_OS1_0079",
+  "query_type": "Q2",
+  "core_key": [
+   "llava16",
+   "origa_OS1_0079",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__vff28b947851b",
+  "image_id": "isic2020_DS1_0475",
+  "query_type": "Q3",
+  "core_key": [
+   "llava_med",
+   "isic2020_DS1_0475",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "qwen25vl__vda9fcfe8fe93",
+  "image_id": "pcam_HS1_0613",
+  "query_type": "Q2",
+  "core_key": [
+   "qwen25vl",
+   "pcam_HS1_0613",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "llava_med__v6681ee0f0afb",
+  "image_id": "isic2020_DS1_0931",
+  "query_type": "Q2",
+  "core_key": [
+   "llava_med",
+   "isic2020_DS1_0931",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v983fa78000c5",
+  "image_id": "pcam_HS1_0058",
+  "query_type": "Q2",
+  "core_key": [
+   "chexagent",
+   "pcam_HS1_0058",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v00209ca57c47",
+  "image_id": "nct_HS1_0058",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "nct_HS1_0058",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v1fbf424da1b2",
+  "image_id": "isic2020_DS1_0623",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "isic2020_DS1_0623",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v30f90a2c60a5",
+  "image_id": "ham10000_DS1_0002",
+  "query_type": "Q3",
+  "core_key": [
+   "chexagent",
+   "ham10000_DS1_0002",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v0a9ca3c7589d",
+  "image_id": "isic2020_DS1_0884",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "isic2020_DS1_0884",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__vdee298fdbde6",
+  "image_id": "ham10000_DS3_0693",
+  "query_type": "Q3",
+  "core_key": [
+   "chexagent",
+   "ham10000_DS3_0693",
+   "Q3"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__v48fbacfdcee4",
+  "image_id": "g1020_OS2_0127",
+  "query_type": "Q1",
+  "core_key": [
+   "chexagent",
+   "g1020_OS2_0127",
+   "Q1"
+  ]
+ },
+ {
+  "pseudo_model": "huatuogpt__v0a9ca3c7589d",
+  "image_id": "isic2020_DS1_0822",
+  "query_type": "Q2",
+  "core_key": [
+   "huatuogpt",
+   "isic2020_DS1_0822",
+   "Q2"
+  ]
+ },
+ {
+  "pseudo_model": "chexagent__vdee298fdbde6",
+  "image_id": "ham10000_DS2_0423",
+  "query_type": "Q3",
+  "core_key": [
+   "chexagent",
+   "ham10000_DS2_0423",
+   "Q3"
+  ]
+ }
+]

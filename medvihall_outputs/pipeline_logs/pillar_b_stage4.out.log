@@ -1,0 +1,6 @@
+core labels 140389 | pillar B labels 17398
+wrote medvihall_outputs\pillar_b_mitigation_results.json
+wrote medvihall_outputs\pillar_b_results_section.md
+baseline {'qwen25vl': 0.537, 'llava16': 0.669, 'chexagent': 0.751, 'huatuogpt': 0.699, 'llava_med': 0.728}
+rag {'qwen25vl': 0.508, 'llava16': 0.627, 'chexagent': 0.778, 'huatuogpt': 0.704, 'llava_med': 0.731}
+contrastive {'qwen25vl': 0.533, 'llava16': 0.583, 'chexagent': 0.709, 'huatuogpt': 0.676, 'llava_med': 0.724}

@@ -1,0 +1,203 @@
+{
+  "parameters": {
+    "conditions": [
+      "baseline",
+      "rag",
+      "contrastive"
+    ],
+    "keys_per_cell": 3,
+    "min_words": 8,
+    "chronic_threshold": 0.3,
+    "exclude_degenerate": false,
+    "seed": 20261008,
+    "outdir": "medvihall_outputs\\annotation",
+    "require_complete": true
+  },
+  "n_keys": 48,
+  "n_items": 720,
+  "items_per_model": {
+    "qwen25vl": 144,
+    "huatuogpt": 144,
+    "chexagent": 144,
+    "llava16": 144,
+    "llava_med": 144
+  },
+  "items_per_condition": {
+    "baseline": 240,
+    "contrastive": 240,
+    "rag": 240
+  },
+  "items_per_model_condition": {
+    "qwen25vl|baseline": 48,
+    "qwen25vl|contrastive": 48,
+    "qwen25vl|rag": 48,
+    "huatuogpt|rag": 48,
+    "chexagent|baseline": 48,
+    "huatuogpt|contrastive": 48,
+    "llava16|baseline": 48,
+    "llava_med|baseline": 48,
+    "chexagent|rag": 48,
+    "llava16|rag": 48,
+    "huatuogpt|baseline": 48,
+    "llava16|contrastive": 48,
+    "llava_med|rag": 48,
+    "chexagent|contrastive": 48,
+    "llava_med|contrastive": 48
+  },
+  "items_per_modality": {
+    "dermatology": 180,
+    "ophthalmology": 180,
+    "radiology": 180,
+    "histopathology": 180
+  },
+  "items_per_query_type": {
+    "Q3": 180,
+    "Q1": 180,
+    "Q2": 180,
+    "Q4": 180
+  },
+  "items_per_image_stratum": {
+    "DS1": 75,
+    "OS2": 45,
+    "DS2": 45,
+    "S2": 45,
+    "S4": 45,
+    "HS1": 75,
+    "S1": 60,
+    "OS1": 90,
+    "HS2": 45,
+    "HS3": 60,
+    "DS3": 60,
+    "S3": 30,
+    "OS3": 45
+  },
+  "valid_rate_before_filter": {
+    "chexagent|baseline": 0.978,
+    "chexagent|contrastive": 0.994,
+    "chexagent|rag": 0.9923,
+    "huatuogpt|baseline": 0.9398,
+    "huatuogpt|contrastive": 0.9518,
+    "huatuogpt|rag": 0.9446,
+    "llava16|baseline": 1.0,
+    "llava16|contrastive": 1.0,
+    "llava16|rag": 1.0,
+    "llava_med|baseline": 1.0,
+    "llava_med|contrastive": 0.9994,
+    "llava_med|rag": 0.9982,
+    "qwen25vl|baseline": 0.9845,
+    "qwen25vl|contrastive": 0.9958,
+    "qwen25vl|rag": 0.9994
+  },
+  "filter_waived_cells (valid rate below threshold)": [],
+  "invalid_reason_counts": {
+    "chexagent|baseline": {
+      "degenerate_repetition": 840,
+      "too_short": 37
+    },
+    "chexagent|contrastive": {
+      "degenerate_repetition": 541,
+      "too_short": 10
+    },
+    "chexagent|rag": {
+      "degenerate_repetition": 187,
+      "too_short": 13
+    },
+    "huatuogpt|baseline": {
+      "too_short": 101
+    },
+    "huatuogpt|contrastive": {
+      "too_short": 81
+    },
+    "huatuogpt|rag": {
+      "too_short": 93
+    },
+    "llava16|contrastive": {
+      "degenerate_repetition": 1
+    },
+    "llava_med|contrastive": {
+      "too_short": 1
+    },
+    "llava_med|rag": {
+      "chopped_start": 3
+    },
+    "qwen25vl|baseline": {
+      "too_short": 26,
+      "degenerate_repetition": 1
+    },
+    "qwen25vl|contrastive": {
+      "too_short": 7
+    },
+    "qwen25vl|rag": {
+      "too_short": 1
+    }
+  },
+  "candidate_keys_vs_eligible_per_cell": {
+    "radiology|Q1": {
+      "candidates": 172,
+      "eligible_all_valid": 171
+    },
+    "radiology|Q2": {
+      "candidates": 172,
+      "eligible_all_valid": 145
+    },
+    "radiology|Q3": {
+      "candidates": 172,
+      "eligible_all_valid": 172
+    },
+    "radiology|Q4": {
+      "candidates": 43,
+      "eligible_all_valid": 43
+    },
+    "dermatology|Q1": {
+      "candidates": 129,
+      "eligible_all_valid": 127
+    },
+    "dermatology|Q2": {
+      "candidates": 129,
+      "eligible_all_valid": 72
+    },
+    "dermatology|Q3": {
+      "candidates": 129,
+      "eligible_all_valid": 129
+    },
+    "dermatology|Q4": {
+      "candidates": 57,
+      "eligible_all_valid": 54
+    },
+    "histopathology|Q1": {
+      "candidates": 114,
+      "eligible_all_valid": 110
+    },
+    "histopathology|Q2": {
+      "candidates": 114,
+      "eligible_all_valid": 62
+    },
+    "histopathology|Q3": {
+      "candidates": 114,
+      "eligible_all_valid": 114
+    },
+    "histopathology|Q4": {
+      "candidates": 43,
+      "eligible_all_valid": 42
+    },
+    "ophthalmology|Q1": {
+      "candidates": 85,
+      "eligible_all_valid": 33
+    },
+    "ophthalmology|Q2": {
+      "candidates": 85,
+      "eligible_all_valid": 73
+    },
+    "ophthalmology|Q3": {
+      "candidates": 85,
+      "eligible_all_valid": 84
+    },
+    "ophthalmology|Q4": {
+      "candidates": 36,
+      "eligible_all_valid": 36
+    }
+  },
+  "shortfall_cells": {},
+  "backfilled_keys": 0,
+  "note": "Keys are kept only if every model x condition response is valid (or its cell is waived), so annotation hallucination rates are conditional on well-formed outputs; the pre-filter validity rates above quantify what was excluded."
+}

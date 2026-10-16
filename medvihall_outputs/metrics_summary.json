@@ -1,0 +1,498 @@
+{
+  "models": {
+    "llava_med": {
+      "is_medical": true,
+      "smhr_overall": 0.7936509394955718,
+      "chr_overall": 0.7497021276595744,
+      "n_records": 11750,
+      "n_parse_errors": 4,
+      "by_modality": {
+        "radiology": {
+          "smhr": 0.9206952691055369,
+          "chr": 0.8858974358974359,
+          "records": 3900,
+          "claims": 10442
+        },
+        "dermatology": {
+          "smhr": 0.6448868229587679,
+          "chr": 0.6845161290322581,
+          "records": 3100,
+          "claims": 4948
+        },
+        "histopathology": {
+          "smhr": 0.7445344129554659,
+          "chr": 0.6125925925925926,
+          "records": 2700,
+          "claims": 2717
+        },
+        "ophthalmology": {
+          "smhr": 0.6687704918032763,
+          "chr": 0.7697560975609756,
+          "records": 2050,
+          "claims": 3660
+        }
+      }
+    },
+    "qwen3vl": {
+      "is_medical": false,
+      "smhr_overall": 0.5620723983453736,
+      "chr_overall": 0.7296170212765958,
+      "n_records": 11750,
+      "n_parse_errors": 51,
+      "by_modality": {
+        "radiology": {
+          "smhr": 0.7637861285763083,
+          "chr": 0.8764102564102564,
+          "records": 3900,
+          "claims": 20517
+        },
+        "dermatology": {
+          "smhr": 0.41520679068087435,
+          "chr": 0.5835483870967741,
+          "records": 3100,
+          "claims": 16611
+        },
+        "histopathology": {
+          "smhr": 0.5207658208498924,
+          "chr": 0.7055555555555556,
+          "records": 2700,
+          "claims": 13084
+        },
+        "ophthalmology": {
+          "smhr": 0.4181388992421397,
+          "chr": 0.7029268292682926,
+          "records": 2050,
+          "claims": 8049
+        }
+      }
+    },
+    "qwen25vl": {
+      "is_medical": false,
+      "smhr_overall": 0.5293624989711117,
+      "chr_overall": 0.7848510638297872,
+      "n_records": 11750,
+      "n_parse_errors": 46,
+      "by_modality": {
+        "radiology": {
+          "smhr": 0.7282155659517686,
+          "chr": 0.9441025641025641,
+          "records": 3900,
+          "claims": 16459
+        },
+        "dermatology": {
+          "smhr": 0.3476816565040646,
+          "chr": 0.675483870967742,
+          "records": 3100,
+          "claims": 15744
+        },
+        "histopathology": {
+          "smhr": 0.53312095762139,
+          "chr": 0.7985185185185185,
+          "records": 2700,
+          "claims": 10359
+        },
+        "ophthalmology": {
+          "smhr": 0.4545409347033456,
+          "chr": 0.6292682926829268,
+          "records": 2050,
+          "claims": 6034
+        }
+      }
+    },
+    "gemma3": {
+      "is_medical": false,
+      "smhr_overall": 0.5316275591287253,
+      "chr_overall": 0.7313191489361702,
+      "n_records": 11750,
+      "n_parse_errors": 59,
+      "by_modality": {
+        "radiology": {
+          "smhr": 0.632654280422966,
+          "chr": 0.8725641025641026,
+          "records": 3900,
+          "claims": 16739
+        },
+        "dermatology": {
+          "smhr": 0.4605245131617612,
+          "chr": 0.7441935483870967,
+          "records": 3100,
+          "claims": 20438
+        },
+        "histopathology": {
+          "smhr": 0.5745211466769492,
+          "chr": 0.544074074074074,
+          "records": 2700,
+          "claims": 7779
+        },
+        "ophthalmology": {
+          "smhr": 0.4646148434752011,
+          "chr": 0.6897560975609756,
+          "records": 2050,
+          "claims": 8529
+        }
+      }
+    },
+    "idefics3": {
+      "is_medical": false,
+      "smhr_overall": 0.6364051153524848,
+      "chr_overall": 0.8,
+      "n_records": 11750,
+      "n_parse_errors": 38,
+      "by_modality": {
+        "radiology": {
+          "smhr": 0.6442010703363931,
+          "chr": 0.9197435897435897,
+          "records": 3900,
+          "claims": 26160
+        },
+        "dermatology": {
+          "smhr": 0.6018594542381039,
+          "chr": 0.7580645161290323,
+          "records": 3100,
+          "claims": 8282
+        },
+        "histopathology": {
+          "smhr": 0.6514572739675044,
+          "chr": 0.7651851851851852,
+          "records": 2700,
+          "claims": 8063
+        },
+        "ophthalmology": {
+          "smhr": 0.6270224988032538,
+          "chr": 0.6814634146341464,
+          "records": 2050,
+          "claims": 4178
+        }
+      }
+    },
+    "qwen2vl": {
+      "is_medical": false,
+      "smhr_overall": 0.6431522681306054,
+      "chr_overall": 0.7972765957446809,
+      "n_records": 11750,
+      "n_parse_errors": 34,
+      "by_modality": {
+        "radiology": {
+          "smhr": 0.8284087025857255,
+          "chr": 0.9484615384615385,
+          "records": 3900,
+          "claims": 17558
+        },
+        "dermatology": {
+          "smhr": 0.43502218934910863,
+          "chr": 0.6932258064516129,
+          "records": 3100,
+          "claims": 10816
+        },
+        "histopathology": {
+          "smhr": 0.5638117712381996,
+          "chr": 0.7514814814814815,
+          "records": 2700,
+          "claims": 7204
+        },
+        "ophthalmology": {
+          "smhr": 0.5709271078266691,
+          "chr": 0.7273170731707317,
+          "records": 2050,
+          "claims": 5954
+        }
+      }
+    },
+    "qwen35": {
+      "is_medical": false,
+      "smhr_overall": 0.5487808594940504,
+      "chr_overall": 0.7732765957446809,
+      "n_records": 11750,
+      "n_parse_errors": 97,
+      "by_modality": {
+        "radiology": {
+          "smhr": 0.6753931961477183,
+          "chr": 0.88,
+          "records": 3900,
+          "claims": 28866
+        },
+        "dermatology": {
+          "smhr": 0.4959520120764333,
+          "chr": 0.7503225806451613,
+          "records": 3100,
+          "claims": 25173
+        },
+        "histopathology": {
+          "smhr": 0.48190909717911545,
+          "chr": 0.6344444444444445,
+          "records": 2700,
+          "claims": 14499
+        },
+        "ophthalmology": {
+          "smhr": 0.41598079561042406,
+          "chr": 0.7878048780487805,
+          "records": 2050,
+          "claims": 10206
+        }
+      }
+    },
+    "llava16": {
+      "is_medical": false,
+      "smhr_overall": 0.6753342381103626,
+      "chr_overall": 0.7414468085106383,
+      "n_records": 11750,
+      "n_parse_errors": 21,
+      "by_modality": {
+        "radiology": {
+          "smhr": 0.7462696861708267,
+          "chr": 0.8866666666666667,
+          "records": 3900,
+          "claims": 17398
+        },
+        "dermatology": {
+          "smhr": 0.5648124912867658,
+          "chr": 0.6541935483870968,
+          "records": 3100,
+          "claims": 7173
+        },
+        "histopathology": {
+          "smhr": 0.7162027123483219,
+          "chr": 0.6681481481481482,
+          "records": 2700,
+          "claims": 4203
+        },
+        "ophthalmology": {
+          "smhr": 0.5706505036708192,
+          "chr": 0.6936585365853658,
+          "records": 2050,
+          "claims": 5857
+        }
+      }
+    },
+    "huatuogpt": {
+      "is_medical": true,
+      "smhr_overall": 0.6911349741338697,
+      "chr_overall": 0.8056170212765957,
+      "n_records": 11750,
+      "n_parse_errors": 134,
+      "by_modality": {
+        "radiology": {
+          "smhr": 0.8274963017751658,
+          "chr": 0.97,
+          "records": 3900,
+          "claims": 16224
+        },
+        "dermatology": {
+          "smhr": 0.5743456731902795,
+          "chr": 0.6745161290322581,
+          "records": 3100,
+          "claims": 8482
+        },
+        "histopathology": {
+          "smhr": 0.6309153713298753,
+          "chr": 0.7822222222222223,
+          "records": 2700,
+          "claims": 7527
+        },
+        "ophthalmology": {
+          "smhr": 0.5639298129448704,
+          "chr": 0.7219512195121951,
+          "records": 2050,
+          "claims": 6041
+        }
+      }
+    },
+    "chexagent": {
+      "is_medical": true,
+      "smhr_overall": 0.7482195665383923,
+      "chr_overall": 0.7191489361702128,
+      "n_records": 11750,
+      "n_parse_errors": 27,
+      "by_modality": {
+        "radiology": {
+          "smhr": 0.8259535417264136,
+          "chr": 0.7651282051282051,
+          "records": 3900,
+          "claims": 10461
+        },
+        "dermatology": {
+          "smhr": 0.6294097222222196,
+          "chr": 0.7225806451612903,
+          "records": 3100,
+          "claims": 5760
+        },
+        "histopathology": {
+          "smhr": 0.7362337424436692,
+          "chr": 0.7685185185185185,
+          "records": 2700,
+          "claims": 5459
+        },
+        "ophthalmology": {
+          "smhr": 0.7271214642262891,
+          "chr": 0.5614634146341464,
+          "records": 2050,
+          "claims": 3005
+        }
+      }
+    },
+    "internvl3": {
+      "is_medical": false,
+      "smhr_overall": 0.5387351548552398,
+      "chr_overall": 0.7596595744680851,
+      "n_records": 11750,
+      "n_parse_errors": 65,
+      "by_modality": {
+        "radiology": {
+          "smhr": 0.6520105401844609,
+          "chr": 0.9494871794871795,
+          "records": 3900,
+          "claims": 18975
+        },
+        "dermatology": {
+          "smhr": 0.44746075715604733,
+          "chr": 0.6306451612903226,
+          "records": 3100,
+          "claims": 14079
+        },
+        "histopathology": {
+          "smhr": 0.5039580034997078,
+          "chr": 0.7137037037037037,
+          "records": 2700,
+          "claims": 12001
+        },
+        "ophthalmology": {
+          "smhr": 0.46972363748648926,
+          "chr": 0.6541463414634147,
+          "records": 2050,
+          "claims": 6477
+        }
+      }
+    },
+    "minicpm": {
+      "is_medical": false,
+      "smhr_overall": 0.5800841514726646,
+      "chr_overall": 0.7151489361702128,
+      "n_records": 11750,
+      "n_parse_errors": 35,
+      "by_modality": {
+        "radiology": {
+          "smhr": 0.6185545426789368,
+          "chr": 0.9220512820512821,
+          "records": 3900,
+          "claims": 22927
+        },
+        "dermatology": {
+          "smhr": 0.5328705057000813,
+          "chr": 0.635483870967742,
+          "records": 3100,
+          "claims": 6842
+        },
+        "histopathology": {
+          "smhr": 0.6459893048128339,
+          "chr": 0.5385185185185185,
+          "records": 2700,
+          "claims": 3179
+        },
+        "ophthalmology": {
+          "smhr": 0.44171768095066394,
+          "chr": 0.6746341463414635,
+          "records": 2050,
+          "claims": 5554
+        }
+      }
+    }
+  },
+  "best_general_vlm_by_modality": {
+    "dermatology": {
+      "model": "qwen25vl",
+      "smhr": 0.3476816565040646
+    },
+    "histopathology": {
+      "model": "qwen35",
+      "smhr": 0.48190909717911545
+    },
+    "ophthalmology": {
+      "model": "qwen35",
+      "smhr": 0.41598079561042406
+    },
+    "radiology": {
+      "model": "minicpm",
+      "smhr": 0.6185545426789368
+    }
+  },
+  "sri": {
+    "chexagent": {
+      "dermatology": {
+        "sri": 1.8103046578612394,
+        "specialist_smhr": 0.6294097222222196,
+        "best_general_model": "qwen25vl",
+        "best_general_smhr": 0.3476816565040646
+      },
+      "histopathology": {
+        "sri": 1.527744022167788,
+        "specialist_smhr": 0.7362337424436692,
+        "best_general_model": "qwen35",
+        "best_general_smhr": 0.48190909717911545
+      },
+      "ophthalmology": {
+        "sri": 1.7479688290880997,
+        "specialist_smhr": 0.7271214642262891,
+        "best_general_model": "qwen35",
+        "best_general_smhr": 0.41598079561042406
+      },
+      "radiology": {
+        "sri": 1.3352962184211588,
+        "specialist_smhr": 0.8259535417264136,
+        "best_general_model": "minicpm",
+        "best_general_smhr": 0.6185545426789368
+      }
+    },
+    "huatuogpt": {
+      "dermatology": {
+        "sri": 1.651929753687092,
+        "specialist_smhr": 0.5743456731902795,
+        "best_general_model": "qwen25vl",
+        "best_general_smhr": 0.3476816565040646
+      },
+      "histopathology": {
+        "sri": 1.3091999612021794,
+        "specialist_smhr": 0.6309153713298753,
+        "best_general_model": "qwen35",
+        "best_general_smhr": 0.48190909717911545
+      },
+      "ophthalmology": {
+        "sri": 1.3556630952574171,
+        "specialist_smhr": 0.5639298129448704,
+        "best_general_model": "qwen35",
+        "best_general_smhr": 0.41598079561042406
+      },
+      "radiology": {
+        "sri": 1.3377903558695243,
+        "specialist_smhr": 0.8274963017751658,
+        "best_general_model": "minicpm",
+        "best_general_smhr": 0.6185545426789368
+      }
+    },
+    "llava_med": {
+      "dermatology": {
+        "sri": 1.854819806840252,
+        "specialist_smhr": 0.6448868229587679,
+        "best_general_model": "qwen25vl",
+        "best_general_smhr": 0.3476816565040646
+      },
+      "histopathology": {
+        "sri": 1.5449685787499008,
+        "specialist_smhr": 0.7445344129554659,
+        "best_general_model": "qwen35",
+        "best_general_smhr": 0.48190909717911545
+      },
+      "ophthalmology": {
+        "sri": 1.6076955928263472,
+        "specialist_smhr": 0.6687704918032763,
+        "best_general_model": "qwen35",
+        "best_general_smhr": 0.41598079561042406
+      },
+      "radiology": {
+        "sri": 1.488462545466144,
+        "specialist_smhr": 0.9206952691055369,
+        "best_general_model": "minicpm",
+        "best_general_smhr": 0.6185545426789368
+      }
+    }
+  }
+}
