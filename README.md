@@ -27,7 +27,7 @@ Build the paper: `cd paper && pdflatex main && bibtex main && pdflatex main && p
 ## Release conventions
 
 - **Modalities.** The released data covers dermatology, histopathology and ophthalmology only. Radiology records are removed.
-- **Images.** Dataset images are not redistributed; obtain them from the original sources under their licences.
+- **Images.** Dataset images are not redistributed; obtain them from the original sources under their licences. A small illustrative sample (36 images) is in [`sample_images/`](sample_images/).
 - **Model weights.** Not stored in this repository.
 - **Large files.** GitHub rejects files over 100 MB, so larger files are stored as `<name>.parts/part_000, part_001, ...` (each at most 95 MB) with a `MANIFEST.json`. Restore with `python tools/rejoin_chunks.py --all .`.
 - **Secrets.** API keys and Hugging Face tokens in notebooks and scripts are replaced by placeholders (`hf_REDACTED`, `sk-REDACTED`). Supply your own via environment variables (`HF_TOKEN`, `OPENAI_API_KEY`).
